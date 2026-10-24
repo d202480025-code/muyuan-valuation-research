@@ -886,7 +886,7 @@
     $('mobile-parameters').addEventListener('click', function () { var panel = document.querySelector('.parameter-panel'); var collapsed = panel.classList.toggle('is-mobile-collapsed'); this.setAttribute('aria-expanded', String(!collapsed)); this.innerHTML = collapsed ? '展开 <span aria-hidden="true">⌄</span>' : '收起 <span aria-hidden="true">⌃</span>'; });
     $('load-main').addEventListener('click',function(){applyConfig(MAIN,'主线：全年20元与10倍PE');});
     $('load-paper').addEventListener('click',function(){applyConfig(PAPER,'修订现金流参照：8000万头持平');showToast('已载入1.4.0资产批次参照。');});
-    $('load-legacy').addEventListener('click',function(){applyConfig(M.mergeConfig(M.DEFAULTS,{assetDepreciationMode:'cohort'}),'2%增长三次：批次折旧模型');showToast('已载入旧销量及投资配置，采用当前修订模型重算。');});
+    $('load-legacy').addEventListener('click',function(){applyConfig(M.mergeConfig(M.DEFAULTS,{assetDepreciationMode:'cohort',terminalCapexMode:'explicit'}),'2%增长三次：批次折旧模型');showToast('已载入旧销量及投资配置，采用当前修订模型重算。');});
     $('load-target').addEventListener('click',function(){applyConfig(M.mergeConfig(PAPER,{companyGrowthMode:'target',targetHogs:9000,targetGrowthYears:4}),'2031年9000万头：提前投资');});
     $('sync-depletion').addEventListener('click',function(){var c=state.config;var d=(1-c.sowQ3/c.sowQ2)*100;var check=M.validate(M.mergeConfig(c,{q4DepletionPct:d}),DATA);if(check.errors.length){showToast('同速去化超出允许范围，请检查Q2/Q3输入。',true);return;} applyConfig(M.mergeConfig(c,{q4DepletionPct:d}),'Q4与Q3同速去化');});
     $('save-scenario').addEventListener('click', openScenarioDialog);
