@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102b45">
+  <meta name="description" content="从养殖效率、有效产能与需求出发，探索猪价和牧原估值。公开数据、明确假设、可保存和分享的交互研究台。">
+  <title>猪周期研究台 · Pig Cycle Lab</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./data.js" defer></script>
+  <script src="./engine.js" defer></script>
+  <script src="./ui.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳转至主要内容</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./index.html" aria-label="猪周期研究台首页">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 23V9h4v14zm9 0V5h4v18zm9 0V13h4v10z" fill="currentColor"/><path d="M4 27h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <span class="brand-copy"><strong>猪周期研究台</strong><span>PIG CYCLE LAB</span></span>
+      </a>
+      <nav class="main-nav" aria-label="主要导航">
+        <button class="nav-link is-active" data-view="simulation" aria-current="page">推演<span class="nav-en"> / MODEL</span></button>
+        <button class="nav-link" data-view="crosschecks">市场与补栏<span class="nav-en"> / CHECKS</span></button>
+        <button class="nav-link" data-view="history">历史证据<span class="nav-en"> / EVIDENCE</span></button>
+        <button class="nav-link" data-view="methods">方法与来源<span class="nav-en"> / NOTES</span></button>
+      </nav>
+      <div class="header-status"><span class="status-dot" aria-hidden="true"></span><span id="data-date">数据与假设透明可查</span></div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section id="view-simulation" class="view is-active" aria-labelledby="simulation-title">
+      <div class="page-intro">
+        <div class="intro-copy"><p class="eyebrow">从生产效率，到猪价，再到企业价值</p><h1 id="simulation-title">把你的判断，<br class="mobile-break">变成可检验的假设。</h1><p class="intro-description">选择推演路径，调整关键参数，观察结论如何变化。让不同观点在同一张计算表里对话。</p></div>
+        <div class="intro-note"><span class="note-line"></span><p>事实是起点，<br>假设决定结果。</p><button class="text-link" data-go-view="methods">了解数据口径 <span aria-hidden="true">↗</span></button></div>
+      </div>
+
+<section class="paper-entry" aria-labelledby="paper-entry-title"><h2 id="paper-entry-title">先走完一条主线，再比较其他条件</h2><p>主线：必要边际成本给正常中枢15.73元/kg，另设全年高位20元/kg，得到演示利润747.84亿元，再乘10倍PE，外推129.54元/股。高位价格是额外假设。</p><div class="paper-actions"><button id="load-main" class="button button-primary">主线高位与10倍PE</button><button id="load-paper" class="button button-secondary">修订现金流参照</button><button id="load-target" class="button button-secondary">2031年9000万头</button><button id="load-legacy" class="button button-secondary">2%销量增长对照</button><button id="sync-depletion" class="button button-secondary">Q4按Q3比例去化</button><a href="./downloads/lecture.pptx">下载完整PPT</a><a href="./downloads/industry.pdf">独立行业篇PDF</a><a href="./downloads/muyuan.pdf">独立牧原篇PDF</a><a href="./downloads/script.docx">下载逐页讲稿</a><a href="./downloads/audit.md">算法核查</a><a href="https://github.com/d202480025-code/muyuan-valuation-research/blob/main/research/2026-10-24/report-v3.md">修订报告与全部资料</a></div><p>模型1.3.0，冻结数据2026年10月24日。修订需求现金流参照：长期基础成本11.8元/kg，平量58.15元/股，9000万头61.23元/股。模型价值折现基准为2026年末。</p></section>
+      <div class="workspace">
+        <aside class="parameter-panel card" aria-labelledby="parameter-title">
+          <div class="panel-heading"><div><p class="eyebrow">YOUR ASSUMPTIONS</p><h2 id="parameter-title">设定你的推演</h2></div><button id="reset-config" class="icon-button" aria-label="恢复论文参照参数" title="恢复论文参照参数"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1.2 7M4 4v6h6"/></svg></button><button id="mobile-parameters" class="mobile-parameter-toggle" aria-expanded="true" aria-controls="parameter-body">收起 <span aria-hidden="true">⌃</span></button></div>
+          <div id="parameter-body">
+            <div class="preset-box"><label class="field-label" for="preset-select">从一个情景开始</label><select id="preset-select"><option value="">自定义推演</option></select><p id="preset-description" class="field-help">也可以直接调整下方参数，建立自己的判断。</p></div>
+            <div class="method-selector"><div class="label-row"><span class="field-label">猪价推演路径</span><span class="data-tag tag-assumption">自主选择</span></div><div id="price-methods" class="choice-grid" role="group" aria-label="猪价推演路径"></div></div>
+            <div class="method-selector valuation-selector"><label class="field-label" for="valuation-method">企业估值方法</label><select id="valuation-method"></select></div>
+            <div id="parameter-sections" class="parameter-sections"><div class="loading-state"><span class="spinner" aria-hidden="true"></span>正在载入可编辑参数</div></div>
+            <div class="parameter-footer"><p><span class="tiny-dot" aria-hidden="true"></span>浅黄色输入框可编辑，改动后自动重算。</p><button id="save-scenario" class="button button-primary full-width"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>保存为对比情景</button></div>
+          </div>
+        </aside>
+
+        <div class="results-column">
+          <div class="results-heading"><div><div class="label-row"><span class="eyebrow">当前推演</span><span id="live-status" class="live-label"><span class="status-dot" aria-hidden="true"></span>随参数实时更新</span></div><h2 id="active-scenario-title">我的猪周期判断</h2><p id="active-method-description" class="muted">正在载入模型…</p></div><div class="result-actions"><button id="copy-share" class="button button-quiet" title="复制包含当前参数的链接"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg><span>分享推演</span></button><button id="download-results" class="button button-quiet" title="下载当前推演结果 CSV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 15v5h14v-5"/></svg><span>下载结果</span></button></div></div>
+          <div id="validation-banner" class="validation-banner" role="alert" hidden></div>
+          <div id="metric-grid" class="metric-grid" aria-live="polite" aria-atomic="true"><article class="metric-card"><p>全年生猪均价</p><div class="metric-number">—<span>元 / 公斤</span></div><small>四个季度平均</small></article><article class="metric-card"><p>归母净利润</p><div class="metric-number">—<span>亿元</span></div><small>当前年度情景</small></article><article class="metric-card accent-card"><p>每股价值</p><div class="metric-number">—<span>元 / 股</span></div><small>当前估值方法</small></article></div>
+
+          <section class="card chart-card" aria-labelledby="forecast-title">
+            <div class="section-heading"><div><p class="eyebrow">PRICE PATH</p><h3 id="forecast-title">猪价将沿着哪条路径走？</h3></div><span id="forecast-period" class="small-pill">2027 年 · 月度推演</span></div>
+            <div id="forecast-legend" class="chart-legend"></div>
+            <div id="forecast-chart" class="chart-container"><div class="chart-placeholder" aria-label="图表载入中"><span></span><span></span><span></span></div></div>
+            <div id="quarter-cards" class="quarter-grid"></div>
+            <p id="forecast-note" class="chart-note">价格按月份推演，再计算季度平均；不同方法代表不同的推理路径。</p>
+            <details class="data-details"><summary>查看数值与方法对照</summary><div id="forecast-table" class="table-scroll"></div></details>
+          </section>
+
+          <div class="result-detail-grid">
+            <section class="card valuation-card" aria-labelledby="valuation-title"><div class="section-heading"><div><p class="eyebrow">FROM PRICE TO VALUE</p><h3 id="valuation-title">这些猪价，意味着多少价值？</h3></div><button class="source-button" data-method-target="valuation" aria-label="查看估值方法说明">?</button></div><div id="valuation-content"></div></section>
+            <section class="card transmission-card" aria-labelledby="transmission-title"><div class="section-heading"><div><p class="eyebrow">CHECK THE CHAIN</p><h3 id="transmission-title">把推理链条展开</h3></div></div><div id="transmission-content"></div></section>
+          </div>
+          <div id="model-notes" class="model-notes"></div>
+
+          <section id="scenario-section" class="card scenarios-card" aria-labelledby="scenarios-title"><div class="section-heading"><div><p class="eyebrow">SCENARIO COMPARISON</p><h3 id="scenarios-title">把分歧放在一张表里</h3><p class="section-description">保留几组不同假设，看看价值来自哪里。</p></div><span id="scenario-count" class="small-pill">0 个情景</span></div><div id="scenario-empty" class="scenario-empty"><div class="empty-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 25V16h5v9m3 0V7h5v18m3 0V12h5v13M3 28h26"/></svg></div><p>一份推演，是观点；几份推演，能看见分歧。</p><span>在左侧保存当前参数，即可并排比较。</span></div><div id="scenario-comparison" class="table-scroll"></div><details id="subjective-weights" class="weights-details" hidden><summary>添加我的主观权重 <span class="data-tag tag-assumption">个人判断</span></summary><p class="field-help">权重由你填写，只表示你对已保存情景的偏好。未填写时不计算加权结果，也不代表客观发生概率。</p><div id="weights-inputs" class="weights-inputs"></div><div id="weighted-result" class="weighted-result"></div></details></section>
+
+          <div class="config-toolbar"><div><strong>把你的推演带走</strong><p>配置保存全部参数，CSV 保存当前结果。</p></div><div class="toolbar-actions"><button id="export-config" class="button button-secondary">导出配置 JSON</button><button id="import-config" class="button button-secondary">导入配置</button><input id="config-file" type="file" accept="application/json,.json" hidden></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-crosschecks" class="view" aria-labelledby="crosschecks-title" hidden>
+      <div class="page-intro"><div class="intro-copy"><p class="eyebrow">MARKET & REPOPULATION CHECKS</p><h1 id="crosschecks-title">给你的猪价判断，<br class="mobile-break">再加两个参照。</h1><p class="intro-description">把期货报价换成可比单位，再从外购仔猪的投入反推所需售价。每一步都保留日期、来源与计算口径。</p></div><div class="intro-note"><span class="note-line"></span><p>参照有边界，<br>假设由你选择。</p><button class="text-link" data-go-view="simulation">返回主模型 <span aria-hidden="true">↗</span></button></div></div>
+      <div class="cross-page-note"><span class="note-symbol" aria-hidden="true">i</span><p>这两个计算器提供辅助参照。只有你选择季度并点击“作为均价假设使用”，结果才会写入主模型的一个自定义季度价格。</p></div>
+      <div class="cross-check-grid">
+        <section class="card cross-check-card" aria-labelledby="futures-title"><div class="section-heading"><div><p class="eyebrow">01 / FUTURES & BASIS</p><h2 id="futures-title">期货与基差</h2><p class="section-description">记录你观察到的 LH 合约报价，换算为对应口径的现货价格参照。</p></div><span class="data-tag tag-user">手动行情输入</span></div><div class="cross-input-caption"><span class="status-dot" aria-hidden="true"></span>本页没有接入实时行情；日期、报价与出处由你填写。</div><div id="futures-fields" class="cross-parameter-fields"><p class="loading-state">正在载入期货参数</p></div><div id="futures-check-result" class="cross-result-region" aria-live="polite" aria-atomic="true"></div><div class="cross-apply-box"><label class="field-label" for="futures-quarter">采用为哪个季度的价格假设？</label><div class="cross-apply-row"><select id="futures-quarter"><option value="">请明确选择季度</option><option value="1">2027 Q1</option><option value="2">2027 Q2</option><option value="3">2027 Q3</option><option value="4">2027 Q4</option></select><button type="button" id="apply-futures-price" aria-describedby="futures-apply-status" class="button button-primary" disabled>先选择季度</button></div><p id="futures-apply-status" class="cross-apply-status" aria-live="polite"></p><p class="cross-apply-note">合约月参照不等于季度均价预测。采用时只写入所选季度的当前数值；以后调整此页参数，需要再次点击使用。</p></div></section>
+        <section class="card cross-check-card" aria-labelledby="piglet-title"><div class="section-heading"><div><p class="eyebrow">02 / PURCHASED-PIGLET ECONOMICS</p><h2 id="piglet-title">外购仔猪育肥</h2><p class="section-description">从每头买入仔猪的投入、成活率和出栏体重，计算育肥所需售价。</p></div><span class="data-tag tag-assumption">默认值为演示</span></div><div class="cross-input-caption"><span class="status-dot" aria-hidden="true"></span>以每头买入仔猪为成本与利润分母；参数可按你的实际经营修改。</div><div id="piglet-fields" class="cross-parameter-fields"><p class="loading-state">正在载入育肥参数</p></div><div id="piglet-check-result" class="cross-result-region" aria-live="polite" aria-atomic="true"></div><div class="cross-apply-box"><label class="field-label" for="piglet-result-choice">选择要采用的计算结果</label><select id="piglet-result-choice"><option value="required">含目标收益的所需售价</option><option value="breakEven">保本售价</option></select><label class="field-label cross-quarter-label" for="piglet-quarter">采用为哪个季度的价格假设？</label><div class="cross-apply-row"><select id="piglet-quarter"><option value="">请明确选择季度</option><option value="1">2027 Q1</option><option value="2">2027 Q2</option><option value="3">2027 Q3</option><option value="4">2027 Q4</option></select><button type="button" id="apply-piglet-price" aria-describedby="piglet-apply-status" class="button button-primary" disabled>先选择季度</button></div><p id="piglet-apply-status" class="cross-apply-status" aria-live="polite"></p><p class="cross-apply-note">经营所需售价不等于市场预测。采用时只写入你选择的一个季度；其余自填季度值保留，并一起用于主模型。</p></div></section>
+      </div>
+      <section class="cross-assumption-strip" aria-labelledby="cross-current-title"><div><p class="eyebrow">YOUR QUARTERLY ASSUMPTIONS</p><h2 id="cross-current-title">当前四个季度的自定义价格</h2><p>点击采用后，主模型切换到自定义猪价路线；这是一笔明确的假设输入。</p></div><div id="cross-custom-quarters" class="cross-custom-quarters"></div><button type="button" class="button button-secondary" data-go-view="simulation">查看主模型结果 <span aria-hidden="true">↗</span></button></section>
+      <div class="config-toolbar cross-config-toolbar"><div><strong>保留你的观察与计算依据</strong><p>保存的情景、JSON 配置和分享链接包含辅助参数；CSV 同时记录报价来源与计算结果。</p></div><div class="toolbar-actions"><button type="button" id="cross-save-scenario" class="button button-secondary">保存情景</button><button type="button" id="cross-export-config" class="button button-secondary">导出配置 JSON</button><button type="button" id="cross-copy-share" class="button button-secondary">复制分享链接</button><button type="button" id="download-crosschecks" class="button button-secondary">下载对照 CSV</button></div></div>
+    </section>
+
+    <section id="view-history" class="view" aria-labelledby="history-title" hidden>
+      <div class="page-intro"><div class="intro-copy"><p class="eyebrow">HISTORICAL EVIDENCE</p><h1 id="history-title">先看证据，再谈周期。</h1><p class="intro-description">存栏、生产效率、猪价与企业表现共同变化。历史可以帮助校准判断，也需要保留口径差异。</p></div><div class="intro-note"><span class="note-line"></span><p>相似的周期，<br>不一定有相同的答案。</p></div></div>
+      <section class="card history-chart-card"><div class="section-heading"><div><p class="eyebrow">SOW INVENTORY & HOG PRICE</p><h2>能繁母猪与猪价</h2><p id="history-description" class="section-description">原始月度数据；缺失值保留为空。</p></div><div class="segmented" role="group" aria-label="历史曲线时间对齐"><button id="history-original" class="is-active" aria-pressed="true">同月观察</button><button id="history-lagged" aria-pressed="false">能繁后移 10 个月</button></div></div><div class="history-filter-row"><div class="segmented" role="group" aria-label="历史价格数据来源"><button data-history-series="mara" class="is-active" aria-pressed="true">农业农村部</button><button data-history-series="ndrc" aria-pressed="false">发改委</button></div><div class="segmented" role="group" aria-label="历史显示范围"><button data-history-range="five" class="is-active" aria-pressed="true">近 5 年</button><button data-history-range="all" aria-pressed="false">全部历史</button></div></div><div id="history-legend" class="chart-legend"></div><div id="history-chart" class="chart-container history-chart"></div><p id="history-note" class="chart-note"></p><details class="data-details"><summary>查看历史数据</summary><div id="history-table" class="table-scroll history-data-table"></div></details></section>
+      <section class="card cycle-card"><div class="section-heading"><div><p class="eyebrow">COMPARE THE CYCLES</p><h2>把多个周期放在一起看</h2><p class="section-description">起点、终点、涨跌幅和样本口径，都影响你看到的振幅。</p></div></div><div id="cycle-comparison" class="table-scroll"></div><div id="cycle-notes" class="model-notes compact-notes"></div></section>
+      <section class="card psy-benchmark-card"><div class="section-heading"><div><p class="eyebrow">PRODUCTIVITY WITH THE RIGHT DENOMINATOR</p><h2>PSY 与 MSY，先把分母对齐</h2><p class="section-description">PSY 是每母猪年断奶仔猪产出；商品猪 MSY 还需要衔接育肥成活、留种与母猪分母结构。</p></div><span class="small-pill">口径先于排名</span></div><div id="psy-benchmark-intro" class="efficiency-equation">商品猪 MSY = PSY × 断奶后成活率 × 商品化比例 × 有效经产占比</div><details class="data-details"><summary id="psy-benchmark-summary">查看中国与国际生产效率参照</summary><div id="psy-benchmark-table" class="table-scroll"></div></details><p class="chart-note">国家均值、筛选样本、领先组均值与分位门槛分别列示，不能直接排成一条可比的技术进步轨迹。</p></section>
+      <div class="history-detail-grid"><section class="card"><div class="section-heading"><div><p class="eyebrow">COMPANY THROUGH THE CYCLE</p><h2>企业如何穿过周期</h2></div></div><div id="company-history" class="table-scroll"></div></section><section class="card"><div class="section-heading"><div><p class="eyebrow">A DIFFERENT MARKET</p><h2>美国可比，能告诉我们什么？</h2></div></div><div id="us-comparables"></div><p class="chart-note">业务结构、会计口径与市场环境不同，估值倍数需要放回各自的经营背景。</p></section></div>
+    </section>
+
+    <section id="view-methods" class="view" aria-labelledby="methods-title" hidden>
+      <div class="page-intro"><div class="intro-copy"><p class="eyebrow">METHODS & SOURCES</p><h1 id="methods-title">每一个数字，都有自己的来处。</h1><p class="intro-description">区分公开事实、模型假设与历史类比。你的推演可以不同，计算口径应该清楚。</p></div><div class="intro-note"><span class="note-line"></span><p>看见依据，<br>也看见推理的边界。</p></div></div>
+      <div class="research-links"><a href="./docs/research.html" target="_blank" rel="noopener"><span class="resource-label">独立复核文档</span><strong>阅读完整研究与口径说明 <span aria-hidden="true">↗</span></strong></a><a href="./data/china_history.csv" download><span class="resource-label">原始月度记录</span><strong>下载中国历史数据 CSV <span aria-hidden="true">↓</span></strong></a><a href="./data/sources.csv" download><span class="resource-label">证据与来源</span><strong>下载完整来源登记 CSV <span aria-hidden="true">↓</span></strong></a></div>
+      <div class="evidence-key"><div><span class="data-tag tag-fact">公开数据</span><p>有明确时间、口径和可追溯来源。</p></div><div><span class="data-tag tag-assumption">研究假设</span><p>可编辑的判断，不是已证实的事实。</p></div><div><span class="data-tag tag-analogy">历史类比</span><p>用于校准情景，不等于因果预测。</p></div></div>
+      <section class="method-section" aria-labelledby="price-method-title"><div class="section-heading"><div><p class="eyebrow">PRICE METHODS</p><h2 id="price-method-title">猪价方法 · 已实现与候选</h2></div></div><div id="price-method-cards" class="method-cards"></div></section>
+      <section id="valuation-method-notes" class="method-section" aria-labelledby="valuation-method-title"><div class="section-heading"><div><p class="eyebrow">VALUATION METHODS</p><h2 id="valuation-method-title">估值方法 · 已实现与候选</h2></div></div><div id="valuation-method-cards" class="method-cards"></div></section>
+      <section class="card claim-card"><div class="section-heading"><div><p class="eyebrow">WHAT THE MODEL DOES — AND ASSUMES</p><h2>使用这些结论之前</h2></div></div><div id="model-claims" class="claims-grid"></div></section>
+      <section id="sources-section" class="card sources-card"><div class="section-heading"><div><p class="eyebrow">SOURCE REGISTER</p><h2>原始资料与来源</h2><p class="section-description">优先使用官方统计、公司公告与研究原文。</p></div><label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="source-search" type="search" placeholder="搜索公司、指标或来源" aria-label="搜索来源"></label></div><div id="sources-table" class="table-scroll"></div><p id="source-count" class="chart-note"></p></section>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div><span class="footer-brand">猪周期研究台 <span>PIG CYCLE LAB</span></span><p>让数据有出处，让假设可修改，让结论经得起比较。</p><div class="footer-links"><a href="./docs/research.html" target="_blank" rel="noopener">独立复核文档 ↗</a><a href="./data/china_history.csv" download>历史数据 CSV ↓</a><a href="./data/sources.csv" download>来源登记 CSV ↓</a></div></div><div class="footer-meta"><span id="footer-version">交互研究工具</span><span>参数情景，不是价格承诺</span></div></footer>
+  <div id="toast-region" class="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="scenario-dialog" class="scenario-dialog"><form id="scenario-form"><div class="dialog-heading"><h2>保存当前推演</h2><button type="button" id="close-scenario-dialog" class="icon-button" aria-label="关闭"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><p>给这组假设起一个容易辨认的名字。</p><label class="field-label" for="scenario-name">情景名称</label><input id="scenario-name" type="text" maxlength="40" placeholder="例如：温和去化，效率继续提升" required><div class="dialog-actions"><button type="button" id="cancel-scenario-dialog" class="button button-secondary">取消</button><button type="submit" class="button button-primary">保存情景</button></div></form></dialog>
+  <noscript><div class="noscript-note">此研究台需要 JavaScript 计算并绘制图表。请启用 JavaScript 后重新打开。</div></noscript>
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿year,hogs_slaughtered_10k,hogs_yearend_10k,sows_yearend_10k,pork_output_10k_tonnes,source_ids,status,sameyear_monthly_stock_observations,lag10_monthly_stock_observations,sameyear_sow_stock_mean_10k,lag10_cohort_sow_stock_mean_10k,throughput_over_lag10_sow_mean_proxy,true_national_MSY
+2015,,,,,[],not_collected,0,0,,,,
+2016,,,,,[],not_collected,0,0,,,,
+2017,,,,,[],not_collected,0,0,,,,
+2018,69382,42817,,5404,['nbs2018'],contemporaneous_release,0,0,,,,
+2019,,,,,[],not_collected,0,0,,,,
+2020,52704,40650,,4113,['nbs2020'],contemporaneous_release,0,0,,,,
+2021,67128.0,44922.0,4329.0,5296.0,['mara_202112'],contemporaneous_release,4,0,,,,
+2022,69995.0,45256.0,4390.0,5541.0,['mara_202212'],contemporaneous_release,12,6,4294.166666666667,,,
+2023,72662.0,43422.0,4142.0,5794.0,['mara_202312'],contemporaneous_release,12,12,4259.583333333333,4306.833333333333,16.871328508958634,
+2024,70256.0,42743.0,4078.0,5706.0,['mara_202412'],contemporaneous_release,12,12,4040.9166666666665,4209.5,16.68986815536287,
+2025,71973.0,42967.0,3961.0,5938.0,['mara_202512'],contemporaneous_release,11,12,,4042.5,17.804081632653062,
+2026,,,,,[],incomplete_year,3,9,,,,

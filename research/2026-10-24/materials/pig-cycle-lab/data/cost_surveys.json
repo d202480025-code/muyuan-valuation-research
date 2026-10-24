@@ -1,0 +1,1733 @@
+{
+  "as_of": "2026-10-24 Asia/Shanghai",
+  "scope": "官方中国生猪成本调查与现有神农锚的研究校准；非全国效率分位识别",
+  "research_only": true,
+  "sources": [
+    {
+      "id": "ZJ_202307",
+      "title": "生猪价格小幅回升 养殖收益仍然亏损——浙江省2023年7月份生猪成本收益分析",
+      "url": "https://zjic.zj.gov.cn/ywdh/jjyx/202308/t20230822_20505487.shtml",
+      "publisher": "浙江省经济信息中心，注明来源浙江省发改委",
+      "publication_date": null,
+      "data_period": "2023-07",
+      "locator": "正文第1—3节；附图浙江省生猪生产成本收益预警信息表",
+      "short_quote": "全省34个定点养猪场（户）月报调查",
+      "source_type": "official_republication",
+      "limitations": "官方信息中心原文转载，未取得省发改委原发文章URL；样本数仅此期明确。当前原始HTML日期空白；网页检索缓存显示2023-08-23，URL含2023-08-22，故不指定已核实发布日期。图片本月成本15.88元/kg。"
+    },
+    {
+      "id": "ZJ_202503",
+      "title": "生猪价格下跌 利润大幅下降——我省2025年3月份生猪成本收益简析",
+      "url": "https://zjic.zj.gov.cn/zkdt/rdzx/202504/t20250414_23381983.shtml",
+      "publisher": "浙江省经济信息中心，注明来源浙江省发展和改革委官网",
+      "publication_date": null,
+      "data_period": "2025-03",
+      "locator": "正文第1—3节",
+      "short_quote": "据对全省定点养猪场（户）月报调查",
+      "source_type": "official_republication",
+      "limitations": "原文小标题称成本增加，数字和正文称减少；本研究保留2234.13元数值。未披露户数、规模权重或自繁比例。同站经济运行重复URL下载404，故采用已下载核验的智库动态同文URL。当前原始HTML日期空白；URL含2025-04-14，不能当作核实的原发日期。"
+    },
+    {
+      "id": "ZJ_202509",
+      "title": "生猪价格大幅下跌 亏损面继续扩大——我省2025年9月份生猪成本收益简析",
+      "url": "https://zjic.zj.gov.cn/ywdh/jjyx/202510/t20251021_23756198.shtml",
+      "publisher": "浙江省经济信息中心，注明来源浙江省发展和改革委官网",
+      "publication_date": null,
+      "data_period": "2025-09",
+      "locator": "正文第1—3节",
+      "short_quote": "平均头猪饲养成本为2111.72元",
+      "source_type": "official_republication",
+      "limitations": "页面日期空白；URL日期为2025-10-21，不能当作核实的原发日期。"
+    },
+    {
+      "id": "ZJ_202604",
+      "title": "生猪价格创新低 养殖效益严重亏损——我省2026年4月份生猪成本收益简析",
+      "url": "https://zjic.zj.gov.cn/ywdh/jjyx/202605/t20260511_24070085.shtml",
+      "publisher": "浙江省经济信息中心，注明来源浙江省发展和改革委官网",
+      "publication_date": "2026-05-11",
+      "data_period": "2026-04",
+      "locator": "正文第1—3节",
+      "short_quote": "平均头猪饲养成本为2111.35元",
+      "source_type": "official_republication",
+      "limitations": "饲养成本未附详细会计定义，不能无条件改称上市公司完全成本或现金成本。"
+    },
+    {
+      "id": "SY_2025",
+      "title": "2025年沈阳市生猪养殖由盈转亏",
+      "url": "https://fgw.shenyang.gov.cn/wjgz/cbdcjs/202601/t20260121_4974136.html",
+      "publisher": "沈阳市发展和改革委员会成本调查监审局",
+      "publication_date": "2026-01-21",
+      "data_period": "2024、2025",
+      "locator": "正文及2024/2025对比表",
+      "short_quote": "共计12个生猪养殖户",
+      "source_type": "official_original",
+      "limitations": "新民、辽中、苏家屯、于洪12户；未列规模档、各档样本权重或仔畜来源比例。"
+    },
+    {
+      "id": "CQ_2024H1",
+      "title": "重庆市2024年上半年生猪饲养止亏转盈",
+      "url": "https://fzggw.cq.gov.cn/zwgk/zfxxgkml/jgxx/jgzc/202407/t20240724_13396687.html",
+      "publisher": "重庆市发展和改革委员会",
+      "publication_date": "2024-07-24",
+      "data_period": "2024H1",
+      "locator": "正文第一至三节",
+      "short_quote": "对13个区县上半年生猪饲养成本及收益情况进行了抽样调查",
+      "source_type": "official_original",
+      "limitations": "原文产值2126.89减总成本2047.58=79.31，与头均盈利98.25差18.94；未说明是否副产品，不自行填补。"
+    },
+    {
+      "id": "YK_2024H1",
+      "title": "营口市2024年上半年小规模生猪成本收益情况分析",
+      "url": "https://fgw.ln.gov.cn/fgw/xxgk/jgjc/fxyc/2024070115191558339/index.shtml",
+      "publisher": "辽宁省发展和改革委员会（营口市发改委调查）",
+      "publication_date": "2024-07-01",
+      "data_period": "2024H1",
+      "locator": "正文一、二节",
+      "short_quote": "本期平均每头猪耗精饲料数量为396.63公斤",
+      "source_type": "official_original",
+      "limitations": "小规模样本，户数及直接主产量未披露；不以统一120kg除头均成本。"
+    },
+    {
+      "id": "LH_2023H1",
+      "title": "有序推进下半年生猪成本收益的调查",
+      "url": "https://fgw.bynr.gov.cn/jfgl/202312/t20231215_406426.html",
+      "publisher": "巴彦淖尔市发展和改革委员会（临河区调查）",
+      "publication_date": "2023-12-15",
+      "data_period": "2023H1",
+      "locator": "正文唯一调查段；标题下半年但数据段明确上半年",
+      "short_quote": "中规模户3户、小规模户3户",
+      "source_type": "official_original",
+      "limitations": "同地区同期小/中规模；生产成本并非明确总成本；没有直接主产品产量、自繁比例或分项。"
+    },
+    {
+      "id": "SD_2025Q1",
+      "title": "2025Q1畜禽养殖成本收益测算",
+      "url": "https://xm.shandong.gov.cn/art/2025/4/21/art_101456_10344337.html?xxgkhide=1",
+      "publisher": "山东省畜牧兽医局",
+      "publication_date": "2025-04-21",
+      "data_period": "2025Q1",
+      "locator": "一、生猪：（一）自繁自育、（二）外购仔猪、（三）规模场监测及备注",
+      "short_quote": "仔猪成本为21日龄断奶小猪",
+      "source_type": "official_original",
+      "limitations": "全文已从同一官方域名HTTP下载；HTTPS网页工具部分超时。标准120kg预算与实际规模场监测为不同类别；额外3%系养殖水平、未知成本和风险修正，不是正常资本利润率。"
+    },
+    {
+      "id": "SD_2025Q3",
+      "title": "2025Q3畜禽养殖成本收益测算",
+      "url": "https://xm.shandong.gov.cn/art/2025/11/3/art_101456_10348533.html?xxgkhide=1",
+      "publisher": "山东省畜牧兽医局",
+      "publication_date": "2025-11-03",
+      "data_period": "2025Q3",
+      "locator": "一、生猪：（一）自繁自育、（二）外购仔猪、（三）规模场监测及备注",
+      "short_quote": "仔猪成本为21日龄断奶小猪",
+      "source_type": "official_original",
+      "limitations": "全文已从同一官方域名HTTP下载；HTTPS网页工具部分超时。标准120kg预算与实际规模场监测为不同类别；额外3%系养殖水平、未知成本和风险修正，不是正常资本利润率。"
+    },
+    {
+      "id": "SD_2026Q2",
+      "title": "2026Q2畜禽养殖成本收益测算",
+      "url": "https://xm.shandong.gov.cn/art/2026/8/4/art_101456_10354235.html?xxgkhide=1",
+      "publisher": "山东省畜牧兽医局",
+      "publication_date": "2026-08-04",
+      "data_period": "2026Q2",
+      "locator": "一、生猪：（一）自繁自育、（二）外购仔猪、（三）规模场监测及备注",
+      "short_quote": "仔猪成本为21日龄断奶小猪",
+      "source_type": "official_original",
+      "limitations": "全文已从同一官方域名HTTP下载；HTTPS网页工具部分超时。标准120kg预算与实际规模场监测为不同类别；额外3%系养殖水平、未知成本和风险修正，不是正常资本利润率。"
+    },
+    {
+      "id": "NDRC_MARA_202506",
+      "title": "生猪产品数据（2025年6月）",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202506/202507/P020250725507217967227.pdf",
+      "publisher": "农业农村部、国家发展改革委等五部门",
+      "publication_date": "2025-07-25",
+      "data_period": "2025-06",
+      "locator": "PDF第1页成本收益23—29项；第2页指标说明12",
+      "short_quote": "现金、实物、劳动力和土地等所有生产要素",
+      "source_type": "official_original",
+      "limitations": "成本、产值、利润取整；未给同一成本样本的主产品产量。不能用全国另一监测样本价格反推出栏重，亦不能直接除120kg。"
+    },
+    {
+      "id": "NDRC_METHOD",
+      "title": "农产品成本调查70周年专栏之一：带你了解农产品成本调查",
+      "url": "https://www.ndrc.gov.cn/xwdt/ztzl/ncpdc70zn/202209/t20220913_1338927.html",
+      "publisher": "国家发展改革委价格司",
+      "publication_date": "2022-09-13",
+      "data_period": "制度说明",
+      "locator": "选取调查对象原则、样本确定、工作流程",
+      "short_quote": "采用分层和随机抽样方法",
+      "source_type": "official_original",
+      "limitations": "制度原则并不意味着每一公开地区均值都附有可用于全国再加权的权重。"
+    },
+    {
+      "id": "NDRC_YEARBOOK2024",
+      "title": "《农产品成本调查简报》2024年第13期：《全国农产品成本收益资料汇编2024》发布",
+      "url": "https://www.ndrc.gov.cn/fggz/jggl/dfgz/202408/t20240802_1392187_ext.html",
+      "publisher": "国家发展改革委价格司",
+      "publication_date": "2024-08-05",
+      "data_period": "2023成本数据",
+      "locator": "正文第一段",
+      "short_quote": "收录了我国2023年50余种农产品",
+      "source_type": "official_original",
+      "limitations": "确认书名2024对应数据年2023；本轮未取得官方公开的小/中/大规模原表与主产量、权重，不采用二手数填全国分层。"
+    },
+    {
+      "id": "NDRC_2004",
+      "title": "国家发展改革委关于实施新农产品成本调查核算指标体系的通知",
+      "url": "https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20000",
+      "publisher": "国家发展改革委",
+      "publication_date": "2004-02-06",
+      "data_period": "核算制度",
+      "locator": "正文第三条、附件说明",
+      "short_quote": "测算确定各品种汇总权数",
+      "source_type": "official_original",
+      "limitations": "网页附件指标解释标略，不能声称已由该页核实当前生猪仔畜费具体估价规则。"
+    },
+    {
+      "id": "CQ_CASH_METHOD",
+      "title": "2010年潼南县主要农产品成本收益分析",
+      "url": "https://fzggw.cq.gov.cn/zwgk/zfxxgkml/jgxx/jgfw/jcdt/202003/t20200304_5581602_wap.html",
+      "publisher": "重庆市发展和改革委员会",
+      "publication_date": "2010",
+      "data_period": "种植业方法说明",
+      "locator": "正文注释",
+      "short_quote": "现金成本＝每亩物质与服务费用＋每亩雇工费用＋每亩流转地租金",
+      "source_type": "official_original",
+      "limitations": "仅作官方农本口径示例；不能据此直接补出现期生猪现金成本，更不能视为FCFE。"
+    },
+    {
+      "id": "SN_2025H1",
+      "title": "神农集团2025年9月5日半年度业绩说明会活动记录表",
+      "url": "https://dataclouds.cninfo.com.cn/shgonggao/2025/2025-09-05/cdb4532a8a3811f0a671fa163e39923a.pdf",
+      "publisher": "神农集团（发行人原公告）",
+      "publication_date": "2025-09-05",
+      "data_period": "2025H1",
+      "locator": "PDF第2页",
+      "short_quote": "上半年育肥猪完全成本约为12.4元/公斤",
+      "source_type": "issuer_original",
+      "limitations": "沿用项目已核验公司成本锚；公司阶段式六项，不是全国成本统计分类。"
+    },
+    {
+      "id": "CN_SOURCE_2023-12",
+      "title": "生猪产品数据（2023-12）",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202312/",
+      "publisher": "农业农村部、国家发展改革委等五部门",
+      "publication_date": null,
+      "data_period": "2023-12",
+      "locator": "成本收益表及指标说明",
+      "short_quote": "成本收益",
+      "source_type": "official_original",
+      "limitations": "各月原URL及数值已在项目历史审计67/67验证，详见pig_cycle_history/source_audit.json；定义以本轮打开的2025-06原PDF再次核验。各月实际发布时间应查原表元数据。"
+    },
+    {
+      "id": "CN_SOURCE_2024-06",
+      "title": "生猪产品数据（2024-06）",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202406/",
+      "publisher": "农业农村部、国家发展改革委等五部门",
+      "publication_date": null,
+      "data_period": "2024-06",
+      "locator": "成本收益表及指标说明",
+      "short_quote": "成本收益",
+      "source_type": "official_original",
+      "limitations": "各月原URL及数值已在项目历史审计67/67验证，详见pig_cycle_history/source_audit.json；定义以本轮打开的2025-06原PDF再次核验。各月实际发布时间应查原表元数据。"
+    },
+    {
+      "id": "CN_SOURCE_2024-12",
+      "title": "生猪产品数据（2024-12）",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202412/",
+      "publisher": "农业农村部、国家发展改革委等五部门",
+      "publication_date": null,
+      "data_period": "2024-12",
+      "locator": "成本收益表及指标说明",
+      "short_quote": "成本收益",
+      "source_type": "official_original",
+      "limitations": "各月原URL及数值已在项目历史审计67/67验证，详见pig_cycle_history/source_audit.json；定义以本轮打开的2025-06原PDF再次核验。各月实际发布时间应查原表元数据。"
+    },
+    {
+      "id": "CN_SOURCE_2025-03",
+      "title": "生猪产品数据（2025-03）",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202503/",
+      "publisher": "农业农村部、国家发展改革委等五部门",
+      "publication_date": null,
+      "data_period": "2025-03",
+      "locator": "成本收益表及指标说明",
+      "short_quote": "成本收益",
+      "source_type": "official_original",
+      "limitations": "各月原URL及数值已在项目历史审计67/67验证，详见pig_cycle_history/source_audit.json；定义以本轮打开的2025-06原PDF再次核验。各月实际发布时间应查原表元数据。"
+    },
+    {
+      "id": "CN_SOURCE_2025-06",
+      "title": "生猪产品数据（2025-06）",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202506/",
+      "publisher": "农业农村部、国家发展改革委等五部门",
+      "publication_date": null,
+      "data_period": "2025-06",
+      "locator": "成本收益表及指标说明",
+      "short_quote": "成本收益",
+      "source_type": "official_original",
+      "limitations": "各月原URL及数值已在项目历史审计67/67验证，详见pig_cycle_history/source_audit.json；定义以本轮打开的2025-06原PDF再次核验。各月实际发布时间应查原表元数据。"
+    },
+    {
+      "id": "CN_SOURCE_2025-08",
+      "title": "生猪产品数据（2025-08）",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202508/",
+      "publisher": "农业农村部、国家发展改革委等五部门",
+      "publication_date": null,
+      "data_period": "2025-08",
+      "locator": "成本收益表及指标说明",
+      "short_quote": "成本收益",
+      "source_type": "official_original",
+      "limitations": "各月原URL及数值已在项目历史审计67/67验证，详见pig_cycle_history/source_audit.json；定义以本轮打开的2025-06原PDF再次核验。各月实际发布时间应查原表元数据。"
+    }
+  ],
+  "records": [
+    {
+      "id": "ZJ_202307",
+      "source_id": "ZJ_202307",
+      "period": "2023-07",
+      "region": "浙江省",
+      "category": "regional_monthly_survey",
+      "scale_group": "未分档",
+      "sample": {
+        "fixed_farms_households": 34,
+        "basis": "定点月报；2023-07的34户不能推定为以后各月样本数"
+      },
+      "observed_liveweight_kg": 137.43,
+      "reported_total_or_rearing_cost_yuan_head": 2182.93,
+      "reported_output_value_yuan_head": 2089.16,
+      "reported_profit_yuan_head": -93.77,
+      "reported_live_price_yuan_kg": 15.21,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "cost_label_original": "饲养成本",
+      "cash_definition_status": "not_disclosed",
+      "direct_components_disclosed": false,
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 15.883940915375097,
+        "formula": "2182.93/137.43",
+        "weight_status": "official_observed",
+        "profit_from_values_yuan_head": -93.76999999999998,
+        "reported_profit_less_identity_yuan_head": -0.0,
+        "proportional_120kg_display_yuan": 1906.0729098450117,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      },
+      "reported_cost_yuan_kg_in_figure": 15.88
+    },
+    {
+      "id": "ZJ_202503",
+      "source_id": "ZJ_202503",
+      "period": "2025-03",
+      "region": "浙江省",
+      "category": "regional_monthly_survey",
+      "scale_group": "未分档",
+      "sample": {
+        "fixed_farms_households": null,
+        "basis": "定点月报；2023-07的34户不能推定为以后各月样本数"
+      },
+      "observed_liveweight_kg": 141.68,
+      "reported_total_or_rearing_cost_yuan_head": 2234.13,
+      "reported_output_value_yuan_head": 2264.78,
+      "reported_profit_yuan_head": 30.65,
+      "reported_live_price_yuan_kg": 15.98,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "cost_label_original": "饲养成本",
+      "cash_definition_status": "not_disclosed",
+      "direct_components_disclosed": false,
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 15.768845285149633,
+        "formula": "2234.13/141.68",
+        "weight_status": "official_observed",
+        "profit_from_values_yuan_head": 30.65000000000009,
+        "reported_profit_less_identity_yuan_head": -0.0,
+        "proportional_120kg_display_yuan": 1892.2614342179559,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      }
+    },
+    {
+      "id": "ZJ_202509",
+      "source_id": "ZJ_202509",
+      "period": "2025-09",
+      "region": "浙江省",
+      "category": "regional_monthly_survey",
+      "scale_group": "未分档",
+      "sample": {
+        "fixed_farms_households": null,
+        "basis": "定点月报；2023-07的34户不能推定为以后各月样本数"
+      },
+      "observed_liveweight_kg": 141.1,
+      "reported_total_or_rearing_cost_yuan_head": 2111.72,
+      "reported_output_value_yuan_head": 1935.93,
+      "reported_profit_yuan_head": -175.79,
+      "reported_live_price_yuan_kg": 13.72,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "cost_label_original": "饲养成本",
+      "cash_definition_status": "not_disclosed",
+      "direct_components_disclosed": false,
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 14.966123316796597,
+        "formula": "2111.72/141.1",
+        "weight_status": "official_observed",
+        "profit_from_values_yuan_head": -175.78999999999974,
+        "reported_profit_less_identity_yuan_head": -0.0,
+        "proportional_120kg_display_yuan": 1795.9347980155917,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      }
+    },
+    {
+      "id": "ZJ_202604",
+      "source_id": "ZJ_202604",
+      "period": "2026-04",
+      "region": "浙江省",
+      "category": "regional_monthly_survey",
+      "scale_group": "未分档",
+      "sample": {
+        "fixed_farms_households": null,
+        "basis": "定点月报；2023-07的34户不能推定为以后各月样本数"
+      },
+      "observed_liveweight_kg": 142.24,
+      "reported_total_or_rearing_cost_yuan_head": 2111.35,
+      "reported_output_value_yuan_head": 1470.77,
+      "reported_profit_yuan_head": -640.58,
+      "reported_live_price_yuan_kg": 10.34,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "cost_label_original": "饲养成本",
+      "cash_definition_status": "not_disclosed",
+      "direct_components_disclosed": false,
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 14.843574240719908,
+        "formula": "2111.35/142.24",
+        "weight_status": "official_observed",
+        "profit_from_values_yuan_head": -640.5799999999999,
+        "reported_profit_less_identity_yuan_head": -0.0,
+        "proportional_120kg_display_yuan": 1781.228908886389,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      }
+    },
+    {
+      "id": "SY_2024",
+      "source_id": "SY_2025",
+      "period": "2024",
+      "region": "辽宁沈阳",
+      "category": "regional_annual_survey",
+      "scale_group": "未分档",
+      "sample": {
+        "farms_households": 12,
+        "districts": [
+          "新民",
+          "辽中",
+          "苏家屯",
+          "于洪"
+        ]
+      },
+      "observed_liveweight_kg": 144.29,
+      "reported_total_or_rearing_cost_yuan_head": 2217.34,
+      "reported_output_value_yuan_head": 2389.21,
+      "reported_profit_yuan_head": 171.87,
+      "reported_live_price_yuan_kg": 16.47,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "material_and_service": 1911.05,
+        "labour": 303.51
+      },
+      "reported_main_product_revenue_yuan_head": 2376.92,
+      "reported_byproduct_revenue_yuan_head": 12.29,
+      "cost_label_original": "饲养总成本",
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 15.367246517430177,
+        "formula": "2217.34/144.29",
+        "weight_status": "official_observed",
+        "components_yuan_kg": {
+          "material_and_service": 13.244507588883499,
+          "labour": 2.103472174093839
+        },
+        "profit_from_values_yuan_head": 171.8699999999999,
+        "reported_profit_less_identity_yuan_head": 0.0,
+        "residual_not_assigned_to_land_yuan_head": 2.78,
+        "net_of_byproduct_break_even_yuan_kg": 15.282070829579322,
+        "net_of_byproduct_formula": "(2217.34-12.29)/144.29",
+        "output_value_weight_mismatch_note": "总产值由主产品加副产品重建；价格×均重可能因平均权重或四舍五入不完全等于主产值。",
+        "proportional_120kg_display_yuan": 1844.0695820916212,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      }
+    },
+    {
+      "id": "SY_2025",
+      "source_id": "SY_2025",
+      "period": "2025",
+      "region": "辽宁沈阳",
+      "category": "regional_annual_survey",
+      "scale_group": "未分档",
+      "sample": {
+        "farms_households": 12,
+        "districts": [
+          "新民",
+          "辽中",
+          "苏家屯",
+          "于洪"
+        ]
+      },
+      "observed_liveweight_kg": 138.97,
+      "reported_total_or_rearing_cost_yuan_head": 2134.01,
+      "reported_output_value_yuan_head": 1686.9,
+      "reported_profit_yuan_head": -447.11,
+      "reported_live_price_yuan_kg": 12.06,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "material_and_service": 1779.68,
+        "labour": 340.77
+      },
+      "reported_main_product_revenue_yuan_head": 1676.66,
+      "reported_byproduct_revenue_yuan_head": 10.24,
+      "cost_label_original": "饲养总成本",
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 15.355904151975247,
+        "formula": "2134.01/138.97",
+        "weight_status": "official_observed",
+        "components_yuan_kg": {
+          "material_and_service": 12.806217169173204,
+          "labour": 2.4521119666114988
+        },
+        "profit_from_values_yuan_head": -447.1100000000001,
+        "reported_profit_less_identity_yuan_head": 0.0,
+        "residual_not_assigned_to_land_yuan_head": 13.56,
+        "net_of_byproduct_break_even_yuan_kg": 15.282219183996549,
+        "net_of_byproduct_formula": "(2134.01-10.24)/138.97",
+        "output_value_weight_mismatch_note": "总产值由主产品加副产品重建；价格×均重可能因平均权重或四舍五入不完全等于主产值。",
+        "proportional_120kg_display_yuan": 1842.7084982370297,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      }
+    },
+    {
+      "id": "CQ_2024H1",
+      "source_id": "CQ_2024H1",
+      "period": "2024H1",
+      "region": "重庆",
+      "category": "regional_halfyear_survey",
+      "scale_group": "未分档",
+      "sample": {
+        "district_count": 13,
+        "farms_households": null
+      },
+      "observed_liveweight_kg": 137.07,
+      "reported_total_or_rearing_cost_yuan_head": 2047.58,
+      "reported_output_value_yuan_head": 2126.89,
+      "reported_profit_yuan_head": 98.25,
+      "reported_live_price_yuan_kg": 15.52,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "concentrated_feed": 1430.42,
+        "piglet": 411.39,
+        "electricity": 5.03,
+        "mortality_loss": 4.6,
+        "tools_materials": 1.91,
+        "repair_maintenance": 1.36,
+        "water": 0.81,
+        "health": 19.45,
+        "depreciation": 17.92,
+        "sales": 5.72,
+        "finance": 2.45,
+        "management": 2.0
+      },
+      "cost_label_original": "总成本",
+      "quality_flag": "reported_profit_identity_mismatch",
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 14.938206755672285,
+        "formula": "2047.58/137.07",
+        "weight_status": "official_observed",
+        "components_yuan_kg": {
+          "concentrated_feed": 10.43568979353615,
+          "piglet": 3.0013131976362444,
+          "electricity": 0.03669657839060334,
+          "mortality_loss": 0.033559495148464284,
+          "tools_materials": 0.013934486029036259,
+          "repair_maintenance": 0.009921937696067704,
+          "water": 0.005909389363099147,
+          "health": 0.14189830013861532,
+          "depreciation": 0.13073612023053915,
+          "sales": 0.04173050266287299,
+          "finance": 0.017874078937769024,
+          "management": 0.014591084847158388
+        },
+        "profit_from_values_yuan_head": 79.30999999999995,
+        "reported_profit_less_identity_yuan_head": 18.94,
+        "unlisted_cost_residual_yuan_head": 144.51999999999975,
+        "proportional_120kg_display_yuan": 1792.584810680674,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      },
+      "interpretation": "差18.94可能与未列副产品等有关，但未核实，故不用于利润校准。未列成本残差不自动填人工或土地。"
+    },
+    {
+      "id": "YK_2024H1",
+      "source_id": "YK_2024H1",
+      "period": "2024H1",
+      "region": "辽宁营口",
+      "category": "regional_halfyear_survey",
+      "scale_group": "小规模",
+      "sample": {
+        "farms_households": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2290.76,
+      "reported_output_value_yuan_head": 2130.13,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 15.1284,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "material_and_service": 1943.29,
+        "labour": 346.48,
+        "piglet": 460,
+        "concentrated_feed": 1400.42,
+        "health": 27.32,
+        "mortality_loss": 19.72
+      },
+      "reported_main_product_revenue_yuan_head": 2116.15,
+      "reported_byproduct_revenue_yuan_head": 13.98,
+      "feed_quantity_kg_head": 396.63,
+      "feed_price_yuan_kg": 3.53,
+      "family_labour_days": 3.89,
+      "family_labour_daily_rate": 89,
+      "cost_label_original": "饲养成本",
+      "components_warning": "物质服务为上级汇总桶，仔畜/饲料/动保等为其子项，不可全部相加。",
+      "calculation": {
+        "profit_from_values_yuan_head": -160.6300000000001,
+        "implied_weight_from_main_revenue_and_price_kg": 139.87929985986622,
+        "implied_weight_status": "conditional_algebra_not_observed",
+        "implied_weight_formula": "2116.15/(756.42/50)",
+        "conditional_cost_yuan_kg": 16.376690491694823,
+        "residual_not_assigned_to_land_yuan_head": 0.99
+      },
+      "interpretation": "隐含重量仅在所报均价=主产值/主产量且平均权重一致时成立；不把它当原始出栏重入主模型。"
+    },
+    {
+      "id": "LH_2023H1_medium",
+      "source_id": "LH_2023H1",
+      "period": "2023H1",
+      "region": "内蒙古巴彦淖尔临河",
+      "category": "same_region_scale_comparison",
+      "scale_group": "中规模",
+      "sample": {
+        "farms_households": 3,
+        "cumulative_sold_heads": 745
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 14.8642,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "reported_production_cost_yuan_head": 2781.64,
+      "reported_main_product_revenue_yuan_head": 2310.18,
+      "cost_label_original": "生产成本",
+      "calculation": {
+        "implied_weight_from_main_revenue_and_price_kg": 155.41906056161784,
+        "implied_weight_status": "conditional_algebra_not_observed",
+        "implied_weight_formula": "2310.18/(743.21/50)",
+        "conditional_production_cost_yuan_kg": 17.897676063337055
+      },
+      "interpretation": "主表只列元/头；以上隐含主产量不是公告报告的出栏重。分档只有各3户，不能推广全国。"
+    },
+    {
+      "id": "LH_2023H1_small",
+      "source_id": "LH_2023H1",
+      "period": "2023H1",
+      "region": "内蒙古巴彦淖尔临河",
+      "category": "same_region_scale_comparison",
+      "scale_group": "小规模",
+      "sample": {
+        "farms_households": 3,
+        "cumulative_sold_heads": 140
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 14.9674,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "reported_production_cost_yuan_head": 2810.77,
+      "reported_main_product_revenue_yuan_head": 2369.79,
+      "cost_label_original": "生产成本",
+      "calculation": {
+        "implied_weight_from_main_revenue_and_price_kg": 158.33010409289523,
+        "implied_weight_status": "conditional_algebra_not_observed",
+        "implied_weight_formula": "2369.79/(748.37/50)",
+        "conditional_production_cost_yuan_kg": 17.752593646694432
+      },
+      "interpretation": "主表只列元/头；以上隐含主产量不是公告报告的出栏重。分档只有各3户，不能推广全国。"
+    },
+    {
+      "id": "SD_2025Q1_self_bred",
+      "source_id": "SD_2025Q1",
+      "period": "2025Q1",
+      "region": "山东省",
+      "category": "standardized_budget",
+      "scale_group": "未按技术效率或规模分位",
+      "sample": {
+        "farms_households": null,
+        "representativeness": "规范120kg预算；不是样本微观均值"
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 15.62,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "piglet": 310,
+        "feed": 965,
+        "vaccine": 25,
+        "medicine": 20,
+        "biosecurity": 20,
+        "water_electricity": 25,
+        "labour": 65,
+        "depreciation": 50,
+        "finance": 20,
+        "mortality_culling": 23
+      },
+      "mode": "self_bred",
+      "standard_weight_kg": 120,
+      "cost_label_original": "所有养殖要素组成直接成本",
+      "official_risk_loading_pct": 3,
+      "official_loaded_break_even_yuan_kg": 13.07,
+      "official_loaded_profit_yuan_head": 306,
+      "piglet_cost_boundary": "21日龄断奶；自繁账已含前期母猪等各环节费用，后续项覆盖21日龄至育肥结束",
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 12.691666666666666,
+        "formula": "1523/120",
+        "weight_status": "official_standard_assumption",
+        "components_yuan_kg": {
+          "piglet": 2.5833333333333335,
+          "feed": 8.041666666666666,
+          "vaccine": 0.20833333333333334,
+          "medicine": 0.16666666666666666,
+          "biosecurity": 0.16666666666666666,
+          "water_electricity": 0.20833333333333334,
+          "labour": 0.5416666666666666,
+          "depreciation": 0.4166666666666667,
+          "finance": 0.16666666666666666,
+          "mortality_culling": 0.19166666666666668
+        },
+        "standard_cost_yuan_kg": 12.691666666666666,
+        "exact_loaded_break_even_yuan_kg": 13.072416666666667,
+        "reported_profit_vs_loaded_formula_difference": 1.1368683772161603e-13,
+        "risk_loading_interpretation": "不是政府认定正常利润率，也不是概率或置信区间"
+      },
+      "reported_standard_budget_cost_yuan_head": 1523
+    },
+    {
+      "id": "SD_2025Q1_purchased_piglet",
+      "source_id": "SD_2025Q1",
+      "period": "2025Q1",
+      "region": "山东省",
+      "category": "standardized_budget",
+      "scale_group": "未按技术效率或规模分位",
+      "sample": {
+        "farms_households": null,
+        "representativeness": "规范120kg预算；不是样本微观均值"
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 15.62,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "piglet": 430,
+        "feed": 965,
+        "vaccine": 25,
+        "medicine": 20,
+        "biosecurity": 20,
+        "water_electricity": 25,
+        "labour": 60,
+        "depreciation": 45,
+        "finance": 20,
+        "mortality_culling": 20
+      },
+      "mode": "purchased_piglet",
+      "standard_weight_kg": 120,
+      "cost_label_original": "所有养殖要素组成直接成本",
+      "official_risk_loading_pct": 3,
+      "official_loaded_break_even_yuan_kg": 13.99,
+      "official_loaded_profit_yuan_head": 195.5,
+      "piglet_cost_boundary": "21日龄断奶；自繁账已含前期母猪等各环节费用，后续项覆盖21日龄至育肥结束",
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 13.583333333333334,
+        "formula": "1630/120",
+        "weight_status": "official_standard_assumption",
+        "components_yuan_kg": {
+          "piglet": 3.5833333333333335,
+          "feed": 8.041666666666666,
+          "vaccine": 0.20833333333333334,
+          "medicine": 0.16666666666666666,
+          "biosecurity": 0.16666666666666666,
+          "water_electricity": 0.20833333333333334,
+          "labour": 0.5,
+          "depreciation": 0.375,
+          "finance": 0.16666666666666666,
+          "mortality_culling": 0.16666666666666666
+        },
+        "standard_cost_yuan_kg": 13.583333333333334,
+        "exact_loaded_break_even_yuan_kg": 13.990833333333335,
+        "reported_profit_vs_loaded_formula_difference": -0.09999999999988063,
+        "risk_loading_interpretation": "不是政府认定正常利润率，也不是概率或置信区间"
+      },
+      "reported_standard_budget_cost_yuan_head": 1630
+    },
+    {
+      "id": "SD_2025Q1_observed",
+      "source_id": "SD_2025Q1",
+      "period": "2025Q1",
+      "region": "山东省",
+      "category": "regional_quarterly_operating_monitor",
+      "scale_group": "规模猪场，未分大中小",
+      "sample": {
+        "farms_households": null
+      },
+      "observed_liveweight_kg": 130.09,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 16.09,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "reported_fattened_pig_cost_yuan_kg": 14.58,
+      "cost_label_original": "出售肥猪成本",
+      "calculation": {
+        "cost_implied_from_reported_unit_cost_and_weight_yuan_head": 1896.7122000000002,
+        "cost_formula": "14.58*130.09",
+        "profit_from_reported_unit_prices_yuan_head": 196.43589999999998,
+        "proportional_120kg_display_yuan": 1749.6,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      },
+      "interpretation": "本条为实际监测均值；同页120kg预算是另一种测算，不可认为预算与监测的差额全是效率差。"
+    },
+    {
+      "id": "SD_2025Q3_self_bred",
+      "source_id": "SD_2025Q3",
+      "period": "2025Q3",
+      "region": "山东省",
+      "category": "standardized_budget",
+      "scale_group": "未按技术效率或规模分位",
+      "sample": {
+        "farms_households": null,
+        "representativeness": "规范120kg预算；不是样本微观均值"
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 14.23,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "piglet": 380,
+        "feed": 930,
+        "vaccine": 25,
+        "medicine": 25,
+        "biosecurity": 20,
+        "water_electricity": 25,
+        "labour": 70,
+        "depreciation": 55,
+        "finance": 25,
+        "low_value_repair": 20,
+        "mortality_culling": 25
+      },
+      "mode": "self_bred",
+      "standard_weight_kg": 120,
+      "cost_label_original": "所有养殖要素组成直接成本",
+      "official_risk_loading_pct": 3,
+      "official_loaded_break_even_yuan_kg": 13.73,
+      "official_loaded_profit_yuan_head": 60,
+      "piglet_cost_boundary": "21日龄断奶；自繁账已含前期母猪等各环节费用，后续项覆盖21日龄至育肥结束",
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 13.333333333333334,
+        "formula": "1600/120",
+        "weight_status": "official_standard_assumption",
+        "components_yuan_kg": {
+          "piglet": 3.1666666666666665,
+          "feed": 7.75,
+          "vaccine": 0.20833333333333334,
+          "medicine": 0.20833333333333334,
+          "biosecurity": 0.16666666666666666,
+          "water_electricity": 0.20833333333333334,
+          "labour": 0.5833333333333334,
+          "depreciation": 0.4583333333333333,
+          "finance": 0.20833333333333334,
+          "low_value_repair": 0.16666666666666666,
+          "mortality_culling": 0.20833333333333334
+        },
+        "standard_cost_yuan_kg": 13.333333333333334,
+        "exact_loaded_break_even_yuan_kg": 13.733333333333334,
+        "reported_profit_vs_loaded_formula_difference": 0.0,
+        "risk_loading_interpretation": "不是政府认定正常利润率，也不是概率或置信区间"
+      },
+      "reported_standard_budget_cost_yuan_head": 1600
+    },
+    {
+      "id": "SD_2025Q3_purchased_piglet",
+      "source_id": "SD_2025Q3",
+      "period": "2025Q3",
+      "region": "山东省",
+      "category": "standardized_budget",
+      "scale_group": "未按技术效率或规模分位",
+      "sample": {
+        "farms_households": null,
+        "representativeness": "规范120kg预算；不是样本微观均值"
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 14.23,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "piglet": 550,
+        "feed": 900,
+        "vaccine": 25,
+        "medicine": 20,
+        "biosecurity": 20,
+        "water_electricity": 25,
+        "labour": 60,
+        "depreciation": 45,
+        "finance": 20,
+        "low_value_repair": 20,
+        "mortality_culling": 25
+      },
+      "mode": "purchased_piglet",
+      "standard_weight_kg": 120,
+      "cost_label_original": "所有养殖要素组成直接成本",
+      "official_risk_loading_pct": 3,
+      "official_loaded_break_even_yuan_kg": 14.68,
+      "official_loaded_profit_yuan_head": -54,
+      "piglet_cost_boundary": "21日龄断奶；自繁账已含前期母猪等各环节费用，后续项覆盖21日龄至育肥结束",
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 14.25,
+        "formula": "1710/120",
+        "weight_status": "official_standard_assumption",
+        "components_yuan_kg": {
+          "piglet": 4.583333333333333,
+          "feed": 7.5,
+          "vaccine": 0.20833333333333334,
+          "medicine": 0.16666666666666666,
+          "biosecurity": 0.16666666666666666,
+          "water_electricity": 0.20833333333333334,
+          "labour": 0.5,
+          "depreciation": 0.375,
+          "finance": 0.16666666666666666,
+          "low_value_repair": 0.16666666666666666,
+          "mortality_culling": 0.20833333333333334
+        },
+        "standard_cost_yuan_kg": 14.25,
+        "exact_loaded_break_even_yuan_kg": 14.6775,
+        "reported_profit_vs_loaded_formula_difference": -8.526512829121202e-14,
+        "risk_loading_interpretation": "不是政府认定正常利润率，也不是概率或置信区间"
+      },
+      "reported_standard_budget_cost_yuan_head": 1710
+    },
+    {
+      "id": "SD_2025Q3_observed",
+      "source_id": "SD_2025Q3",
+      "period": "2025Q3",
+      "region": "山东省",
+      "category": "regional_quarterly_operating_monitor",
+      "scale_group": "规模猪场，未分大中小",
+      "sample": {
+        "farms_households": null
+      },
+      "observed_liveweight_kg": 130.99,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 14.56,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "reported_fattened_pig_cost_yuan_kg": 14.1,
+      "cost_label_original": "出售肥猪成本",
+      "calculation": {
+        "cost_implied_from_reported_unit_cost_and_weight_yuan_head": 1846.959,
+        "cost_formula": "14.1*130.99",
+        "profit_from_reported_unit_prices_yuan_head": 60.255400000000115,
+        "proportional_120kg_display_yuan": 1692.0,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      },
+      "interpretation": "本条为实际监测均值；同页120kg预算是另一种测算，不可认为预算与监测的差额全是效率差。"
+    },
+    {
+      "id": "SD_2026Q2_self_bred",
+      "source_id": "SD_2026Q2",
+      "period": "2026Q2",
+      "region": "山东省",
+      "category": "standardized_budget",
+      "scale_group": "未按技术效率或规模分位",
+      "sample": {
+        "farms_households": null,
+        "representativeness": "规范120kg预算；不是样本微观均值"
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 10.03,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "piglet": 280,
+        "feed": 900,
+        "vaccine": 20,
+        "medicine": 20,
+        "biosecurity": 20,
+        "water_electricity": 25,
+        "labour": 65,
+        "depreciation": 55,
+        "finance": 25,
+        "low_value_repair": 20,
+        "mortality_culling": 25
+      },
+      "mode": "self_bred",
+      "standard_weight_kg": 120,
+      "cost_label_original": "所有养殖要素组成直接成本",
+      "official_risk_loading_pct": 3,
+      "official_loaded_break_even_yuan_kg": 12.49,
+      "official_loaded_profit_yuan_head": -295.2,
+      "piglet_cost_boundary": "21日龄断奶；自繁账已含前期母猪等各环节费用，后续项覆盖21日龄至育肥结束",
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 12.125,
+        "formula": "1455/120",
+        "weight_status": "official_standard_assumption",
+        "components_yuan_kg": {
+          "piglet": 2.3333333333333335,
+          "feed": 7.5,
+          "vaccine": 0.16666666666666666,
+          "medicine": 0.16666666666666666,
+          "biosecurity": 0.16666666666666666,
+          "water_electricity": 0.20833333333333334,
+          "labour": 0.5416666666666666,
+          "depreciation": 0.4583333333333333,
+          "finance": 0.20833333333333334,
+          "low_value_repair": 0.16666666666666666,
+          "mortality_culling": 0.20833333333333334
+        },
+        "standard_cost_yuan_kg": 12.125,
+        "exact_loaded_break_even_yuan_kg": 12.48875,
+        "reported_profit_vs_loaded_formula_difference": 1.1368683772161603e-13,
+        "risk_loading_interpretation": "不是政府认定正常利润率，也不是概率或置信区间"
+      },
+      "reported_standard_budget_cost_yuan_head": 1455
+    },
+    {
+      "id": "SD_2026Q2_purchased_piglet",
+      "source_id": "SD_2026Q2",
+      "period": "2026Q2",
+      "region": "山东省",
+      "category": "standardized_budget",
+      "scale_group": "未按技术效率或规模分位",
+      "sample": {
+        "farms_households": null,
+        "representativeness": "规范120kg预算；不是样本微观均值"
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 10.03,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {
+        "piglet": 230,
+        "feed": 900,
+        "vaccine": 20,
+        "medicine": 20,
+        "biosecurity": 15,
+        "water_electricity": 25,
+        "labour": 55,
+        "depreciation": 45,
+        "finance": 20,
+        "low_value_repair": 20,
+        "mortality_culling": 20
+      },
+      "mode": "purchased_piglet",
+      "standard_weight_kg": 120,
+      "cost_label_original": "所有养殖要素组成直接成本",
+      "official_risk_loading_pct": 3,
+      "official_loaded_break_even_yuan_kg": 11.76,
+      "official_loaded_profit_yuan_head": -207.6,
+      "piglet_cost_boundary": "21日龄断奶；自繁账已含前期母猪等各环节费用，后续项覆盖21日龄至育肥结束",
+      "calculation": {
+        "total_cost_div_liveweight_yuan_kg": 11.416666666666666,
+        "formula": "1370/120",
+        "weight_status": "official_standard_assumption",
+        "components_yuan_kg": {
+          "piglet": 1.9166666666666667,
+          "feed": 7.5,
+          "vaccine": 0.16666666666666666,
+          "medicine": 0.16666666666666666,
+          "biosecurity": 0.125,
+          "water_electricity": 0.20833333333333334,
+          "labour": 0.4583333333333333,
+          "depreciation": 0.375,
+          "finance": 0.16666666666666666,
+          "low_value_repair": 0.16666666666666666,
+          "mortality_culling": 0.16666666666666666
+        },
+        "standard_cost_yuan_kg": 11.416666666666666,
+        "exact_loaded_break_even_yuan_kg": 11.759166666666667,
+        "reported_profit_vs_loaded_formula_difference": 5.684341886080802e-14,
+        "risk_loading_interpretation": "不是政府认定正常利润率，也不是概率或置信区间"
+      },
+      "reported_standard_budget_cost_yuan_head": 1370
+    },
+    {
+      "id": "SD_2026Q2_observed",
+      "source_id": "SD_2026Q2",
+      "period": "2026Q2",
+      "region": "山东省",
+      "category": "regional_quarterly_operating_monitor",
+      "scale_group": "规模猪场，未分大中小",
+      "sample": {
+        "farms_households": null
+      },
+      "observed_liveweight_kg": 125.24,
+      "reported_total_or_rearing_cost_yuan_head": null,
+      "reported_output_value_yuan_head": null,
+      "reported_profit_yuan_head": null,
+      "reported_live_price_yuan_kg": 10.46,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "reported_fattened_pig_cost_yuan_kg": 12.74,
+      "cost_label_original": "出售肥猪成本",
+      "calculation": {
+        "cost_implied_from_reported_unit_cost_and_weight_yuan_head": 1595.5575999999999,
+        "cost_formula": "12.74*125.24",
+        "profit_from_reported_unit_prices_yuan_head": -285.5471999999999,
+        "proportional_120kg_display_yuan": 1528.8,
+        "proportional_120kg_display_note": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。"
+      },
+      "interpretation": "本条为实际监测均值；同页120kg预算是另一种测算，不可认为预算与监测的差额全是效率差。"
+    },
+    {
+      "id": "CN_2023-12_small",
+      "source_id": "CN_SOURCE_2023-12",
+      "period": "2023-12",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "散养",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2160.0,
+      "reported_output_value_yuan_head": 2051.0,
+      "reported_profit_yuan_head": -108.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202312/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": -109.0,
+        "reported_profit_less_identity_yuan_head": 1.0
+      }
+    },
+    {
+      "id": "CN_2023-12_scale",
+      "source_id": "CN_SOURCE_2023-12",
+      "period": "2023-12",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "规模养殖合计",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2097.0,
+      "reported_output_value_yuan_head": 2074.0,
+      "reported_profit_yuan_head": -23.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202312/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": -23.0,
+        "reported_profit_less_identity_yuan_head": 0.0
+      }
+    },
+    {
+      "id": "CN_2024-06_small",
+      "source_id": "CN_SOURCE_2024-06",
+      "period": "2024-06",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "散养",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2093.0,
+      "reported_output_value_yuan_head": 2344.0,
+      "reported_profit_yuan_head": 251.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202406/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": 251.0,
+        "reported_profit_less_identity_yuan_head": 0.0
+      }
+    },
+    {
+      "id": "CN_2024-06_scale",
+      "source_id": "CN_SOURCE_2024-06",
+      "period": "2024-06",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "规模养殖合计",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 1998.0,
+      "reported_output_value_yuan_head": 2468.0,
+      "reported_profit_yuan_head": 470.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202406/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": 470.0,
+        "reported_profit_less_identity_yuan_head": 0.0
+      }
+    },
+    {
+      "id": "CN_2024-12_small",
+      "source_id": "CN_SOURCE_2024-12",
+      "period": "2024-12",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "散养",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2264.0,
+      "reported_output_value_yuan_head": 2384.0,
+      "reported_profit_yuan_head": 119.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202412/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": 120.0,
+        "reported_profit_less_identity_yuan_head": -1.0
+      }
+    },
+    {
+      "id": "CN_2024-12_scale",
+      "source_id": "CN_SOURCE_2024-12",
+      "period": "2024-12",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "规模养殖合计",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2123.0,
+      "reported_output_value_yuan_head": 2336.0,
+      "reported_profit_yuan_head": 213.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202412/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": 213.0,
+        "reported_profit_less_identity_yuan_head": 0.0
+      }
+    },
+    {
+      "id": "CN_2025-03_small",
+      "source_id": "CN_SOURCE_2025-03",
+      "period": "2025-03",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "散养",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2107.0,
+      "reported_output_value_yuan_head": 2160.0,
+      "reported_profit_yuan_head": 54.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202503/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": 53.0,
+        "reported_profit_less_identity_yuan_head": 1.0
+      }
+    },
+    {
+      "id": "CN_2025-03_scale",
+      "source_id": "CN_SOURCE_2025-03",
+      "period": "2025-03",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "规模养殖合计",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2018.0,
+      "reported_output_value_yuan_head": 2102.0,
+      "reported_profit_yuan_head": 84.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202503/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": 84.0,
+        "reported_profit_less_identity_yuan_head": 0.0
+      }
+    },
+    {
+      "id": "CN_2025-06_small",
+      "source_id": "CN_SOURCE_2025-06",
+      "period": "2025-06",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "散养",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2098.0,
+      "reported_output_value_yuan_head": 2092.0,
+      "reported_profit_yuan_head": -6.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202506/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": -6.0,
+        "reported_profit_less_identity_yuan_head": 0.0
+      }
+    },
+    {
+      "id": "CN_2025-06_scale",
+      "source_id": "CN_SOURCE_2025-06",
+      "period": "2025-06",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "规模养殖合计",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2053.0,
+      "reported_output_value_yuan_head": 2060.0,
+      "reported_profit_yuan_head": 7.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202506/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": 7.0,
+        "reported_profit_less_identity_yuan_head": 0.0
+      }
+    },
+    {
+      "id": "CN_2025-08_small",
+      "source_id": "CN_SOURCE_2025-08",
+      "period": "2025-08",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "散养",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2145.0,
+      "reported_output_value_yuan_head": 2036.0,
+      "reported_profit_yuan_head": -109.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202508/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": -109.0,
+        "reported_profit_less_identity_yuan_head": 0.0
+      }
+    },
+    {
+      "id": "CN_2025-08_scale",
+      "source_id": "CN_SOURCE_2025-08",
+      "period": "2025-08",
+      "region": "全国",
+      "category": "national_monthly_cost_monitor",
+      "scale_group": "规模养殖合计",
+      "sample": {
+        "farms_households": null,
+        "scale_definition_threshold": null
+      },
+      "observed_liveweight_kg": null,
+      "reported_total_or_rearing_cost_yuan_head": 2066.0,
+      "reported_output_value_yuan_head": 2009.0,
+      "reported_profit_yuan_head": -57.0,
+      "reported_live_price_yuan_kg": null,
+      "reported_cash_cost_yuan_head": null,
+      "reported_land_cost_yuan_head": null,
+      "breeding_purchase_mix": null,
+      "components_yuan_head": {},
+      "actual_month_source_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202508/",
+      "cost_label_original": "每头成本",
+      "cash_definition_status": "total_economic_cost_not_cash_cost",
+      "verification": "项目已完成67个官方原URL数值复核，见pig_cycle_history/source_audit.json；本轮重新打开2025-06原PDF核验定义",
+      "interpretation": "散养列不是小规模列；全国价格采报价样本与成本调查样本不是可直接相除的一组。未获头重，单位成本保持null。",
+      "calculation": {
+        "profit_from_values_yuan_head": -57.0,
+        "reported_profit_less_identity_yuan_head": 0.0
+      }
+    }
+  ],
+  "company_anchor": {
+    "source_id": "SN_2025H1",
+    "period": "2025H1",
+    "unit": "元/公斤出栏活重",
+    "full_cost": 12.4,
+    "components": {
+      "piglet": 2.9,
+      "feed": 6.7,
+      "health": 0.3,
+      "labour_and_contract": 1.5,
+      "depreciation_bucket": 0.2,
+      "headquarters": 0.8
+    },
+    "crosswalk": [
+      {
+        "company_bucket": "仔猪2.9",
+        "survey_match": "仔畜费/山东21日龄猪苗成本",
+        "limitation": "同为阶段转入成本才可对比；外购市场价含繁育方利润与购入时点溢价，自繁成本则含母猪饲料、人工、折旧等，不能仅用PSY解释全部差额。"
+      },
+      {
+        "company_bucket": "饲料6.7",
+        "survey_match": "精饲料+青粗饲料+加工费，或山东育肥饲料",
+        "limitation": "阶段、入栏重、出栏重、死淘耗料及含运费/加工费范围须一致。料肉比应对增重而非活重。"
+      },
+      {
+        "company_bucket": "动保0.3",
+        "survey_match": "医疗防疫/疫苗/用药/生物安全",
+        "limitation": "环保、生安固定设施或消杀人工归属可能跨桶。"
+      },
+      {
+        "company_bucket": "人工1.5",
+        "survey_match": "人工成本（家庭折价+雇工）或劳务代养",
+        "limitation": "神农模式含代养，人工桶不能等同农本调查家庭劳动机会成本；不能由人均工资差推技术效率。"
+      },
+      {
+        "company_bucket": "折旧0.2",
+        "survey_match": "固定资产折旧",
+        "limitation": "公司六桶中的该数不代表所有繁育和生物资产折旧；部分已进入猪苗或代养服务价。"
+      },
+      {
+        "company_bucket": "总部0.8",
+        "survey_match": "管理/销售/财务等间接费，另有未列能源维修土地等",
+        "limitation": "六桶未给官方勾稽，不能把所有未匹配项硬塞总部，亦不能在完全成本上重复加一遍。"
+      }
+    ],
+    "same_period_compare": {
+      "zhejiang_202503_rearing_cost": 15.768845285149633,
+      "shandong_2025Q1_observed_fattened_cost": 14.58,
+      "shandong_2025Q1_standard_selfbred_raw_budget": 12.691666666666666,
+      "warning": "观察期、样本、重量和会计归集不同；约2—3元差额不等于纯技术差距。"
+    },
+    "engine_status_before_this_revision": "本轮修订前A—E的PSY/FCR/成活率/利用率映射为研究者情景，只有B锚总和回到神农12.4；官方调查尚未识别各层市场权重或全国成本分位。"
+  },
+  "normalization": {
+    "gross_liveweight_cost": "同一批次/同一加权口径的总成本C与销售活重W：C/W。若头均量来自相同头数权重，头均C/头均W亦成立；不是每个农户单位成本的简单平均。",
+    "byproduct_net_break_even": "若副产品收入B已核实，生猪主产品保本价=(C-B)/W；先列毛成本C/W，再列副产品抵扣，不隐含删除成本。",
+    "statistical_primary_allocation": "若某年鉴对主副产品按产值分摊，原表单位成本可能为(C/Vtotal)*(Vmain/W)。本轮未取得现行原始附录，不把这个可选公式宣称为所有已列官方表的规则。",
+    "weight_not_120": "除山东明确120kg标准预算外，不将元/头直接除120。全国出场价格与成本样本不同，不能用总产值/全国价造重量。",
+    "proportional_120kg_display": "已知实际单位成本c时，可以显示c×120元作为120kg金额比例展示；这不是该样本重新饲养到120kg的实际成本，不包含改变出栏重后的饲料、天数、固定费摊销等反事实。",
+    "no_price_efficiency_confusion": "统一期间、品种、地区投入品单价、饲料配方、仔猪来源/入栏体重、出栏重量、疾病损失和成本边界后，技术参数差才能近似解释成本效率差。",
+    "cash_flow": "经济成本、核算现金成本、当期经营现金支付、维持性资本支出、FCFE是不同对象；融资与扩产约束应另编现金流桥。"
+  },
+  "calibration_recommendation": {
+    "recommended_structure": [
+      "层1：官方调查/监测观察——保留省市、时期、样本和口径，展示成本参照点，不赋全国效率分位。",
+      "层2：同地区同期间标准预算——山东自繁与外购分开，3%风险修正可单列开关，不能命名合理利润。",
+      "层3：技术反事实——以公司或完整同口径预算为基点，一次只调整PSY、经济FCR、成活、利用率等；标签为条件成本，不称中国A—E人群。"
+    ],
+    "normal_return": "正常利润另以相同边界投入权益资本K_e、要求回报r_e和年度销售活重Q_live推算K_e*r_e/Q_live；若调查成本已含贷款利息/家庭用工/自有地机会成本，应避免重复支付对应要素。权益资本回报可单加，但须明确资本占用定义。",
+    "market_clearing": "只有掌握各类主体年度可持续供给量q_i及长期经济保留成本c_i后，才可建立累计供给曲线，与需求相交求边际层。调查均值不是需求交点，政策能繁目标不隐含某一个成本分位。",
+    "weights_needed": [
+      "全国各档出栏活重权重，而非调查户数权重",
+      "自繁/外购/公司+农户模式占比和边界",
+      "同地区同规模档内部成本分布、分位点、离散度和退出样本",
+      "每户PSY/MSY、经济FCR、成活、体重、利用率与成本的配套微观数据",
+      "年度成本与猪苗/饲料购入时点对应",
+      "真实权益及营运资本占用、维持资本支出和净融资"
+    ],
+    "what_to_change_in_existing_model": "保留神农六项作技术机制示范；将A—E从效率分层改为技术参数反事实；旁列官方调查参照，接受用户选择某条观察锚/自填可比成本后再加明确权益回报。未经权重及需求闭合不输出被称为官方校准全国中枢的单值。",
+    "not_a_calibrated_range": "浙江2026-04约14.84、沈阳2025约15.36、山东2026Q2规模场12.74跨地域跨期，不能把min/max当全国成本区间或置信带。",
+    "finite_capital": "低于包含自有劳动机会成本的经济总成本，不必立即停产；低于可避免现金支出且现金资源枯竭会约束补栏/扩产。反过来经济成本较低也不保证资本无限。"
+  },
+  "unresolved_and_excluded": {
+    "national_yearbook_scale_numbers": {
+      "status": "excluded_not_officially_verified",
+      "data_year_claimed": 2023,
+      "small_yuan_head": 2237.36,
+      "medium_yuan_head": 2199.06,
+      "large_yuan_head": 2114.94,
+      "why": "只找到二次分析转引，缺官方原表、配套主产量、具体规模定义与汇总权重；不得作为本轮已核实分层。",
+      "lead_url": "https://www.fxbaogao.com/detail/5041010"
+    },
+    "national_2024_2025_2026_scale_tables": "未取得可公开核验的全国年鉴原表全文；不能用本轮地区记录代替全国档次均值。2026全年尚未结束。",
+    "zhejiang_original_agency_url": "本轮可核验的是浙江省经济信息中心官网原文转载；省发改委官网可访问但旧文章在新站导航/索引未定位。未把转载冒称原发URL。",
+    "zhejiang_202609": "检索发现行业网站转述，但未取得原发官方文章，不纳入已核验数值。",
+    "scale_cutoffs": "二手资料对年饲养量、年出栏、存栏口径有混写；尚未取得当前全国农本调查原附录，故不宣布30/100/1000为已核实规则，更不与农业农村部500头规模化口径混用。",
+    "piglet_accounting": "山东自繁预算边界明确；浙江/沈阳/重庆样本的自繁外购占比、内部猪苗估价及繁育成本分配未披露，不以统一市场仔猪价回填。",
+    "cash_costs": "本轮2023—2026有效观察未完整披露现金成本。保留null，不能总成本减某一个折旧桶即称现金成本。"
+  },
+  "raw_file_audit": [
+    {
+      "file": "cost_survey_raw/chongqing_2024_h1.html",
+      "bytes": 57297,
+      "sha256": "9033f3bd30f846b4f2df1b579fcb3700f1dda1553faaac9aafa0d152bb25d701"
+    },
+    {
+      "file": "cost_survey_raw/chongqing_2024_h1.txt",
+      "bytes": 4587,
+      "sha256": "d0d5d3544ea42b8ba3e910706fec954e5bc6dbc44c62232ee8a7c3817be93a66"
+    },
+    {
+      "file": "cost_survey_raw/linhe_2023_h1.html",
+      "bytes": 60376,
+      "sha256": "10ca999ab2a70f8d2ea45234a83cb093261e5d2a3a4a7656b3a530c0f535eb41"
+    },
+    {
+      "file": "cost_survey_raw/linhe_2023_h1.txt",
+      "bytes": 4279,
+      "sha256": "4d04c6970f7d204d7fd0780b3533b7e0e43d3f9201cbe020c3dff7773f702e77"
+    },
+    {
+      "file": "cost_survey_raw/mara_2025_06.pdf",
+      "bytes": 192728,
+      "sha256": "d4ed5bb765725707f813595862ef6f8ff0c2e5682630972337f3dd36cb92212b"
+    },
+    {
+      "file": "cost_survey_raw/shandong_2025_q1.html",
+      "bytes": 50506,
+      "sha256": "a5d502c4a85d181cae5580b44cd4ae2496790595ea47a1b5de3d22a66ab1f7a0"
+    },
+    {
+      "file": "cost_survey_raw/shandong_2025_q1.txt",
+      "bytes": 29678,
+      "sha256": "9872773443cccffa74ea3094afe16d93283be12aa3aee8edfe384ead1d86e4c3"
+    },
+    {
+      "file": "cost_survey_raw/shandong_2025_q3.html",
+      "bytes": 46944,
+      "sha256": "4fd4dfe33f7fa9ededae46e9f93d0302cd70fbaf7e386da030b9db1f8bacdb3d"
+    },
+    {
+      "file": "cost_survey_raw/shandong_2025_q3.txt",
+      "bytes": 26047,
+      "sha256": "776c23aeed5363811ddce52db1e2f91e440ac0b320b96db7c40cfa015b6966d8"
+    },
+    {
+      "file": "cost_survey_raw/shandong_2026_q2.html",
+      "bytes": 50056,
+      "sha256": "caef474fb3e78a8dd75d01a21729abb95b14a849323c56bdb6fde8c1519b447d"
+    },
+    {
+      "file": "cost_survey_raw/shandong_2026_q2.txt",
+      "bytes": 28933,
+      "sha256": "7685037e46e16f778cce0f487f564df8530d12a3291ed5e045aa8ab798b32339"
+    },
+    {
+      "file": "cost_survey_raw/shenyang_2025.html",
+      "bytes": 29828,
+      "sha256": "7dfc420e5b66f88a1a218bacf9f2a1bfeae0fadc3f77d2cb8478839e07aa9383"
+    },
+    {
+      "file": "cost_survey_raw/shenyang_2025.txt",
+      "bytes": 1333,
+      "sha256": "1b3cf3479eeac10b9e176704cadba1296746b5c77eb5cef4b78aa4ce81a418c9"
+    },
+    {
+      "file": "cost_survey_raw/yingkou_2024_h1.html",
+      "bytes": 62449,
+      "sha256": "68a3c5af1d170f7d9fda567da69628c8ed3802597abf14a75e3f9bfb7b4920ac"
+    },
+    {
+      "file": "cost_survey_raw/yingkou_2024_h1.txt",
+      "bytes": 10003,
+      "sha256": "9a7c09a3a7aa012dc1af881a0efb6aa6edb899a8ee813e111c395c24266bcb0d"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_2023_07.html",
+      "bytes": 9969,
+      "sha256": "15ab959e0fd010e17564cd7b0e292afa3c3b69dfe0a691a56fa14628d666dcdd"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_2023_07.png",
+      "bytes": 140486,
+      "sha256": "8a853db0884d528c36d2eb851957ac3177e1af34f57a11165df4f567ea1759fb"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_2023_07.txt",
+      "bytes": 1727,
+      "sha256": "66f66c4b16f112fb73883588025db83ab84e1f1bdd4ca46319682e9b9178aea6"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_2025_03.html",
+      "bytes": 19382,
+      "sha256": "222c74843cedee58ddd5314c4e09f238aa3a9e3951148f268e28ca911f40fddc"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_2025_03.txt",
+      "bytes": 2425,
+      "sha256": "75ea39dc1628ba2616ff4c9c839648f7ba4590cf5686871ec840550538926cb5"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_2025_09.html",
+      "bytes": 8306,
+      "sha256": "1356fd1bf1d5c53be817315cce331641a5ed786fc4ff311f59818298bf0002a9"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_2025_09.txt",
+      "bytes": 1446,
+      "sha256": "a6d10a6f7bd28ee9bdc2f9533a676b7ab92e1ffa3d03ba6303bfe5e80d3cd396"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_2026_04.html",
+      "bytes": 8013,
+      "sha256": "8238cf122b94b4c676e7d0de10568544ffc99996862a02afd5b832e1e26c62f0"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_2026_04.txt",
+      "bytes": 1474,
+      "sha256": "7ee28c641496a14d8894dedb6b4b0ec162f315b2089ec7bfe9f8713fb5df82c0"
+    },
+    {
+      "file": "cost_survey_raw/zhejiang_drc_home.html",
+      "bytes": 57641,
+      "sha256": "671c35648a580b41089bbbcbe115179e1c088489125dcae07b98beb45aa02822"
+    }
+  ]
+}

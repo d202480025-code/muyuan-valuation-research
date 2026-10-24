@@ -1,0 +1,9 @@
+{
+  "name": "pig-cycle-lab",
+  "version": "1.3.0",
+  "private": true,
+  "description": "Auditable Chinese hog-cycle scenario and valuation calculator",
+  "scripts": {
+    "test": "node tests/engine.test.js && node tests/revised.test.js"
+  }
+}

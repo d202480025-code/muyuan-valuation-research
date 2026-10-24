@@ -1,0 +1,38 @@
+PASS 120kg disclosure sums to 1488; no added duplicate piglet cost
+PASS default valid and quarterly profits reconcile with year one
+PASS 万头、公斤、亿元 profit conversion
+PASS MSY direct mode does not multiply survival or PSY twice
+PASS future efficiency improvement reduces scarcity holding history calibration fixed
+PASS two post-ASF modern episodes are eligible and series not spliced
+PASS high historical MSY improvement rejects non-contracting capacity cycle
+PASS near-zero historical depletion cannot generate astronomical automatic beta
+PASS r <= g and malformed numeric inputs give errors instead of stale output
+PASS growth requires explicit capital spending
+PASS net borrowing cannot manufacture equity value without a debt service path
+PASS other EBITDA is independent of farming attribution and model outside cash not double-added to EV/PB
+PASS FCFE never subtracts net debt again; EV method does exactly once
+PASS terminal all sustaining capital defaults to D&A, no perpetual maintenance windfall
+PASS terminal growth reinvestment deducted
+PASS last explicit year-end repayment saves interest in first terminal year
+PASS negative normalized earnings make PE unavailable
+PASS consistent zero-growth PE and ROE-PB agree at PE=1/r
+PASS one-year recovery does not rewrite first-year cost or quarterly profit
+PASS recovery and repayment beyond explicit horizon rejected
+PASS seasonality alters quarterly shape but preserves annual mean
+PASS import/export hash roundtrip validates all parameters
+PASS reverse DCF recovers the given normal price
+PASS all configured sources and data series are valid
+PASS auxiliary defaults neither invent a futures quote nor change established valuations
+PASS futures yuan per tonne converts to yuan per kg, positive and negative basis keep their sign
+PASS complete auxiliary references do not automatically change any primary price or valuation
+PASS missing futures provenance stays local to the auxiliary calculator
+PASS futures dates are real calendar dates and contracts use odd delivery months
+PASS invalid or empty auxiliary numeric drafts never produce stale references
+PASS piglet default break-even and target prices use surviving sale kilograms
+PASS piglet deaths reduce sale revenue denominator without charging the same mortality cost twice
+PASS zero survival, excessive survival, and unfinished piglet costs invalidate only piglet results
+PASS auxiliary text preserves blanks but rejects nonstrings, excessive length, and control characters
+PASS 1.0.0 configurations migrate with auxiliary defaults and retain existing main parameters
+PASS unfinished auxiliary inputs roundtrip without invalidating a legacy or current main configuration
+PASS CSV includes provenance, units, validity, and auxiliary results as safe text
+37 meaningful calculation checks passed.

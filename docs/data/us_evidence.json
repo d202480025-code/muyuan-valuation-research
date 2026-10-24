@@ -1,0 +1,3811 @@
+{
+  "as_of": "2026-10-24",
+  "purpose": "Empirical constraints and auditable US comparisons for a China hog-cycle/Muyuan calculator; not a recommendation or probability forecast.",
+  "units": {
+    "company_financials": "USD million unless stated otherwise",
+    "scenario_prices": "CNY/kg live weight",
+    "ers": "USD/cwt of gain"
+  },
+  "consolidated_annual": {
+    "hormel": [
+      {
+        "fiscal_year": 2015,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:SalesRevenueNet",
+            "unit": "USD",
+            "raw_value": 9263863000,
+            "start": "2014-10-27",
+            "end": "2015-10-25",
+            "filed": "2017-12-20",
+            "accession": "0001104659-17-074227",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000110465917074227/0001104659-17-074227-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 686088000,
+            "start": "2014-10-27",
+            "end": "2015-10-25",
+            "filed": "2017-12-20",
+            "accession": "0001104659-17-074227",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000110465917074227/0001104659-17-074227-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1067320000,
+            "start": "2014-10-27",
+            "end": "2015-10-25",
+            "filed": "2017-12-20",
+            "accession": "0001104659-17-074227",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000110465917074227/0001104659-17-074227-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 991992000,
+            "start": "2014-10-27",
+            "end": "2015-10-25",
+            "filed": "2017-12-20",
+            "accession": "0001104659-17-074227",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000110465917074227/0001104659-17-074227-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 144063000,
+            "start": "2014-10-27",
+            "end": "2015-10-25",
+            "filed": "2017-12-20",
+            "accession": "0001104659-17-074227",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000110465917074227/0001104659-17-074227-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.27,
+            "start": "2014-10-27",
+            "end": "2015-10-25",
+            "filed": "2017-12-20",
+            "accession": "0001104659-17-074227",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000110465917074227/0001104659-17-074227-index.html"
+          }
+        },
+        "revenue_usd_m": 9263.863,
+        "period_start": "2014-10-27",
+        "period_end": "2015-10-25",
+        "net_income_parent_usd_m": 686.088,
+        "operating_income_usd_m": 1067.32,
+        "cash_from_operations_usd_m": 991.992,
+        "ppe_cash_capex_usd_m": 144.063,
+        "diluted_eps_usd": 1.27,
+        "cfo_less_ppe_capex_usd_m": 847.929,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2016,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 9523224000,
+            "start": "2015-10-26",
+            "end": "2016-10-30",
+            "filed": "2018-12-07",
+            "accession": "0000048465-18-000046",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846518000046/0000048465-18-000046-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 890052000,
+            "start": "2015-10-26",
+            "end": "2016-10-30",
+            "filed": "2018-12-07",
+            "accession": "0000048465-18-000046",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846518000046/0000048465-18-000046-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1323895000,
+            "start": "2015-10-26",
+            "end": "2016-10-30",
+            "filed": "2018-12-07",
+            "accession": "0000048465-18-000046",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846518000046/0000048465-18-000046-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 1040020000,
+            "start": "2015-10-26",
+            "end": "2016-10-30",
+            "filed": "2018-12-07",
+            "accession": "0000048465-18-000046",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846518000046/0000048465-18-000046-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 255524000,
+            "start": "2015-10-26",
+            "end": "2016-10-30",
+            "filed": "2018-12-07",
+            "accession": "0000048465-18-000046",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846518000046/0000048465-18-000046-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.64,
+            "start": "2015-10-26",
+            "end": "2016-10-30",
+            "filed": "2018-12-07",
+            "accession": "0000048465-18-000046",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846518000046/0000048465-18-000046-index.html"
+          }
+        },
+        "revenue_usd_m": 9523.224,
+        "period_start": "2015-10-26",
+        "period_end": "2016-10-30",
+        "net_income_parent_usd_m": 890.052,
+        "operating_income_usd_m": 1323.895,
+        "cash_from_operations_usd_m": 1040.02,
+        "ppe_cash_capex_usd_m": 255.524,
+        "diluted_eps_usd": 1.64,
+        "cfo_less_ppe_capex_usd_m": 784.496,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2017,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 9167519000,
+            "start": "2016-10-31",
+            "end": "2017-10-29",
+            "filed": "2019-12-06",
+            "accession": "0000048465-19-000057",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846519000057/0000048465-19-000057-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 846735000,
+            "start": "2016-10-31",
+            "end": "2017-10-29",
+            "filed": "2019-12-06",
+            "accession": "0000048465-19-000057",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846519000057/0000048465-19-000057-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1276742000,
+            "start": "2016-10-31",
+            "end": "2017-10-29",
+            "filed": "2019-12-06",
+            "accession": "0000048465-19-000057",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846519000057/0000048465-19-000057-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 1033885000,
+            "start": "2016-10-31",
+            "end": "2017-10-29",
+            "filed": "2019-12-06",
+            "accession": "0000048465-19-000057",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846519000057/0000048465-19-000057-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 221286000,
+            "start": "2016-10-31",
+            "end": "2017-10-29",
+            "filed": "2019-12-06",
+            "accession": "0000048465-19-000057",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846519000057/0000048465-19-000057-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.57,
+            "start": "2016-10-31",
+            "end": "2017-10-29",
+            "filed": "2019-12-06",
+            "accession": "0000048465-19-000057",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846519000057/0000048465-19-000057-index.html"
+          }
+        },
+        "revenue_usd_m": 9167.519,
+        "period_start": "2016-10-31",
+        "period_end": "2017-10-29",
+        "net_income_parent_usd_m": 846.735,
+        "operating_income_usd_m": 1276.742,
+        "cash_from_operations_usd_m": 1033.885,
+        "ppe_cash_capex_usd_m": 221.286,
+        "diluted_eps_usd": 1.57,
+        "cfo_less_ppe_capex_usd_m": 812.599,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2018,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 9545700000,
+            "start": "2017-10-30",
+            "end": "2018-10-28",
+            "filed": "2020-12-04",
+            "accession": "0000048465-20-000043",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846520000043/0000048465-20-000043-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1012140000,
+            "start": "2017-10-30",
+            "end": "2018-10-28",
+            "filed": "2020-12-04",
+            "accession": "0000048465-20-000043",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846520000043/0000048465-20-000043-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1179961000,
+            "start": "2017-10-30",
+            "end": "2018-10-28",
+            "filed": "2020-12-04",
+            "accession": "0000048465-20-000043",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846520000043/0000048465-20-000043-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 1241729000,
+            "start": "2017-10-30",
+            "end": "2018-10-28",
+            "filed": "2020-12-04",
+            "accession": "0000048465-20-000043",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846520000043/0000048465-20-000043-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 389607000,
+            "start": "2017-10-30",
+            "end": "2018-10-28",
+            "filed": "2020-12-04",
+            "accession": "0000048465-20-000043",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846520000043/0000048465-20-000043-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.86,
+            "start": "2017-10-30",
+            "end": "2018-10-28",
+            "filed": "2020-12-04",
+            "accession": "0000048465-20-000043",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846520000043/0000048465-20-000043-index.html"
+          }
+        },
+        "revenue_usd_m": 9545.7,
+        "period_start": "2017-10-30",
+        "period_end": "2018-10-28",
+        "net_income_parent_usd_m": 1012.14,
+        "operating_income_usd_m": 1179.961,
+        "cash_from_operations_usd_m": 1241.729,
+        "ppe_cash_capex_usd_m": 389.607,
+        "diluted_eps_usd": 1.86,
+        "cfo_less_ppe_capex_usd_m": 852.122,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2019,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 9497317000,
+            "start": "2018-10-29",
+            "end": "2019-10-27",
+            "filed": "2021-12-10",
+            "accession": "0000048465-21-000067",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846521000067/0000048465-21-000067-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 978806000,
+            "start": "2018-10-29",
+            "end": "2019-10-27",
+            "filed": "2021-12-10",
+            "accession": "0000048465-21-000067",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846521000067/0000048465-21-000067-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1196265000,
+            "start": "2018-10-29",
+            "end": "2019-10-27",
+            "filed": "2021-12-10",
+            "accession": "0000048465-21-000067",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846521000067/0000048465-21-000067-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 922996000,
+            "start": "2018-10-29",
+            "end": "2019-10-27",
+            "filed": "2021-12-10",
+            "accession": "0000048465-21-000067",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846521000067/0000048465-21-000067-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 293838000,
+            "start": "2018-10-29",
+            "end": "2019-10-27",
+            "filed": "2021-12-10",
+            "accession": "0000048465-21-000067",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846521000067/0000048465-21-000067-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.8,
+            "start": "2018-10-29",
+            "end": "2019-10-27",
+            "filed": "2021-12-10",
+            "accession": "0000048465-21-000067",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846521000067/0000048465-21-000067-index.html"
+          }
+        },
+        "revenue_usd_m": 9497.317,
+        "period_start": "2018-10-29",
+        "period_end": "2019-10-27",
+        "net_income_parent_usd_m": 978.806,
+        "operating_income_usd_m": 1196.265,
+        "cash_from_operations_usd_m": 922.996,
+        "ppe_cash_capex_usd_m": 293.838,
+        "diluted_eps_usd": 1.8,
+        "cfo_less_ppe_capex_usd_m": 629.158,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2020,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 9608462000,
+            "start": "2019-10-28",
+            "end": "2020-10-25",
+            "filed": "2022-12-06",
+            "accession": "0000048465-22-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846522000051/0000048465-22-000051-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 908082000,
+            "start": "2019-10-28",
+            "end": "2020-10-25",
+            "filed": "2022-12-06",
+            "accession": "0000048465-22-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846522000051/0000048465-22-000051-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1100220000,
+            "start": "2019-10-28",
+            "end": "2020-10-25",
+            "filed": "2022-12-06",
+            "accession": "0000048465-22-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846522000051/0000048465-22-000051-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 1128024000,
+            "start": "2019-10-28",
+            "end": "2020-10-25",
+            "filed": "2022-12-06",
+            "accession": "0000048465-22-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846522000051/0000048465-22-000051-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 367501000,
+            "start": "2019-10-28",
+            "end": "2020-10-25",
+            "filed": "2022-12-06",
+            "accession": "0000048465-22-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846522000051/0000048465-22-000051-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.66,
+            "start": "2019-10-28",
+            "end": "2020-10-25",
+            "filed": "2022-12-06",
+            "accession": "0000048465-22-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846522000051/0000048465-22-000051-index.html"
+          }
+        },
+        "revenue_usd_m": 9608.462,
+        "period_start": "2019-10-28",
+        "period_end": "2020-10-25",
+        "net_income_parent_usd_m": 908.082,
+        "operating_income_usd_m": 1100.22,
+        "cash_from_operations_usd_m": 1128.024,
+        "ppe_cash_capex_usd_m": 367.501,
+        "diluted_eps_usd": 1.66,
+        "cfo_less_ppe_capex_usd_m": 760.523,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2021,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 11386189000,
+            "start": "2020-10-26",
+            "end": "2021-10-31",
+            "filed": "2023-12-06",
+            "accession": "0000048465-23-000083",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846523000083/0000048465-23-000083-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 908839000,
+            "start": "2020-10-26",
+            "end": "2021-10-31",
+            "filed": "2023-12-06",
+            "accession": "0000048465-23-000083",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846523000083/0000048465-23-000083-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1122599000,
+            "start": "2020-10-26",
+            "end": "2021-10-31",
+            "filed": "2023-12-06",
+            "accession": "0000048465-23-000083",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846523000083/0000048465-23-000083-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 1001934000,
+            "start": "2020-10-26",
+            "end": "2021-10-31",
+            "filed": "2023-12-06",
+            "accession": "0000048465-23-000083",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846523000083/0000048465-23-000083-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 232416000,
+            "start": "2020-10-26",
+            "end": "2021-10-31",
+            "filed": "2023-12-06",
+            "accession": "0000048465-23-000083",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846523000083/0000048465-23-000083-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.66,
+            "start": "2020-10-26",
+            "end": "2021-10-31",
+            "filed": "2023-12-06",
+            "accession": "0000048465-23-000083",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846523000083/0000048465-23-000083-index.html"
+          }
+        },
+        "revenue_usd_m": 11386.189,
+        "period_start": "2020-10-26",
+        "period_end": "2021-10-31",
+        "net_income_parent_usd_m": 908.839,
+        "operating_income_usd_m": 1122.599,
+        "cash_from_operations_usd_m": 1001.934,
+        "ppe_cash_capex_usd_m": 232.416,
+        "diluted_eps_usd": 1.66,
+        "cfo_less_ppe_capex_usd_m": 769.518,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2022,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 12458806000,
+            "start": "2021-11-01",
+            "end": "2022-10-30",
+            "filed": "2024-12-05",
+            "accession": "0000048465-24-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846524000051/0000048465-24-000051-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 999987000,
+            "start": "2021-11-01",
+            "end": "2022-10-30",
+            "filed": "2024-12-05",
+            "accession": "0000048465-24-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846524000051/0000048465-24-000051-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1312607000,
+            "start": "2021-11-01",
+            "end": "2022-10-30",
+            "filed": "2024-12-05",
+            "accession": "0000048465-24-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846524000051/0000048465-24-000051-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 1134977000,
+            "start": "2021-11-01",
+            "end": "2022-10-30",
+            "filed": "2024-12-05",
+            "accession": "0000048465-24-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846524000051/0000048465-24-000051-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 278918000,
+            "start": "2021-11-01",
+            "end": "2022-10-30",
+            "filed": "2024-12-05",
+            "accession": "0000048465-24-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846524000051/0000048465-24-000051-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.82,
+            "start": "2021-11-01",
+            "end": "2022-10-30",
+            "filed": "2024-12-05",
+            "accession": "0000048465-24-000051",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846524000051/0000048465-24-000051-index.html"
+          }
+        },
+        "revenue_usd_m": 12458.806,
+        "period_start": "2021-11-01",
+        "period_end": "2022-10-30",
+        "net_income_parent_usd_m": 999.987,
+        "operating_income_usd_m": 1312.607,
+        "cash_from_operations_usd_m": 1134.977,
+        "ppe_cash_capex_usd_m": 278.918,
+        "diluted_eps_usd": 1.82,
+        "cfo_less_ppe_capex_usd_m": 856.059,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2023,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 12110010000,
+            "start": "2022-10-31",
+            "end": "2023-10-29",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 793572000,
+            "start": "2022-10-31",
+            "end": "2023-10-29",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1072046000,
+            "start": "2022-10-31",
+            "end": "2023-10-29",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 1047847000,
+            "start": "2022-10-31",
+            "end": "2023-10-29",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 270211000,
+            "start": "2022-10-31",
+            "end": "2023-10-29",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.45,
+            "start": "2022-10-31",
+            "end": "2023-10-29",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          }
+        },
+        "revenue_usd_m": 12110.01,
+        "period_start": "2022-10-31",
+        "period_end": "2023-10-29",
+        "net_income_parent_usd_m": 793.572,
+        "operating_income_usd_m": 1072.046,
+        "cash_from_operations_usd_m": 1047.847,
+        "ppe_cash_capex_usd_m": 270.211,
+        "diluted_eps_usd": 1.45,
+        "cfo_less_ppe_capex_usd_m": 777.636,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2024,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 11920797000,
+            "start": "2023-10-30",
+            "end": "2024-10-27",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 805038000,
+            "start": "2023-10-30",
+            "end": "2024-10-27",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1067932000,
+            "start": "2023-10-30",
+            "end": "2024-10-27",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 1266738000,
+            "start": "2023-10-30",
+            "end": "2024-10-27",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 256441000,
+            "start": "2023-10-30",
+            "end": "2024-10-27",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.47,
+            "start": "2023-10-30",
+            "end": "2024-10-27",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          }
+        },
+        "revenue_usd_m": 11920.797,
+        "period_start": "2023-10-30",
+        "period_end": "2024-10-27",
+        "net_income_parent_usd_m": 805.038,
+        "operating_income_usd_m": 1067.932,
+        "cash_from_operations_usd_m": 1266.738,
+        "ppe_cash_capex_usd_m": 256.441,
+        "diluted_eps_usd": 1.47,
+        "cfo_less_ppe_capex_usd_m": 1010.297,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2025,
+        "company": "hormel",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "HORMEL_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 12106160000,
+            "start": "2024-10-28",
+            "end": "2025-10-26",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 478197000,
+            "start": "2024-10-28",
+            "end": "2025-10-26",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 718603000,
+            "start": "2024-10-28",
+            "end": "2025-10-26",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 845251000,
+            "start": "2024-10-28",
+            "end": "2025-10-26",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 310902000,
+            "start": "2024-10-28",
+            "end": "2025-10-26",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 0.87,
+            "start": "2024-10-28",
+            "end": "2025-10-26",
+            "filed": "2025-12-05",
+            "accession": "0000048465-25-000059",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/48465/000004846525000059/0000048465-25-000059-index.html"
+          }
+        },
+        "revenue_usd_m": 12106.16,
+        "period_start": "2024-10-28",
+        "period_end": "2025-10-26",
+        "net_income_parent_usd_m": 478.197,
+        "operating_income_usd_m": 718.603,
+        "cash_from_operations_usd_m": 845.251,
+        "ppe_cash_capex_usd_m": 310.902,
+        "diluted_eps_usd": 0.87,
+        "cfo_less_ppe_capex_usd_m": 534.349,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      }
+    ],
+    "seb": [
+      {
+        "fiscal_year": 2015,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 5594000000,
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-21",
+            "accession": "0000088121-18-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812118000012/0000088121-18-000012-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 171000000,
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-21",
+            "accession": "0000088121-18-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812118000012/0000088121-18-000012-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 126000000,
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-21",
+            "accession": "0000088121-18-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812118000012/0000088121-18-000012-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 416000000,
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-21",
+            "accession": "0000088121-18-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812118000012/0000088121-18-000012-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 139000000,
+            "start": "2015-01-01",
+            "end": "2015-12-31",
+            "filed": "2018-02-21",
+            "accession": "0000088121-18-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812118000012/0000088121-18-000012-index.html"
+          }
+        },
+        "revenue_usd_m": 5594.0,
+        "period_start": "2015-01-01",
+        "period_end": "2015-12-31",
+        "net_income_parent_usd_m": 171.0,
+        "operating_income_usd_m": 126.0,
+        "cash_from_operations_usd_m": 416.0,
+        "ppe_cash_capex_usd_m": 139.0,
+        "cfo_less_ppe_capex_usd_m": 277.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2016,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 5379000000,
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-20",
+            "accession": "0000088121-19-000011",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812119000011/0000088121-19-000011-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 312000000,
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-20",
+            "accession": "0000088121-19-000011",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812119000011/0000088121-19-000011-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 230000000,
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-20",
+            "accession": "0000088121-19-000011",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812119000011/0000088121-19-000011-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 427000000,
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-20",
+            "accession": "0000088121-19-000011",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812119000011/0000088121-19-000011-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 158000000,
+            "start": "2016-01-01",
+            "end": "2016-12-31",
+            "filed": "2019-02-20",
+            "accession": "0000088121-19-000011",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812119000011/0000088121-19-000011-index.html"
+          }
+        },
+        "revenue_usd_m": 5379.0,
+        "period_start": "2016-01-01",
+        "period_end": "2016-12-31",
+        "net_income_parent_usd_m": 312.0,
+        "operating_income_usd_m": 230.0,
+        "cash_from_operations_usd_m": 427.0,
+        "ppe_cash_capex_usd_m": 158.0,
+        "cfo_less_ppe_capex_usd_m": 269.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2017,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 5809000000,
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-19",
+            "accession": "0000088121-20-000010",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812120000010/0000088121-20-000010-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 247000000,
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-19",
+            "accession": "0000088121-20-000010",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812120000010/0000088121-20-000010-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 240000000,
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-19",
+            "accession": "0000088121-20-000010",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812120000010/0000088121-20-000010-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 245000000,
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-19",
+            "accession": "0000088121-20-000010",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812120000010/0000088121-20-000010-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 173000000,
+            "start": "2017-01-01",
+            "end": "2017-12-31",
+            "filed": "2020-02-19",
+            "accession": "0000088121-20-000010",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812120000010/0000088121-20-000010-index.html"
+          }
+        },
+        "revenue_usd_m": 5809.0,
+        "period_start": "2017-01-01",
+        "period_end": "2017-12-31",
+        "net_income_parent_usd_m": 247.0,
+        "operating_income_usd_m": 240.0,
+        "cash_from_operations_usd_m": 245.0,
+        "ppe_cash_capex_usd_m": 173.0,
+        "cfo_less_ppe_capex_usd_m": 72.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2018,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 6583000000,
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-17",
+            "accession": "0000088121-21-000013",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812121000013/0000088121-21-000013-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 3000000,
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-17",
+            "accession": "0000088121-21-000013",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812121000013/0000088121-21-000013-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 236000000,
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-17",
+            "accession": "0000088121-21-000013",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812121000013/0000088121-21-000013-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 238000000,
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-17",
+            "accession": "0000088121-21-000013",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812121000013/0000088121-21-000013-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 162000000,
+            "start": "2018-01-01",
+            "end": "2018-12-31",
+            "filed": "2021-02-17",
+            "accession": "0000088121-21-000013",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812121000013/0000088121-21-000013-index.html"
+          }
+        },
+        "revenue_usd_m": 6583.0,
+        "period_start": "2018-01-01",
+        "period_end": "2018-12-31",
+        "net_income_parent_usd_m": 3.0,
+        "operating_income_usd_m": 236.0,
+        "cash_from_operations_usd_m": 238.0,
+        "ppe_cash_capex_usd_m": 162.0,
+        "cfo_less_ppe_capex_usd_m": 76.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2019,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 6840000000,
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-15",
+            "accession": "0000088121-22-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812122000017/0000088121-22-000017-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 287000000,
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-15",
+            "accession": "0000088121-22-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812122000017/0000088121-22-000017-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 110000000,
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-15",
+            "accession": "0000088121-22-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812122000017/0000088121-22-000017-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 171000000,
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-15",
+            "accession": "0000088121-22-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812122000017/0000088121-22-000017-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 349000000,
+            "start": "2019-01-01",
+            "end": "2019-12-31",
+            "filed": "2022-02-15",
+            "accession": "0000088121-22-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812122000017/0000088121-22-000017-index.html"
+          }
+        },
+        "revenue_usd_m": 6840.0,
+        "period_start": "2019-01-01",
+        "period_end": "2019-12-31",
+        "net_income_parent_usd_m": 287.0,
+        "operating_income_usd_m": 110.0,
+        "cash_from_operations_usd_m": 171.0,
+        "ppe_cash_capex_usd_m": 349.0,
+        "cfo_less_ppe_capex_usd_m": -178.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2020,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 7126000000,
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-14",
+            "accession": "0000088121-23-000020",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812123000020/0000088121-23-000020-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 283000000,
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-14",
+            "accession": "0000088121-23-000020",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812123000020/0000088121-23-000020-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 245000000,
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-14",
+            "accession": "0000088121-23-000020",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812123000020/0000088121-23-000020-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 291000000,
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-14",
+            "accession": "0000088121-23-000020",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812123000020/0000088121-23-000020-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 259000000,
+            "start": "2020-01-01",
+            "end": "2020-12-31",
+            "filed": "2023-02-14",
+            "accession": "0000088121-23-000020",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812123000020/0000088121-23-000020-index.html"
+          }
+        },
+        "revenue_usd_m": 7126.0,
+        "period_start": "2020-01-01",
+        "period_end": "2020-12-31",
+        "net_income_parent_usd_m": 283.0,
+        "operating_income_usd_m": 245.0,
+        "cash_from_operations_usd_m": 291.0,
+        "ppe_cash_capex_usd_m": 259.0,
+        "cfo_less_ppe_capex_usd_m": 32.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2021,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 9229000000,
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-13",
+            "accession": "0000088121-24-000025",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812124000025/0000088121-24-000025-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 570000000,
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-13",
+            "accession": "0000088121-24-000025",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812124000025/0000088121-24-000025-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 458000000,
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-13",
+            "accession": "0000088121-24-000025",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812124000025/0000088121-24-000025-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 92000000,
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-13",
+            "accession": "0000088121-24-000025",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812124000025/0000088121-24-000025-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 460000000,
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "filed": "2024-02-13",
+            "accession": "0000088121-24-000025",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812124000025/0000088121-24-000025-index.html"
+          }
+        },
+        "revenue_usd_m": 9229.0,
+        "period_start": "2021-01-01",
+        "period_end": "2021-12-31",
+        "net_income_parent_usd_m": 570.0,
+        "operating_income_usd_m": 458.0,
+        "cash_from_operations_usd_m": 92.0,
+        "ppe_cash_capex_usd_m": 460.0,
+        "cfo_less_ppe_capex_usd_m": -368.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2022,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 11243000000,
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-13",
+            "accession": "0000088121-25-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812125000017/0000088121-25-000017-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 580000000,
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-13",
+            "accession": "0000088121-25-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812125000017/0000088121-25-000017-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 657000000,
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-13",
+            "accession": "0000088121-25-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812125000017/0000088121-25-000017-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 676000000,
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-13",
+            "accession": "0000088121-25-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812125000017/0000088121-25-000017-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 474000000,
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-13",
+            "accession": "0000088121-25-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812125000017/0000088121-25-000017-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 499.66,
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "filed": "2025-02-13",
+            "accession": "0000088121-25-000017",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812125000017/0000088121-25-000017-index.html"
+          }
+        },
+        "revenue_usd_m": 11243.0,
+        "period_start": "2022-01-01",
+        "period_end": "2022-12-31",
+        "net_income_parent_usd_m": 580.0,
+        "operating_income_usd_m": 657.0,
+        "cash_from_operations_usd_m": 676.0,
+        "ppe_cash_capex_usd_m": 474.0,
+        "diluted_eps_usd": 499.66,
+        "cfo_less_ppe_capex_usd_m": 202.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2023,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 9562000000,
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 226000000,
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": -87000000,
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 710000000,
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 506000000,
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 202.21,
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          }
+        },
+        "revenue_usd_m": 9562.0,
+        "period_start": "2023-01-01",
+        "period_end": "2023-12-31",
+        "net_income_parent_usd_m": 226.0,
+        "operating_income_usd_m": -87.0,
+        "cash_from_operations_usd_m": 710.0,
+        "ppe_cash_capex_usd_m": 506.0,
+        "diluted_eps_usd": 202.21,
+        "cfo_less_ppe_capex_usd_m": 204.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2024,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 9100000000,
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 88000000,
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 156000000,
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 519000000,
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 511000000,
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 90.62,
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          }
+        },
+        "revenue_usd_m": 9100.0,
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31",
+        "net_income_parent_usd_m": 88.0,
+        "operating_income_usd_m": 156.0,
+        "cash_from_operations_usd_m": 519.0,
+        "ppe_cash_capex_usd_m": 511.0,
+        "diluted_eps_usd": 90.62,
+        "cfo_less_ppe_capex_usd_m": 8.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2025,
+        "company": "seb",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "SEB_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD",
+            "raw_value": 9746000000,
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+            "unit": "USD",
+            "raw_value": 496000000,
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 239000000,
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 568000000,
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 562000000,
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 514.46,
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "filed": "2026-02-12",
+            "accession": "0000088121-26-000012",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/88121/000008812126000012/0000088121-26-000012-index.html"
+          }
+        },
+        "revenue_usd_m": 9746.0,
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31",
+        "net_income_parent_usd_m": 496.0,
+        "operating_income_usd_m": 239.0,
+        "cash_from_operations_usd_m": 568.0,
+        "ppe_cash_capex_usd_m": 562.0,
+        "diluted_eps_usd": 514.46,
+        "cfo_less_ppe_capex_usd_m": 6.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      }
+    ],
+    "tsn": [
+      {
+        "fiscal_year": 2015,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:SalesRevenueNet",
+            "unit": "USD",
+            "raw_value": 41373000000,
+            "start": "2014-09-28",
+            "end": "2015-10-03",
+            "filed": "2017-11-13",
+            "accession": "0000100493-17-000133",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049317000133/0000100493-17-000133-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1220000000,
+            "start": "2014-09-28",
+            "end": "2015-10-03",
+            "filed": "2017-11-13",
+            "accession": "0000100493-17-000133",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049317000133/0000100493-17-000133-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 2169000000,
+            "start": "2014-09-28",
+            "end": "2015-10-03",
+            "filed": "2017-11-13",
+            "accession": "0000100493-17-000133",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049317000133/0000100493-17-000133-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 2570000000,
+            "start": "2014-09-28",
+            "end": "2015-10-03",
+            "filed": "2017-11-13",
+            "accession": "0000100493-17-000133",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049317000133/0000100493-17-000133-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 854000000,
+            "start": "2014-09-28",
+            "end": "2015-10-03",
+            "filed": "2017-11-13",
+            "accession": "0000100493-17-000133",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049317000133/0000100493-17-000133-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 2.95,
+            "start": "2014-09-28",
+            "end": "2015-10-03",
+            "filed": "2017-11-13",
+            "accession": "0000100493-17-000133",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049317000133/0000100493-17-000133-index.html"
+          }
+        },
+        "revenue_usd_m": 41373.0,
+        "period_start": "2014-09-28",
+        "period_end": "2015-10-03",
+        "net_income_parent_usd_m": 1220.0,
+        "operating_income_usd_m": 2169.0,
+        "cash_from_operations_usd_m": 2570.0,
+        "ppe_cash_capex_usd_m": 854.0,
+        "diluted_eps_usd": 2.95,
+        "cfo_less_ppe_capex_usd_m": 1716.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2016,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 36881000000,
+            "start": "2015-10-04",
+            "end": "2016-10-01",
+            "filed": "2018-11-13",
+            "accession": "0000100493-18-000108",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049318000108/0000100493-18-000108-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1768000000,
+            "start": "2015-10-04",
+            "end": "2016-10-01",
+            "filed": "2018-11-13",
+            "accession": "0000100493-18-000108",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049318000108/0000100493-18-000108-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 2833000000,
+            "start": "2015-10-04",
+            "end": "2016-10-01",
+            "filed": "2018-11-13",
+            "accession": "0000100493-18-000108",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049318000108/0000100493-18-000108-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 2716000000,
+            "start": "2015-10-04",
+            "end": "2016-10-01",
+            "filed": "2018-11-13",
+            "accession": "0000100493-18-000108",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049318000108/0000100493-18-000108-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 695000000,
+            "start": "2015-10-04",
+            "end": "2016-10-01",
+            "filed": "2018-11-13",
+            "accession": "0000100493-18-000108",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049318000108/0000100493-18-000108-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 4.53,
+            "start": "2015-10-04",
+            "end": "2016-10-01",
+            "filed": "2018-11-13",
+            "accession": "0000100493-18-000108",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049318000108/0000100493-18-000108-index.html"
+          }
+        },
+        "revenue_usd_m": 36881.0,
+        "period_start": "2015-10-04",
+        "period_end": "2016-10-01",
+        "net_income_parent_usd_m": 1768.0,
+        "operating_income_usd_m": 2833.0,
+        "cash_from_operations_usd_m": 2716.0,
+        "ppe_cash_capex_usd_m": 695.0,
+        "diluted_eps_usd": 4.53,
+        "cfo_less_ppe_capex_usd_m": 2021.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2017,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 38260000000,
+            "start": "2016-10-02",
+            "end": "2017-09-30",
+            "filed": "2019-11-12",
+            "accession": "0000100493-19-000118",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049319000118/0000100493-19-000118-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1774000000,
+            "start": "2016-10-02",
+            "end": "2017-09-30",
+            "filed": "2019-11-12",
+            "accession": "0000100493-19-000118",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049319000118/0000100493-19-000118-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 2921000000,
+            "start": "2016-10-02",
+            "end": "2017-09-30",
+            "filed": "2019-11-12",
+            "accession": "0000100493-19-000118",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049319000118/0000100493-19-000118-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 2599000000,
+            "start": "2016-10-02",
+            "end": "2017-09-30",
+            "filed": "2019-11-12",
+            "accession": "0000100493-19-000118",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049319000118/0000100493-19-000118-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 1069000000,
+            "start": "2016-10-02",
+            "end": "2017-09-30",
+            "filed": "2019-11-12",
+            "accession": "0000100493-19-000118",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049319000118/0000100493-19-000118-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 4.79,
+            "start": "2016-10-02",
+            "end": "2017-09-30",
+            "filed": "2019-11-12",
+            "accession": "0000100493-19-000118",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049319000118/0000100493-19-000118-index.html"
+          }
+        },
+        "revenue_usd_m": 38260.0,
+        "period_start": "2016-10-02",
+        "period_end": "2017-09-30",
+        "net_income_parent_usd_m": 1774.0,
+        "operating_income_usd_m": 2921.0,
+        "cash_from_operations_usd_m": 2599.0,
+        "ppe_cash_capex_usd_m": 1069.0,
+        "diluted_eps_usd": 4.79,
+        "cfo_less_ppe_capex_usd_m": 1530.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2018,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 40052000000,
+            "start": "2017-10-01",
+            "end": "2018-09-29",
+            "filed": "2020-11-16",
+            "accession": "0000100493-20-000132",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049320000132/0000100493-20-000132-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 3024000000,
+            "start": "2017-10-01",
+            "end": "2018-09-29",
+            "filed": "2020-11-16",
+            "accession": "0000100493-20-000132",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049320000132/0000100493-20-000132-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 3032000000,
+            "start": "2017-10-01",
+            "end": "2018-09-29",
+            "filed": "2020-11-16",
+            "accession": "0000100493-20-000132",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049320000132/0000100493-20-000132-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 2963000000,
+            "start": "2017-10-01",
+            "end": "2018-09-29",
+            "filed": "2020-11-16",
+            "accession": "0000100493-20-000132",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049320000132/0000100493-20-000132-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 1200000000,
+            "start": "2017-10-01",
+            "end": "2018-09-29",
+            "filed": "2020-11-16",
+            "accession": "0000100493-20-000132",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049320000132/0000100493-20-000132-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 8.19,
+            "start": "2017-10-01",
+            "end": "2018-09-29",
+            "filed": "2020-11-16",
+            "accession": "0000100493-20-000132",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049320000132/0000100493-20-000132-index.html"
+          }
+        },
+        "revenue_usd_m": 40052.0,
+        "period_start": "2017-10-01",
+        "period_end": "2018-09-29",
+        "net_income_parent_usd_m": 3024.0,
+        "operating_income_usd_m": 3032.0,
+        "cash_from_operations_usd_m": 2963.0,
+        "ppe_cash_capex_usd_m": 1200.0,
+        "diluted_eps_usd": 8.19,
+        "cfo_less_ppe_capex_usd_m": 1763.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2019,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 42405000000,
+            "start": "2018-09-30",
+            "end": "2019-09-28",
+            "filed": "2021-11-15",
+            "accession": "0000100493-21-000122",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049321000122/0000100493-21-000122-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1980000000,
+            "start": "2018-09-30",
+            "end": "2019-09-28",
+            "filed": "2021-11-15",
+            "accession": "0000100493-21-000122",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049321000122/0000100493-21-000122-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 2770000000,
+            "start": "2018-09-30",
+            "end": "2019-09-28",
+            "filed": "2021-11-15",
+            "accession": "0000100493-21-000122",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049321000122/0000100493-21-000122-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 2513000000,
+            "start": "2018-09-30",
+            "end": "2019-09-28",
+            "filed": "2021-11-15",
+            "accession": "0000100493-21-000122",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049321000122/0000100493-21-000122-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 1259000000,
+            "start": "2018-09-30",
+            "end": "2019-09-28",
+            "filed": "2021-11-15",
+            "accession": "0000100493-21-000122",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049321000122/0000100493-21-000122-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 5.4,
+            "start": "2018-09-30",
+            "end": "2019-09-28",
+            "filed": "2021-11-15",
+            "accession": "0000100493-21-000122",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049321000122/0000100493-21-000122-index.html"
+          }
+        },
+        "revenue_usd_m": 42405.0,
+        "period_start": "2018-09-30",
+        "period_end": "2019-09-28",
+        "net_income_parent_usd_m": 1980.0,
+        "operating_income_usd_m": 2770.0,
+        "cash_from_operations_usd_m": 2513.0,
+        "ppe_cash_capex_usd_m": 1259.0,
+        "diluted_eps_usd": 5.4,
+        "cfo_less_ppe_capex_usd_m": 1254.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2020,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 43185000000,
+            "start": "2019-09-29",
+            "end": "2020-10-03",
+            "filed": "2022-11-14",
+            "accession": "0000100493-22-000097",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049322000097/0000100493-22-000097-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 2061000000,
+            "start": "2019-09-29",
+            "end": "2020-10-03",
+            "filed": "2022-11-14",
+            "accession": "0000100493-22-000097",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049322000097/0000100493-22-000097-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 3008000000,
+            "start": "2019-09-29",
+            "end": "2020-10-03",
+            "filed": "2022-11-14",
+            "accession": "0000100493-22-000097",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049322000097/0000100493-22-000097-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 3874000000,
+            "start": "2019-09-29",
+            "end": "2020-10-03",
+            "filed": "2022-11-14",
+            "accession": "0000100493-22-000097",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049322000097/0000100493-22-000097-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 1199000000,
+            "start": "2019-09-29",
+            "end": "2020-10-03",
+            "filed": "2022-11-14",
+            "accession": "0000100493-22-000097",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049322000097/0000100493-22-000097-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 5.64,
+            "start": "2019-09-29",
+            "end": "2020-10-03",
+            "filed": "2022-11-14",
+            "accession": "0000100493-22-000097",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049322000097/0000100493-22-000097-index.html"
+          }
+        },
+        "revenue_usd_m": 43185.0,
+        "period_start": "2019-09-29",
+        "period_end": "2020-10-03",
+        "net_income_parent_usd_m": 2061.0,
+        "operating_income_usd_m": 3008.0,
+        "cash_from_operations_usd_m": 3874.0,
+        "ppe_cash_capex_usd_m": 1199.0,
+        "diluted_eps_usd": 5.64,
+        "cfo_less_ppe_capex_usd_m": 2675.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2021,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 47049000000,
+            "start": "2020-10-04",
+            "end": "2021-10-02",
+            "filed": "2023-11-13",
+            "accession": "0000100493-23-000105",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/0000100493-23-000105-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 3047000000,
+            "start": "2020-10-04",
+            "end": "2021-10-02",
+            "filed": "2023-11-13",
+            "accession": "0000100493-23-000105",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/0000100493-23-000105-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 4396000000,
+            "start": "2020-10-04",
+            "end": "2021-10-02",
+            "filed": "2023-11-13",
+            "accession": "0000100493-23-000105",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/0000100493-23-000105-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 3840000000,
+            "start": "2020-10-04",
+            "end": "2021-10-02",
+            "filed": "2023-11-13",
+            "accession": "0000100493-23-000105",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/0000100493-23-000105-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 1209000000,
+            "start": "2020-10-04",
+            "end": "2021-10-02",
+            "filed": "2023-11-13",
+            "accession": "0000100493-23-000105",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/0000100493-23-000105-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 8.34,
+            "start": "2020-10-04",
+            "end": "2021-10-02",
+            "filed": "2023-11-13",
+            "accession": "0000100493-23-000105",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049323000105/0000100493-23-000105-index.html"
+          }
+        },
+        "revenue_usd_m": 47049.0,
+        "period_start": "2020-10-04",
+        "period_end": "2021-10-02",
+        "net_income_parent_usd_m": 3047.0,
+        "operating_income_usd_m": 4396.0,
+        "cash_from_operations_usd_m": 3840.0,
+        "ppe_cash_capex_usd_m": 1209.0,
+        "diluted_eps_usd": 8.34,
+        "cfo_less_ppe_capex_usd_m": 2631.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2022,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 53282000000,
+            "start": "2021-10-03",
+            "end": "2022-10-01",
+            "filed": "2024-11-12",
+            "accession": "0000100493-24-000119",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049324000119/0000100493-24-000119-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 3238000000,
+            "start": "2021-10-03",
+            "end": "2022-10-01",
+            "filed": "2024-11-12",
+            "accession": "0000100493-24-000119",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049324000119/0000100493-24-000119-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 4410000000,
+            "start": "2021-10-03",
+            "end": "2022-10-01",
+            "filed": "2024-11-12",
+            "accession": "0000100493-24-000119",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049324000119/0000100493-24-000119-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 2687000000,
+            "start": "2021-10-03",
+            "end": "2022-10-01",
+            "filed": "2024-11-12",
+            "accession": "0000100493-24-000119",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049324000119/0000100493-24-000119-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 1887000000,
+            "start": "2021-10-03",
+            "end": "2022-10-01",
+            "filed": "2024-11-12",
+            "accession": "0000100493-24-000119",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049324000119/0000100493-24-000119-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 8.92,
+            "start": "2021-10-03",
+            "end": "2022-10-01",
+            "filed": "2024-11-12",
+            "accession": "0000100493-24-000119",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049324000119/0000100493-24-000119-index.html"
+          }
+        },
+        "revenue_usd_m": 53282.0,
+        "period_start": "2021-10-03",
+        "period_end": "2022-10-01",
+        "net_income_parent_usd_m": 3238.0,
+        "operating_income_usd_m": 4410.0,
+        "cash_from_operations_usd_m": 2687.0,
+        "ppe_cash_capex_usd_m": 1887.0,
+        "diluted_eps_usd": 8.92,
+        "cfo_less_ppe_capex_usd_m": 800.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2023,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 52881000000,
+            "start": "2022-10-02",
+            "end": "2023-09-30",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": -648000000,
+            "start": "2022-10-02",
+            "end": "2023-09-30",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": -395000000,
+            "start": "2022-10-02",
+            "end": "2023-09-30",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 1752000000,
+            "start": "2022-10-02",
+            "end": "2023-09-30",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 1939000000,
+            "start": "2022-10-02",
+            "end": "2023-09-30",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": -1.87,
+            "start": "2022-10-02",
+            "end": "2023-09-30",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          }
+        },
+        "revenue_usd_m": 52881.0,
+        "period_start": "2022-10-02",
+        "period_end": "2023-09-30",
+        "net_income_parent_usd_m": -648.0,
+        "operating_income_usd_m": -395.0,
+        "cash_from_operations_usd_m": 1752.0,
+        "ppe_cash_capex_usd_m": 1939.0,
+        "diluted_eps_usd": -1.87,
+        "cfo_less_ppe_capex_usd_m": -187.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2024,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 53309000000,
+            "start": "2023-10-01",
+            "end": "2024-09-28",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 800000000,
+            "start": "2023-10-01",
+            "end": "2024-09-28",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1409000000,
+            "start": "2023-10-01",
+            "end": "2024-09-28",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 2590000000,
+            "start": "2023-10-01",
+            "end": "2024-09-28",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 1132000000,
+            "start": "2023-10-01",
+            "end": "2024-09-28",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 2.25,
+            "start": "2023-10-01",
+            "end": "2024-09-28",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          }
+        },
+        "revenue_usd_m": 53309.0,
+        "period_start": "2023-10-01",
+        "period_end": "2024-09-28",
+        "net_income_parent_usd_m": 800.0,
+        "operating_income_usd_m": 1409.0,
+        "cash_from_operations_usd_m": 2590.0,
+        "ppe_cash_capex_usd_m": 1132.0,
+        "diluted_eps_usd": 2.25,
+        "cfo_less_ppe_capex_usd_m": 1458.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      },
+      {
+        "fiscal_year": 2025,
+        "company": "tsn",
+        "scope": "consolidated group; not pure hog farming",
+        "source_id": "TSN_FACTS",
+        "observations": {
+          "revenue_usd_m": {
+            "tag": "us-gaap:Revenues",
+            "unit": "USD",
+            "raw_value": 54441000000,
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "net_income_parent_usd_m": {
+            "tag": "us-gaap:NetIncomeLoss",
+            "unit": "USD",
+            "raw_value": 474000000,
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "operating_income_usd_m": {
+            "tag": "us-gaap:OperatingIncomeLoss",
+            "unit": "USD",
+            "raw_value": 1098000000,
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "cash_from_operations_usd_m": {
+            "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "unit": "USD",
+            "raw_value": 2155000000,
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "ppe_cash_capex_usd_m": {
+            "tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "unit": "USD",
+            "raw_value": 978000000,
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          },
+          "diluted_eps_usd": {
+            "tag": "us-gaap:EarningsPerShareDiluted",
+            "unit": "USD/shares",
+            "raw_value": 1.33,
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "filed": "2025-11-10",
+            "accession": "0000100493-25-000095",
+            "filing_index_url": "https://www.sec.gov/Archives/edgar/data/100493/000010049325000095/0000100493-25-000095-index.html"
+          }
+        },
+        "revenue_usd_m": 54441.0,
+        "period_start": "2024-09-29",
+        "period_end": "2025-09-27",
+        "net_income_parent_usd_m": 474.0,
+        "operating_income_usd_m": 1098.0,
+        "cash_from_operations_usd_m": 2155.0,
+        "ppe_cash_capex_usd_m": 978.0,
+        "diluted_eps_usd": 1.33,
+        "cfo_less_ppe_capex_usd_m": 1177.0,
+        "historical_stock_price": null,
+        "historical_pe": null,
+        "market_history_status": "No matched original share-price/share-count time series collected; no PE inferred from public float value or TSR."
+      }
+    ]
+  },
+  "segments": [
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2015,
+      "reported_sales_usd_m": 1332,
+      "operating_income_gaap_usd_m": 116,
+      "capital_expenditures_usd_m": 40,
+      "depreciation_amortization_usd_m": 44,
+      "segment_assets_usd_m": 858,
+      "source_id": "SEB_AR2016",
+      "operating_margin_pct": 8.70870870870871,
+      "scope": "Pork including liquid fuels, historical reporting",
+      "sales_basis": "external customer sales, historical presentation",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2016,
+      "reported_sales_usd_m": 1443,
+      "operating_income_gaap_usd_m": 175,
+      "capital_expenditures_usd_m": 69,
+      "depreciation_amortization_usd_m": 56,
+      "segment_assets_usd_m": 1157,
+      "source_id": "SEB_AR2016",
+      "operating_margin_pct": 12.127512127512128,
+      "scope": "Pork including liquid fuels, historical reporting",
+      "sales_basis": "external customer sales, historical presentation",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2017,
+      "reported_sales_usd_m": 1609,
+      "operating_income_gaap_usd_m": 193,
+      "capital_expenditures_usd_m": 100,
+      "depreciation_amortization_usd_m": 69,
+      "segment_assets_usd_m": null,
+      "source_id": "SEB_AR2019",
+      "operating_margin_pct": 11.99502796768179,
+      "scope": "Pork including liquid fuels, historical reporting",
+      "sales_basis": "external customer sales, historical presentation",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2018,
+      "reported_sales_usd_m": 1774,
+      "operating_income_gaap_usd_m": 117,
+      "capital_expenditures_usd_m": 86,
+      "depreciation_amortization_usd_m": 73,
+      "segment_assets_usd_m": 1304,
+      "source_id": "SEB_AR2019",
+      "operating_margin_pct": 6.595264937993235,
+      "scope": "Pork including liquid fuels, historical reporting",
+      "sales_basis": "external customer sales, historical presentation",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2019,
+      "reported_sales_usd_m": 1851,
+      "operating_income_gaap_usd_m": 54,
+      "capital_expenditures_usd_m": 164,
+      "depreciation_amortization_usd_m": 75,
+      "segment_assets_usd_m": 1802,
+      "source_id": "SEB_AR2019",
+      "operating_margin_pct": 2.9173419773095626,
+      "scope": "Pork including liquid fuels, historical reporting",
+      "sales_basis": "external customer sales, historical presentation",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2020,
+      "reported_sales_usd_m": 1941,
+      "operating_income_gaap_usd_m": 131,
+      "capital_expenditures_usd_m": 207,
+      "depreciation_amortization_usd_m": null,
+      "segment_assets_usd_m": null,
+      "source_id": "SEB_10K2022",
+      "operating_margin_pct": 6.749098402885111,
+      "scope": "Pork including liquid fuels, historical reporting",
+      "sales_basis": "external customer sales, historical presentation",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2021,
+      "reported_sales_usd_m": 2481,
+      "operating_income_gaap_usd_m": 227,
+      "capital_expenditures_usd_m": 343,
+      "depreciation_amortization_usd_m": null,
+      "segment_assets_usd_m": 2265,
+      "source_id": "SEB_10K2022",
+      "operating_margin_pct": 9.149536477226924,
+      "scope": "Pork including liquid fuels, historical reporting",
+      "sales_basis": "external customer sales, historical presentation",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2022,
+      "reported_sales_usd_m": 1998,
+      "operating_income_gaap_usd_m": -60,
+      "capital_expenditures_usd_m": 315,
+      "depreciation_amortization_usd_m": 109,
+      "segment_assets_usd_m": 1932,
+      "source_id": "SEB_10K2024",
+      "operating_margin_pct": -3.003003003003003,
+      "scope": "Pork excluding Liquid Fuels, 2024 presentation recast",
+      "sales_basis": "total segment sales including intersegment",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2023,
+      "reported_sales_usd_m": 1863,
+      "operating_income_gaap_usd_m": -455,
+      "capital_expenditures_usd_m": 361,
+      "depreciation_amortization_usd_m": 122,
+      "segment_assets_usd_m": 2075,
+      "source_id": "SEB_10K2025",
+      "operating_margin_pct": -24.422973698336016,
+      "scope": "Pork excluding Liquid Fuels, 2024 presentation recast",
+      "sales_basis": "total segment sales including intersegment",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2024,
+      "reported_sales_usd_m": 2093,
+      "operating_income_gaap_usd_m": 20,
+      "capital_expenditures_usd_m": 299,
+      "depreciation_amortization_usd_m": 148,
+      "segment_assets_usd_m": 2111,
+      "source_id": "SEB_10K2025",
+      "operating_margin_pct": 0.9555661729574773,
+      "scope": "Pork excluding Liquid Fuels, 2024 presentation recast",
+      "sales_basis": "total segment sales including intersegment",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Seaboard",
+      "segment": "Pork",
+      "fiscal_year": 2025,
+      "reported_sales_usd_m": 2058,
+      "operating_income_gaap_usd_m": 67,
+      "capital_expenditures_usd_m": 134,
+      "depreciation_amortization_usd_m": 157,
+      "segment_assets_usd_m": 2033,
+      "source_id": "SEB_10K2025",
+      "operating_margin_pct": 3.2555879494655007,
+      "scope": "Pork excluding Liquid Fuels, 2024 presentation recast",
+      "sales_basis": "total segment sales including intersegment",
+      "can_pool_for_same_scope_decade_average": false,
+      "notes": "Operating income excludes separately reported equity-method affiliate earnings. Segment is integrated farming/processing; not parent equity earnings."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2015,
+      "reported_sales_usd_m": 5262,
+      "operating_income_gaap_usd_m": 380,
+      "capital_expenditures_usd_m": 50,
+      "depreciation_amortization_usd_m": 31,
+      "segment_assets_usd_m": 927,
+      "source_id": "TSN_10K2016",
+      "operating_margin_pct": 7.221588749524895,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2016,
+      "reported_sales_usd_m": 4909,
+      "operating_income_gaap_usd_m": 528,
+      "capital_expenditures_usd_m": 68,
+      "depreciation_amortization_usd_m": 33,
+      "segment_assets_usd_m": 1039,
+      "source_id": "TSN_10K2016",
+      "operating_margin_pct": 10.755754736198819,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2017,
+      "reported_sales_usd_m": 5238,
+      "operating_income_gaap_usd_m": 645,
+      "capital_expenditures_usd_m": 101,
+      "depreciation_amortization_usd_m": 36,
+      "segment_assets_usd_m": 1132,
+      "source_id": "TSN_10K2019",
+      "operating_margin_pct": 12.313860252004583,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2018,
+      "reported_sales_usd_m": 4879,
+      "operating_income_gaap_usd_m": 361,
+      "capital_expenditures_usd_m": 150,
+      "depreciation_amortization_usd_m": 42,
+      "segment_assets_usd_m": 1265,
+      "source_id": "TSN_10K2019",
+      "operating_margin_pct": 7.399057183849149,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2019,
+      "reported_sales_usd_m": 4932,
+      "operating_income_gaap_usd_m": 263,
+      "capital_expenditures_usd_m": 128,
+      "depreciation_amortization_usd_m": 47,
+      "segment_assets_usd_m": 1372,
+      "source_id": "TSN_10K2019",
+      "operating_margin_pct": 5.332522303325223,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2020,
+      "reported_sales_usd_m": 5128,
+      "operating_income_gaap_usd_m": 565,
+      "capital_expenditures_usd_m": 117,
+      "depreciation_amortization_usd_m": 56,
+      "segment_assets_usd_m": 1516,
+      "source_id": "TSN_10K2022",
+      "operating_margin_pct": 11.017940717628704,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2021,
+      "reported_sales_usd_m": 6277,
+      "operating_income_gaap_usd_m": 328,
+      "capital_expenditures_usd_m": 100,
+      "depreciation_amortization_usd_m": 61,
+      "segment_assets_usd_m": 1583,
+      "source_id": "TSN_10K2022",
+      "operating_margin_pct": 5.22542615899315,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2022,
+      "reported_sales_usd_m": 6414,
+      "operating_income_gaap_usd_m": 193,
+      "capital_expenditures_usd_m": 82,
+      "depreciation_amortization_usd_m": 70,
+      "segment_assets_usd_m": 1697,
+      "source_id": "TSN_10K2022",
+      "operating_margin_pct": 3.0090427190520734,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2023,
+      "reported_sales_usd_m": 5768,
+      "operating_income_gaap_usd_m": -139,
+      "capital_expenditures_usd_m": 62,
+      "depreciation_amortization_usd_m": 68,
+      "segment_assets_usd_m": 1696,
+      "source_id": "TSN_10K2025",
+      "operating_margin_pct": -2.409847434119279,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE. Includes $11m restructuring charges; does not automatically represent normal profit."
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2024,
+      "reported_sales_usd_m": 5903,
+      "operating_income_gaap_usd_m": -40,
+      "capital_expenditures_usd_m": 41,
+      "depreciation_amortization_usd_m": 125,
+      "segment_assets_usd_m": 1570,
+      "source_id": "TSN_10K2025",
+      "operating_margin_pct": -0.677621548365238,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE. GAAP differs from company-adjusted operating profit: 2024 includes $73m legal, $108m plant closure, $1m restructuring; 2025 includes $380m legal accruals.",
+      "operating_income_adjusted_usd_m": 142,
+      "adjusted_source_id": "TSN_EARN2025"
+    },
+    {
+      "company": "Tyson",
+      "segment": "Pork",
+      "fiscal_year": 2025,
+      "reported_sales_usd_m": 5781,
+      "operating_income_gaap_usd_m": -199,
+      "capital_expenditures_usd_m": 66,
+      "depreciation_amortization_usd_m": 63,
+      "segment_assets_usd_m": 1532,
+      "source_id": "TSN_10K2025",
+      "operating_margin_pct": -3.4423110188548693,
+      "scope": "Hog slaughter/processing; majority hogs purchased, very limited own market hogs",
+      "sales_basis": "segment sales including intersegment; legal accruals reduce revenue in some years",
+      "notes": "Different fiscal year ends; consolidated share price cannot be divided by segment operating income to obtain PE. GAAP differs from company-adjusted operating profit: 2024 includes $73m legal, $108m plant closure, $1m restructuring; 2025 includes $380m legal accruals.",
+      "operating_income_adjusted_usd_m": 181,
+      "adjusted_source_id": "TSN_EARN2025"
+    }
+  ],
+  "seaboard_scope_bridge_2022": {
+    "company": "Seaboard",
+    "fiscal_year": 2022,
+    "old_scope_including_liquid_fuels": {
+      "sales_usd_m": 2605,
+      "operating_income_usd_m": -96,
+      "capex_usd_m": 315,
+      "source_id": "SEB_10K2022"
+    },
+    "recast_pork_only": {
+      "sales_usd_m": 1998,
+      "operating_income_usd_m": -60,
+      "capex_usd_m": 315,
+      "source_id": "SEB_10K2024"
+    },
+    "liquid_fuels_recast": {
+      "sales_usd_m": 607,
+      "operating_income_usd_m": -36,
+      "source_id": "SEB_10K2024"
+    }
+  },
+  "smithfield": {
+    "annual": [
+      {
+        "fiscal_year": 2021,
+        "period_end": "2022-01-02",
+        "scope": "continuing US/Mexico operations, European carve-out restated; group business mix changes",
+        "sales_usd_m": 15009,
+        "operating_income_gaap_usd_m": 521,
+        "net_income_continuing_parent_usd_m": 388,
+        "cfo_continuing_usd_m": 755,
+        "ppe_capex_usd_m": 207,
+        "net_breeding_stock_investment_usd_m": 6,
+        "cfo_less_capex_and_breeding_usd_m": 542,
+        "source_id": "SMF_IPO",
+        "rounding_note": "Rounded financial statement amounts can differ by $1m from recomputation; CFO minus capex is not FCFE."
+      },
+      {
+        "fiscal_year": 2022,
+        "period_end": "2023-01-01",
+        "scope": "continuing US/Mexico operations, European carve-out restated; group business mix changes",
+        "sales_usd_m": 16199,
+        "operating_income_gaap_usd_m": 1117,
+        "net_income_continuing_parent_usd_m": 800,
+        "cfo_continuing_usd_m": 521,
+        "ppe_capex_usd_m": 338,
+        "net_breeding_stock_investment_usd_m": 1,
+        "cfo_less_capex_and_breeding_usd_m": 182,
+        "source_id": "SMF_10K2024",
+        "rounding_note": "Rounded financial statement amounts can differ by $1m from recomputation; CFO minus capex is not FCFE."
+      },
+      {
+        "fiscal_year": 2023,
+        "period_end": "2023-12-31",
+        "scope": "continuing US/Mexico operations, European carve-out restated; group business mix changes",
+        "sales_usd_m": 14640,
+        "operating_income_gaap_usd_m": -56,
+        "net_income_continuing_parent_usd_m": -138,
+        "cfo_continuing_usd_m": 688,
+        "ppe_capex_usd_m": 353,
+        "net_breeding_stock_investment_usd_m": 48,
+        "cfo_less_capex_and_breeding_usd_m": 287,
+        "source_id": "SMF_10K2025",
+        "rounding_note": "Rounded financial statement amounts can differ by $1m from recomputation; CFO minus capex is not FCFE."
+      },
+      {
+        "fiscal_year": 2024,
+        "period_end": "2024-12-29",
+        "scope": "continuing US/Mexico operations, European carve-out restated; group business mix changes",
+        "sales_usd_m": 14142,
+        "operating_income_gaap_usd_m": 1118,
+        "net_income_continuing_parent_usd_m": 783,
+        "cfo_continuing_usd_m": 916,
+        "ppe_capex_usd_m": 350,
+        "net_breeding_stock_investment_usd_m": 43,
+        "cfo_less_capex_and_breeding_usd_m": 523,
+        "source_id": "SMF_10K2025",
+        "rounding_note": "Rounded financial statement amounts can differ by $1m from recomputation; CFO minus capex is not FCFE."
+      },
+      {
+        "fiscal_year": 2025,
+        "period_end": "2025-12-28",
+        "scope": "continuing US/Mexico operations, European carve-out restated; group business mix changes",
+        "sales_usd_m": 15531,
+        "operating_income_gaap_usd_m": 1292,
+        "net_income_continuing_parent_usd_m": 987,
+        "cfo_continuing_usd_m": 1059,
+        "ppe_capex_usd_m": 341,
+        "net_breeding_stock_investment_usd_m": 14,
+        "cfo_less_capex_and_breeding_usd_m": 704,
+        "source_id": "SMF_10K2025",
+        "rounding_note": "Rounded financial statement amounts can differ by $1m from recomputation; CFO minus capex is not FCFE."
+      }
+    ],
+    "segments": [
+      {
+        "fiscal_year": 2022,
+        "segment": "Packaged Meats",
+        "sales_including_intersegment_usd_m": 9262,
+        "operating_profit_gaap_usd_m": 1047,
+        "capex_usd_m": 99,
+        "da_usd_m": 124,
+        "source_id": "SMF_10K2024",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2022,
+        "segment": "Fresh Pork",
+        "sales_including_intersegment_usd_m": 9190,
+        "operating_profit_gaap_usd_m": 30,
+        "capex_usd_m": 148,
+        "da_usd_m": 111,
+        "source_id": "SMF_10K2024",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2022,
+        "segment": "Hog Production",
+        "sales_including_intersegment_usd_m": 4456,
+        "operating_profit_gaap_usd_m": -133,
+        "capex_usd_m": 79,
+        "da_usd_m": 74,
+        "source_id": "SMF_10K2024",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2023,
+        "segment": "Packaged Meats",
+        "sales_including_intersegment_usd_m": 8280,
+        "operating_profit_gaap_usd_m": 1066,
+        "capex_usd_m": 154,
+        "da_usd_m": 120,
+        "source_id": "SMF_10K2025",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2023,
+        "segment": "Fresh Pork",
+        "sales_including_intersegment_usd_m": 7832,
+        "operating_profit_gaap_usd_m": 117,
+        "capex_usd_m": 123,
+        "da_usd_m": 109,
+        "source_id": "SMF_10K2025",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2023,
+        "segment": "Hog Production",
+        "sales_including_intersegment_usd_m": 3317,
+        "operating_profit_gaap_usd_m": -756,
+        "capex_usd_m": 40,
+        "da_usd_m": 72,
+        "source_id": "SMF_10K2025",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2024,
+        "segment": "Packaged Meats",
+        "sales_including_intersegment_usd_m": 8319,
+        "operating_profit_gaap_usd_m": 1168,
+        "capex_usd_m": 144,
+        "da_usd_m": 123,
+        "source_id": "SMF_10K2025",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2024,
+        "segment": "Fresh Pork",
+        "sales_including_intersegment_usd_m": 7873,
+        "operating_profit_gaap_usd_m": 266,
+        "capex_usd_m": 106,
+        "da_usd_m": 113,
+        "source_id": "SMF_10K2025",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2024,
+        "segment": "Hog Production",
+        "sales_including_intersegment_usd_m": 3002,
+        "operating_profit_gaap_usd_m": -144,
+        "capex_usd_m": 33,
+        "da_usd_m": 61,
+        "source_id": "SMF_10K2025",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2025,
+        "segment": "Packaged Meats",
+        "sales_including_intersegment_usd_m": 8757,
+        "operating_profit_gaap_usd_m": 1094,
+        "capex_usd_m": 161,
+        "da_usd_m": 133,
+        "source_id": "SMF_10K2025",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2025,
+        "segment": "Fresh Pork",
+        "sales_including_intersegment_usd_m": 8344,
+        "operating_profit_gaap_usd_m": 214,
+        "capex_usd_m": 114,
+        "da_usd_m": 109,
+        "source_id": "SMF_10K2025",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      },
+      {
+        "fiscal_year": 2025,
+        "segment": "Hog Production",
+        "sales_including_intersegment_usd_m": 3393,
+        "operating_profit_gaap_usd_m": 176,
+        "capex_usd_m": 49,
+        "da_usd_m": 57,
+        "source_id": "SMF_10K2025",
+        "note": "Corporate and unallocated costs remain outside segments; segment totals do not equal consolidated earnings before eliminations."
+      }
+    ],
+    "hogs_produced_m": [
+      {
+        "year": 2019,
+        "value": 17.6,
+        "source_id": "SMF_IPO"
+      },
+      {
+        "year": 2023,
+        "value": 15.8,
+        "source_id": "SMF_IPO"
+      },
+      {
+        "year": 2024,
+        "value": 14.6,
+        "source_id": "SMF_10K2024"
+      },
+      {
+        "year": 2025,
+        "value": 11.1,
+        "source_id": "SMF_10K2025"
+      }
+    ],
+    "2026H1": {
+      "period_end": "2026-06-28",
+      "net_income_parent_usd_m": 484,
+      "cfo_usd_m": 204,
+      "capex_usd_m": 165,
+      "net_breeding_stock_investment_usd_m": 15,
+      "hog_production_operating_profit_usd_m": 68,
+      "packaged_meats_operating_profit_usd_m": 540,
+      "fresh_pork_operating_profit_usd_m": 92,
+      "source_id": "SMF_10Q2026H1",
+      "annualized": false
+    },
+    "listing_history": {
+      "went_private": 2013,
+      "relisted": "2025-01-28",
+      "source_ids": [
+        "SMF_IPO",
+        "SMF_IPO_PRICE"
+      ],
+      "2015_2024_public_equity_pe": "Not available: Smithfield was privately held. WH Group market PE is not Smithfield standalone PE."
+    },
+    "coverage_gap": "No same-scope FY2015–2020 annual segment series reconstructed; never splice old Europe-inclusive figures with current restated business."
+  },
+  "latest_2026_ytd": [
+    {
+      "company": "hormel",
+      "period_type": "2026 latest published fiscal YTD as of cut-off; not annualized",
+      "source_id": "HORMEL_FACTS",
+      "net_income_parent_usd_m": {
+        "value": 398.848,
+        "start": "2025-10-27",
+        "end": "2026-07-26",
+        "filed": "2026-08-27",
+        "accession": "0000048465-26-000055",
+        "tag": "NetIncomeLoss"
+      },
+      "cash_from_operations_usd_m": {
+        "value": 768.752,
+        "start": "2025-10-27",
+        "end": "2026-07-26",
+        "filed": "2026-08-27",
+        "accession": "0000048465-26-000055",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "ppe_cash_capex_usd_m": {
+        "value": 219.331,
+        "start": "2025-10-27",
+        "end": "2026-07-26",
+        "filed": "2026-08-27",
+        "accession": "0000048465-26-000055",
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+      }
+    },
+    {
+      "company": "seb",
+      "period_type": "2026 latest published fiscal YTD as of cut-off; not annualized",
+      "source_id": "SEB_FACTS",
+      "net_income_parent_usd_m": {
+        "value": 272.0,
+        "start": "2026-01-01",
+        "end": "2026-07-04",
+        "filed": "2026-08-04",
+        "accession": "0000088121-26-000054",
+        "tag": "NetIncomeLossAvailableToCommonStockholdersBasic"
+      },
+      "cash_from_operations_usd_m": {
+        "value": -30.0,
+        "start": "2026-01-01",
+        "end": "2026-07-04",
+        "filed": "2026-08-04",
+        "accession": "0000088121-26-000054",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "ppe_cash_capex_usd_m": {
+        "value": 198.0,
+        "start": "2026-01-01",
+        "end": "2026-07-04",
+        "filed": "2026-08-04",
+        "accession": "0000088121-26-000054",
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+      }
+    },
+    {
+      "company": "tsn",
+      "period_type": "2026 latest published fiscal YTD as of cut-off; not annualized",
+      "source_id": "TSN_FACTS",
+      "net_income_parent_usd_m": {
+        "value": 527.0,
+        "start": "2025-09-28",
+        "end": "2026-06-27",
+        "filed": "2026-08-03",
+        "accession": "0000100493-26-000058",
+        "tag": "NetIncomeLoss"
+      },
+      "cash_from_operations_usd_m": {
+        "value": 1469.0,
+        "start": "2025-09-28",
+        "end": "2026-06-27",
+        "filed": "2026-08-03",
+        "accession": "0000100493-26-000058",
+        "tag": "NetCashProvidedByUsedInOperatingActivities"
+      },
+      "ppe_cash_capex_usd_m": {
+        "value": 556.0,
+        "start": "2025-09-28",
+        "end": "2026-06-27",
+        "filed": "2026-08-03",
+        "accession": "0000100493-26-000058",
+        "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+      }
+    }
+  ],
+  "usda_farrow_finish": [
+    {
+      "year": 2015,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2015"
+      ],
+      "gross_value": 63.38,
+      "operating_cost": 44.24,
+      "overhead": 23.91,
+      "total_economic_cost": 68.15,
+      "return_above_operating_cost": 19.14,
+      "return_above_all_costs": -4.77,
+      "feed_cost": 36.13
+    },
+    {
+      "year": 2016,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2015"
+      ],
+      "gross_value": 57.03,
+      "operating_cost": 42.42,
+      "overhead": 24.13,
+      "total_economic_cost": 66.55,
+      "return_above_operating_cost": 14.61,
+      "return_above_all_costs": -9.52,
+      "feed_cost": 34.44
+    },
+    {
+      "year": 2017,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2015"
+      ],
+      "gross_value": 60.72,
+      "operating_cost": 40.62,
+      "overhead": 24.76,
+      "total_economic_cost": 65.38,
+      "return_above_operating_cost": 20.1,
+      "return_above_all_costs": -4.66,
+      "feed_cost": 32.3
+    },
+    {
+      "year": 2018,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2015"
+      ],
+      "gross_value": 57.23,
+      "operating_cost": 41.96,
+      "overhead": 25.6,
+      "total_economic_cost": 67.56,
+      "return_above_operating_cost": 15.27,
+      "return_above_all_costs": -10.33,
+      "feed_cost": 33.22
+    },
+    {
+      "year": 2019,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2015"
+      ],
+      "gross_value": 58.74,
+      "operating_cost": 43.15,
+      "overhead": 26.29,
+      "total_economic_cost": 69.44,
+      "return_above_operating_cost": 15.59,
+      "return_above_all_costs": -10.7,
+      "feed_cost": 34.22
+    },
+    {
+      "year": 2020,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2020"
+      ],
+      "gross_value": 51.48,
+      "operating_cost": 44.18,
+      "overhead": 19.55,
+      "total_economic_cost": 63.73,
+      "return_above_operating_cost": 7.3,
+      "return_above_all_costs": -12.25,
+      "feed_cost": 36.67
+    },
+    {
+      "year": 2021,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2020"
+      ],
+      "gross_value": 73.91,
+      "operating_cost": 52.77,
+      "overhead": 21.9,
+      "total_economic_cost": 74.67,
+      "return_above_operating_cost": 21.14,
+      "return_above_all_costs": -0.76,
+      "feed_cost": 44.2
+    },
+    {
+      "year": 2022,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2020"
+      ],
+      "gross_value": 82.45,
+      "operating_cost": 60.93,
+      "overhead": 24.05,
+      "total_economic_cost": 84.98,
+      "return_above_operating_cost": 21.52,
+      "return_above_all_costs": -2.53,
+      "feed_cost": 49.88
+    },
+    {
+      "year": 2023,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2020"
+      ],
+      "gross_value": 70.65,
+      "operating_cost": 58.79,
+      "overhead": 24.84,
+      "total_economic_cost": 83.63,
+      "return_above_operating_cost": 11.86,
+      "return_above_all_costs": -12.98,
+      "feed_cost": 47.3
+    },
+    {
+      "year": 2024,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2020"
+      ],
+      "gross_value": 70.15,
+      "operating_cost": 52.95,
+      "overhead": 25.56,
+      "total_economic_cost": 78.51,
+      "return_above_operating_cost": 17.2,
+      "return_above_all_costs": -8.36,
+      "feed_cost": 41.54
+    },
+    {
+      "year": 2025,
+      "unit": "USD per hundredweight of gain; not USD per head or live selling price",
+      "source_id": "USDA_ERS_FF",
+      "survey_base": [
+        "Base survey of 2020"
+      ],
+      "gross_value": 78.2,
+      "operating_cost": 50.29,
+      "overhead": 25.99,
+      "total_economic_cost": 76.28,
+      "return_above_operating_cost": 27.91,
+      "return_above_all_costs": 1.92,
+      "feed_cost": 38.96
+    }
+  ],
+  "valuation_anchors": [
+    {
+      "event": "2025-01-27 IPO pricing",
+      "price_usd": 20,
+      "basic_post_issue_shares": 393112711,
+      "market_cap_usd_m": 7862.25422,
+      "ttm_end": "2024-09-29",
+      "ttm_continuing_parent_earnings_usd_m": 433,
+      "ttm_formula": "(581-9)+(-133-5)-(-2-(-3))",
+      "basic_equity_ttm_pe": 18.157630993071592,
+      "source_ids": [
+        "SMF_IPO",
+        "SMF_IPO_PRICE"
+      ],
+      "limitations": [
+        "This uses post-IPO basic shares and rounded reported continuing parent earnings.",
+        "Preliminary Q4 2024 results were also disclosed at IPO; the older TTM PE is not a full forward valuation.",
+        "FY2023 continuing parent loss was $138m: a positive FY2023 PE is undefined.",
+        "Options/RSUs can change fully diluted equity value."
+      ]
+    },
+    {
+      "event": "last_market_sale_2025-09-04",
+      "price_usd": 24.24,
+      "basic_shares": 393112711,
+      "market_cap_usd_m": 9529.052114639999,
+      "ttm_end": "2025-06-29",
+      "ttm_continuing_parent_ni_usd_m": 825,
+      "ttm_ni_formula": "783 + 412 - 370",
+      "ttm_adjusted_parent_ni_usd_m": 842,
+      "ttm_adjusted_ebitda_usd_m": 1562,
+      "net_debt_at_2025_06_29_usd_m": 1075,
+      "basic_equity_ttm_pe": 11.550366199563635,
+      "basic_equity_adjusted_ttm_pe": 11.317164031638953,
+      "simplified_ev_adjusted_ebitda": 6.788765758412291,
+      "source_id": "SMF_SECONDARY",
+      "limitations": [
+        "Market date is September 4; latest published financial stock/flow data end June 29.",
+        "Simplified EV=basic market cap+reported net debt; does not include a full adjustment for NCI, operating leases, pensions, unconsolidated investments or other nonoperating assets.",
+        "Both earnings and equity represent the integrated/packaged-meat group, not its hog-farming segment.",
+        "A single event is not a US-industry historical percentile."
+      ]
+    },
+    {
+      "event": "secondary_offer_2025-09-04",
+      "price_usd": 23.25,
+      "basic_shares": 393112711,
+      "market_cap_usd_m": 9139.87053075,
+      "ttm_end": "2025-06-29",
+      "ttm_continuing_parent_ni_usd_m": 825,
+      "ttm_ni_formula": "783 + 412 - 370",
+      "ttm_adjusted_parent_ni_usd_m": 842,
+      "ttm_adjusted_ebitda_usd_m": 1562,
+      "net_debt_at_2025_06_29_usd_m": 1075,
+      "basic_equity_ttm_pe": 11.078630946363637,
+      "basic_equity_adjusted_ttm_pe": 10.854953124406176,
+      "simplified_ev_adjusted_ebitda": 6.539609814820743,
+      "source_id": "SMF_SECONDARY",
+      "limitations": [
+        "Market date is September 4; latest published financial stock/flow data end June 29.",
+        "Simplified EV=basic market cap+reported net debt; does not include a full adjustment for NCI, operating leases, pensions, unconsolidated investments or other nonoperating assets.",
+        "Both earnings and equity represent the integrated/packaged-meat group, not its hog-farming segment.",
+        "A single event is not a US-industry historical percentile."
+      ]
+    }
+  ],
+  "scenario_demonstrations": {
+    "status": "Method demonstration only; not calibrated forecasts, not approved application defaults, no probability weights.",
+    "inherited_scale_assumptions": {
+      "annual_sales_head": 80000000.0,
+      "weight_kg": 120,
+      "shares": 5772996144.0,
+      "profit_realization_coefficient": 0.95,
+      "cash_conversion_coefficient": 0.8
+    },
+    "important_limits": [
+      "To isolate duration, arithmetic uses the earlier constant alpha/k shorthand, including negative years. Applying k=0.8 and alpha=0.95 to losses reduces cash losses and is not conservative.",
+      "The production calculator should replace that shorthand with explicit NI+D&A-capex-deltaNWC+net borrowing and handle negative cash/financing/dilution.",
+      "All three paths intentionally converge to the same terminal margin for a fair operating-path comparison; test terminal margins separately.",
+      "A positive perpetual gap is a hypothesis about retained efficiency/rent; it is not an economic hard floor."
+    ],
+    "old_perpetuities": [
+      {
+        "label": "old_low_profit_perpetuity",
+        "price": 13,
+        "cost": 12.5,
+        "ke": 0.11,
+        "value_per_share": 5.744614327883113
+      },
+      {
+        "label": "old_high_profit_perpetuity",
+        "price": 16.5,
+        "cost": 11.5,
+        "ke": 0.09,
+        "value_per_share": 70.21195289634916
+      }
+    ],
+    "old_high_low_ratio": 12.222222222222223,
+    "paths": [
+      {
+        "label": "finite_stress",
+        "year_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "price_cny_kg": [
+          12.5,
+          13,
+          14,
+          14.5,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "full_cost_cny_kg": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "margin_cny_kg": [
+          -0.5,
+          0,
+          1,
+          1.5,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "terminal_price_cny_kg": 15,
+        "terminal_cost_cny_kg": 13,
+        "terminal_g": 0,
+        "values_by_ke": {
+          "0.09": {
+            "value_per_share": 21.635110254971927,
+            "explicit_pv": 9.77179518430435,
+            "terminal_pv": 11.863315070667579,
+            "terminal_share": 0.5483362428412534
+          },
+          "0.1": {
+            "value_per_share": 18.933920807656207,
+            "explicit_pv": 9.18881178796149,
+            "terminal_pv": 9.745109019694716,
+            "terminal_share": 0.5146904921961086
+          },
+          "0.11": {
+            "value_per_share": 16.740197490865157,
+            "explicit_pv": 8.64754147956176,
+            "terminal_pv": 8.092656011303395,
+            "terminal_share": 0.4834265554943077
+          },
+          "0.12": {
+            "value_per_share": 14.926411150395824,
+            "explicit_pv": 8.144500233978516,
+            "terminal_pv": 6.781910916417308,
+            "terminal_share": 0.45435643223839933
+          }
+        }
+      },
+      {
+        "label": "conservative_recovery",
+        "year_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "price_cny_kg": [
+          14,
+          14.5,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "full_cost_cny_kg": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13,
+          13
+        ],
+        "margin_cny_kg": [
+          1,
+          1.5,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "terminal_price_cny_kg": 15,
+        "terminal_cost_cny_kg": 13,
+        "terminal_g": 0,
+        "values_by_ke": {
+          "0.09": {
+            "value_per_share": 26.393453751845335,
+            "explicit_pv": 14.530138681177757,
+            "terminal_pv": 11.863315070667579,
+            "terminal_share": 0.4494794497987266
+          },
+          "0.1": {
+            "value_per_share": 23.605142510937867,
+            "explicit_pv": 13.86003349124315,
+            "terminal_pv": 9.745109019694716,
+            "terminal_share": 0.41283838956613567
+          },
+          "0.11": {
+            "value_per_share": 21.32701473792949,
+            "explicit_pv": 13.234358726626093,
+            "terminal_pv": 8.092656011303395,
+            "terminal_share": 0.37945563927945514
+          },
+          "0.12": {
+            "value_per_share": 19.43142663225172,
+            "explicit_pv": 12.649515715834413,
+            "terminal_pv": 6.781910916417308,
+            "terminal_share": 0.3490176529375814
+          }
+        }
+      },
+      {
+        "label": "better_then_fade",
+        "year_indices": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "price_cny_kg": [
+          16.5,
+          16,
+          15.5,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "full_cost_cny_kg": [
+          11.5,
+          12,
+          12,
+          12,
+          12.2,
+          12.4,
+          12.6,
+          12.8,
+          12.9,
+          13
+        ],
+        "margin_cny_kg": [
+          5.0,
+          4,
+          3.5,
+          3,
+          2.8000000000000007,
+          2.5999999999999996,
+          2.4000000000000004,
+          2.1999999999999993,
+          2.0999999999999996,
+          2
+        ],
+        "terminal_price_cny_kg": 15,
+        "terminal_cost_cny_kg": 13,
+        "terminal_g": 0,
+        "values_by_ke": {
+          "0.09": {
+            "value_per_share": 37.62063201801264,
+            "explicit_pv": 25.757316947345068,
+            "terminal_pv": 11.863315070667579,
+            "terminal_share": 0.31534066373439607
+          },
+          "0.1": {
+            "value_per_share": 34.586256567620836,
+            "explicit_pv": 24.841147547926116,
+            "terminal_pv": 9.745109019694716,
+            "terminal_share": 0.2817624682984035
+          },
+          "0.11": {
+            "value_per_share": 32.072305361709546,
+            "explicit_pv": 23.97964935040615,
+            "terminal_pv": 8.092656011303395,
+            "terminal_share": 0.25232536046395493
+          },
+          "0.12": {
+            "value_per_share": 29.9505382857312,
+            "explicit_pv": 23.16862736931389,
+            "terminal_pv": 6.781910916417308,
+            "terminal_share": 0.22643702933540574
+          }
+        }
+      }
+    ],
+    "probabilities": null,
+    "duration_grid_years": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "terminal_margin_grid_cny_kg": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "discount_rate_grid": [
+      0.09,
+      0.1,
+      0.11,
+      0.12
+    ]
+  },
+  "coverage_limitations": [
+    "No verified decade-long matched prices and common share counts for Seaboard/Tyson/Hormel, so historical PE series are null.",
+    "Smithfield was private through 2024; no 2015–2024 public equity PE exists for that issuer.",
+    "Historical companyfacts observations use latest restatements available at the cut-off, not a point-in-time backtest data set.",
+    "Fiscal year calendars, business mix, subsidiary scope and accounting policies differ.",
+    "Observed loss frequency in selected companies and years is not an independently identified probability of a future Muyuan scenario."
+  ]
+}

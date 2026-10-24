@@ -1,0 +1,5261 @@
+{
+  "meta": {
+    "asOf": "2026-10-24",
+    "timezone": "Asia/Hong_Kong",
+    "historyDataSha256": "5597a8fded6a10a3cbfb3f44b02d7517045d7ae3462603ba54726ca6bb60e5e8",
+    "resultsPriceSha256": "a8ebc79e38ba45644440b85e74b5f0c5d77ce74387d03589ff011ca91c78a3d4",
+    "scriptSha256": "78f3d9fdf1de9e9d51358f26e83fa6fc828e8a45865d6f3750185b71f2b36046",
+    "fontPath": "/workspace/scratch/cb736cd573f0/pig_cycle_history/NotoSansCJKsc-Regular.otf",
+    "dpi": 200,
+    "reproduction": "python academic_work/make_figures.py --data-root /path/to/workspace"
+  },
+  "figure1": {
+    "files": [
+      "/workspace/scratch/cb736cd573f0/outputs/pig-cycle-academic-20261024/figures/figure1_history_lag10.png",
+      "/workspace/scratch/cb736cd573f0/outputs/pig-cycle-academic-20261024/figures/figure1_history_lag10.pdf"
+    ],
+    "caption": "图1　全国活猪价格与十个月前能繁母猪存栏的历史对齐（2021年10月—2026年9月）。上图用同一价格轴分别绘制农业农村部（MARA）集贸生猪价格和国家发展改革委（NDRC）全国生猪出场价格，未把两个调查序列拼接为一条价格线。MARA共60个月，其中18个月为作者将完整官方周观察按实际采集日所属月份取算术平均，以空心圆标出；其他月份保留原月度数据口径。NDRC共59个月，2026年9月缺失。下图横轴仍为价格月份t，纵轴为原始能繁观察S[t−10]（万头），故需要2020年12月至2025年11月的母猪数据；现有数据中可用51个月，9个月保持缺失，灰带标示缺少原始观察的月份，不代表实际存栏为零。未对缺失值插值，未混入引擎预测路径，未使用倒置母猪轴。两套价格口径及生产率、体重、需求和统计制度均可能变化，该图只是日期对齐展示，不能据此识别因果弹性或证明十个月为唯一正确时滞。来源：农业农村部、全国畜牧总站、五部门生猪月表及国家统计局；逐月来源ID和URL列于figure_data.json。",
+    "counts": {
+      "mara": 60,
+      "ndrc": 59,
+      "sowsLag10": 51,
+      "maraWeeklyAggregated": 18,
+      "totalPriceMonths": 60
+    },
+    "rows": [
+      {
+        "priceMonth": "2021-10",
+        "sowSourceMonth": "2020-12",
+        "sowsLag10_10k": null,
+        "sowStatus": "missing_original_observation",
+        "sowSourceIds": [],
+        "mara": 13.07,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s0ec459a954ce",
+          "s29234e601e01",
+          "s603a839cc4d8",
+          "sb1b9a37f8657",
+          "sd529abac3076"
+        ],
+        "ndrc": 14.32,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s0ec459a954ce"
+        ]
+      },
+      {
+        "priceMonth": "2021-11",
+        "sowSourceMonth": "2021-01",
+        "sowsLag10_10k": null,
+        "sowStatus": "missing_original_observation",
+        "sowSourceIds": [],
+        "mara": 17.302500000000002,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s2321176f27f1",
+          "s2298f4cf574f",
+          "s5c3189840ce2",
+          "sc83bb9cb622d",
+          "seae4f119020a"
+        ],
+        "ndrc": 17.88,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s2321176f27f1"
+        ]
+      },
+      {
+        "priceMonth": "2021-12",
+        "sowSourceMonth": "2021-02",
+        "sowsLag10_10k": null,
+        "sowStatus": "missing_original_observation",
+        "sowSourceIds": [],
+        "mara": 17.592000000000002,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s5ad7b9abe7b1",
+          "s56bdfc987f93",
+          "s7963b38626e8",
+          "s823a9562fef8",
+          "s82c00edbfad7",
+          "s82c46eb55731"
+        ],
+        "ndrc": 17.95,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s5ad7b9abe7b1"
+        ]
+      },
+      {
+        "priceMonth": "2022-01",
+        "sowSourceMonth": "2021-03",
+        "sowsLag10_10k": null,
+        "sowStatus": "missing_original_observation",
+        "sowSourceIds": [],
+        "mara": 15.55,
+        "maraStatus": "official_monthly_prose",
+        "maraSourceIds": [
+          "s484bf1af2ba7",
+          "sda970c64aad6"
+        ],
+        "ndrc": 15.88,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s484bf1af2ba7"
+        ]
+      },
+      {
+        "priceMonth": "2022-02",
+        "sowSourceMonth": "2021-04",
+        "sowsLag10_10k": null,
+        "sowStatus": "missing_original_observation",
+        "sowSourceIds": [],
+        "mara": 14.06,
+        "maraStatus": "official_monthly_prose",
+        "maraSourceIds": [
+          "sa59844d8c612",
+          "s26f64998c86b"
+        ],
+        "ndrc": 14.16,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sa59844d8c612"
+        ]
+      },
+      {
+        "priceMonth": "2022-03",
+        "sowSourceMonth": "2021-05",
+        "sowsLag10_10k": null,
+        "sowStatus": "missing_original_observation",
+        "sowSourceIds": [],
+        "mara": 12.764,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s4e418f97fdb4",
+          "s0944802de4b6",
+          "s5ae26bf71440",
+          "s5bc4c6559564",
+          "s61160fe2b0e5",
+          "sa11809c5c76a"
+        ],
+        "ndrc": 13.34,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s4e418f97fdb4"
+        ]
+      },
+      {
+        "priceMonth": "2022-04",
+        "sowSourceMonth": "2021-06",
+        "sowsLag10_10k": 4564.0,
+        "sowStatus": [
+          "official_nbs_quoted_by_mara"
+        ],
+        "sowSourceIds": [
+          "s37ebaae27f93",
+          "s7446d07d7ce5",
+          "s90e6c15c9c68",
+          "saa5c025a2dd4"
+        ],
+        "mara": 13.3975,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "sc297d7712130",
+          "s53c7a5d5ff5f",
+          "s6411b6af4d0e",
+          "s848fb09f0995",
+          "sc1afc65b73b2"
+        ],
+        "ndrc": 14.06,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sc297d7712130"
+        ]
+      },
+      {
+        "priceMonth": "2022-05",
+        "sowSourceMonth": "2021-07",
+        "sowsLag10_10k": null,
+        "sowStatus": "missing_original_observation",
+        "sowSourceIds": [],
+        "mara": 15.2975,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s943ced9c81bb",
+          "s3d67aecf2b91",
+          "s535b7508eb55",
+          "se182945be601",
+          "sed6b328f9436"
+        ],
+        "ndrc": 15.92,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s943ced9c81bb"
+        ]
+      },
+      {
+        "priceMonth": "2022-06",
+        "sowSourceMonth": "2021-08",
+        "sowsLag10_10k": null,
+        "sowStatus": "missing_original_observation",
+        "sowSourceIds": [],
+        "mara": 16.574,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s9917c2edeea8",
+          "s28bd9eff7259",
+          "s3fc70412f863",
+          "s8b769baaf5ad",
+          "sdde89e7eafa7",
+          "sfccd20b1f66c"
+        ],
+        "ndrc": 17.15,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s9917c2edeea8"
+        ]
+      },
+      {
+        "priceMonth": "2022-07",
+        "sowSourceMonth": "2021-09",
+        "sowsLag10_10k": 4459.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "scf38c2b9b80b",
+          "sff0e9717153d"
+        ],
+        "mara": 22.175,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "sa8af4732ac06",
+          "s22d7d3d36d6f",
+          "s2373d67a0290",
+          "s56d0689a4e88",
+          "se539b2b518c3"
+        ],
+        "ndrc": 22.55,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sa8af4732ac06"
+        ]
+      },
+      {
+        "priceMonth": "2022-08",
+        "sowSourceMonth": "2021-10",
+        "sowsLag10_10k": 4348.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s0ec459a954ce",
+          "s29234e601e01",
+          "s603a839cc4d8",
+          "sb1b9a37f8657",
+          "sd529abac3076"
+        ],
+        "mara": 21.898,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s6e1ae5c904f8",
+          "s25343fa65b00",
+          "s4b0952421efd",
+          "s5ea89389dc6d",
+          "sb855b728f870",
+          "sd26ff598d556"
+        ],
+        "ndrc": 22.32,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s6e1ae5c904f8"
+        ]
+      },
+      {
+        "priceMonth": "2022-09",
+        "sowSourceMonth": "2021-11",
+        "sowsLag10_10k": 4296.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s2298f4cf574f",
+          "s2321176f27f1",
+          "s5c3189840ce2",
+          "sc83bb9cb622d",
+          "seae4f119020a"
+        ],
+        "mara": 23.65,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "sf1b16ef360b8",
+          "s050494296d8a",
+          "s57e09fe683a6",
+          "s5b7ecb0c8fb7",
+          "sf8c9a3491baa"
+        ],
+        "ndrc": 24.12,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sf1b16ef360b8"
+        ]
+      },
+      {
+        "priceMonth": "2022-10",
+        "sowSourceMonth": "2021-12",
+        "sowsLag10_10k": 4329.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s56bdfc987f93",
+          "s5ad7b9abe7b1",
+          "s7963b38626e8",
+          "s823a9562fef8",
+          "s82c00edbfad7",
+          "s82c46eb55731"
+        ],
+        "mara": 26.6425,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "sc9f5f1df0db0",
+          "s0fcdba74d635",
+          "s3354acd48db5",
+          "s6b766107318e",
+          "sa850940072e5"
+        ],
+        "ndrc": 27.39,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sc9f5f1df0db0"
+        ]
+      },
+      {
+        "priceMonth": "2022-11",
+        "sowSourceMonth": "2022-01",
+        "sowsLag10_10k": 4290.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s484bf1af2ba7",
+          "sda970c64aad6"
+        ],
+        "mara": 25.386000000000003,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "sb17704295d19",
+          "s001d4b9e7209",
+          "s3aef37038eff",
+          "s6cc769082beb",
+          "s719e2cea02bf",
+          "se88a1ccba300"
+        ],
+        "ndrc": 25.7,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sb17704295d19"
+        ]
+      },
+      {
+        "priceMonth": "2022-12",
+        "sowSourceMonth": "2022-02",
+        "sowsLag10_10k": 4268.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s26f64998c86b",
+          "sa59844d8c612"
+        ],
+        "mara": 20.615000000000002,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s9e07b468ff67",
+          "s5af977fe66f0",
+          "s5c9066b92657",
+          "s9442602fa8e4",
+          "sba03c867b959"
+        ],
+        "ndrc": 20.93,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s9e07b468ff67"
+        ]
+      },
+      {
+        "priceMonth": "2023-01",
+        "sowSourceMonth": "2022-03",
+        "sowsLag10_10k": 4185.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s0944802de4b6",
+          "s4e418f97fdb4",
+          "s5ae26bf71440",
+          "s5bc4c6559564",
+          "s61160fe2b0e5",
+          "sa11809c5c76a"
+        ],
+        "mara": 16.3125,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s8945fbfa2b4f",
+          "s0cb50a1d74ff",
+          "s36073737075c",
+          "sacc9cafd31e8",
+          "sbc992d02d067"
+        ],
+        "ndrc": 16.83,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s8945fbfa2b4f"
+        ]
+      },
+      {
+        "priceMonth": "2023-02",
+        "sowSourceMonth": "2022-04",
+        "sowsLag10_10k": 4177.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s53c7a5d5ff5f",
+          "s6411b6af4d0e",
+          "s848fb09f0995",
+          "sc1afc65b73b2",
+          "sc297d7712130"
+        ],
+        "mara": 15.1775,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s611ff4638d8c",
+          "s416dcb5a130d",
+          "sa43e042c17af",
+          "sd4ac27c05bcf",
+          "se77eb5faf3fa"
+        ],
+        "ndrc": 14.9,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s611ff4638d8c"
+        ]
+      },
+      {
+        "priceMonth": "2023-03",
+        "sowSourceMonth": "2022-05",
+        "sowsLag10_10k": 4192.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s3d67aecf2b91",
+          "s535b7508eb55",
+          "s943ced9c81bb",
+          "se182945be601",
+          "sed6b328f9436"
+        ],
+        "mara": 15.6,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "s35c95a959d8e",
+          "s87ef3c43e231"
+        ],
+        "ndrc": 15.54,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s35c95a959d8e"
+        ]
+      },
+      {
+        "priceMonth": "2023-04",
+        "sowSourceMonth": "2022-06",
+        "sowsLag10_10k": 4277.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s28bd9eff7259",
+          "s3fc70412f863",
+          "s8b769baaf5ad",
+          "s9917c2edeea8",
+          "sdde89e7eafa7",
+          "sfccd20b1f66c"
+        ],
+        "mara": 14.67,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "sded27634e90b",
+          "sab99a80cf14e"
+        ],
+        "ndrc": 14.61,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sded27634e90b"
+        ]
+      },
+      {
+        "priceMonth": "2023-05",
+        "sowSourceMonth": "2022-07",
+        "sowsLag10_10k": 4298.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s22d7d3d36d6f",
+          "s2373d67a0290",
+          "s56d0689a4e88",
+          "sa8af4732ac06",
+          "se539b2b518c3"
+        ],
+        "mara": 14.56,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "sd73ec4bbc9c1",
+          "s674d72066673"
+        ],
+        "ndrc": 14.47,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sd73ec4bbc9c1"
+        ]
+      },
+      {
+        "priceMonth": "2023-06",
+        "sowSourceMonth": "2022-08",
+        "sowsLag10_10k": 4324.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s25343fa65b00",
+          "s4b0952421efd",
+          "s5ea89389dc6d",
+          "s6e1ae5c904f8",
+          "sb855b728f870",
+          "sd26ff598d556"
+        ],
+        "mara": 14.39,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "s4efcf14e0ce0",
+          "s99fad3d5a53e"
+        ],
+        "ndrc": 14.3,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s4efcf14e0ce0"
+        ]
+      },
+      {
+        "priceMonth": "2023-07",
+        "sowSourceMonth": "2022-09",
+        "sowsLag10_10k": 4362.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s050494296d8a",
+          "s57e09fe683a6",
+          "s5b7ecb0c8fb7",
+          "sf1b16ef360b8",
+          "sf8c9a3491baa"
+        ],
+        "mara": 14.35,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "s7e3a37428c1a",
+          "s6ee1ff241692"
+        ],
+        "ndrc": 14.26,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s7e3a37428c1a"
+        ]
+      },
+      {
+        "priceMonth": "2023-08",
+        "sowSourceMonth": "2022-10",
+        "sowsLag10_10k": 4379.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s0fcdba74d635",
+          "s3354acd48db5",
+          "s6b766107318e",
+          "sa850940072e5",
+          "sc9f5f1df0db0"
+        ],
+        "mara": 17.02,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "sd179f5479f7f",
+          "sef3c8da6afe3"
+        ],
+        "ndrc": 17.11,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sd179f5479f7f"
+        ]
+      },
+      {
+        "priceMonth": "2023-09",
+        "sowSourceMonth": "2022-11",
+        "sowsLag10_10k": 4388.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s001d4b9e7209",
+          "s3aef37038eff",
+          "s6cc769082beb",
+          "s719e2cea02bf",
+          "sb17704295d19",
+          "se88a1ccba300"
+        ],
+        "mara": 16.77,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "sf4424f7045d8",
+          "s0e0fd91c321d"
+        ],
+        "ndrc": 16.76,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sf4424f7045d8"
+        ]
+      },
+      {
+        "priceMonth": "2023-10",
+        "sowSourceMonth": "2022-12",
+        "sowsLag10_10k": 4390.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s5af977fe66f0",
+          "s5c9066b92657",
+          "s9442602fa8e4",
+          "s9e07b468ff67",
+          "sba03c867b959"
+        ],
+        "mara": 15.895,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "sd1f088f52bb6",
+          "s3f239410bde2",
+          "s4244af8b1672",
+          "s883546c6d2c1",
+          "sfdc068d5429b"
+        ],
+        "ndrc": 15.78,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sd1f088f52bb6"
+        ]
+      },
+      {
+        "priceMonth": "2023-11",
+        "sowSourceMonth": "2023-01",
+        "sowsLag10_10k": 4367.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s0cb50a1d74ff",
+          "s36073737075c",
+          "s8945fbfa2b4f",
+          "sacc9cafd31e8",
+          "sbc992d02d067"
+        ],
+        "mara": 15.106,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "sa9e22d957835",
+          "s012b78100816",
+          "s57c9cf92e2e2",
+          "sb799037e8461",
+          "sc05b7c3e4945",
+          "se4e14a688209"
+        ],
+        "ndrc": 14.99,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sa9e22d957835"
+        ]
+      },
+      {
+        "priceMonth": "2023-12",
+        "sowSourceMonth": "2023-02",
+        "sowsLag10_10k": 4343.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s416dcb5a130d",
+          "s611ff4638d8c",
+          "sa43e042c17af",
+          "sd4ac27c05bcf",
+          "se77eb5faf3fa"
+        ],
+        "mara": 14.83,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "sff556bde09c0",
+          "s17a8d856a488"
+        ],
+        "ndrc": 14.69,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sff556bde09c0"
+        ]
+      },
+      {
+        "priceMonth": "2024-01",
+        "sowSourceMonth": "2023-03",
+        "sowsLag10_10k": 4305.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s35c95a959d8e",
+          "s87ef3c43e231"
+        ],
+        "mara": 14.52,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "s002e5e0ccc8f",
+          "s5f488891c6df"
+        ],
+        "ndrc": 14.63,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s002e5e0ccc8f"
+        ]
+      },
+      {
+        "priceMonth": "2024-02",
+        "sowSourceMonth": "2023-04",
+        "sowsLag10_10k": 4284.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "sab99a80cf14e",
+          "sded27634e90b"
+        ],
+        "mara": 15.24,
+        "maraStatus": "official_monthly_prior_column",
+        "maraSourceIds": [
+          "s221ad55ecb3c",
+          "s16f777f21b2d",
+          "s87ef3c43e231"
+        ],
+        "ndrc": 14.97,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s221ad55ecb3c"
+        ]
+      },
+      {
+        "priceMonth": "2024-03",
+        "sowSourceMonth": "2023-05",
+        "sowsLag10_10k": 4258.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s674d72066673",
+          "sd73ec4bbc9c1"
+        ],
+        "mara": 14.95,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "sb5a91a18f468",
+          "s87ef3c43e231",
+          "sab99a80cf14e",
+          "sc19598be5efe"
+        ],
+        "ndrc": 14.85,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sb5a91a18f468"
+        ]
+      },
+      {
+        "priceMonth": "2024-04",
+        "sowSourceMonth": "2023-06",
+        "sowsLag10_10k": 4296.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s4efcf14e0ce0",
+          "s99fad3d5a53e"
+        ],
+        "mara": 15.35,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "se5dc13575c88",
+          "s5a72a29e948d",
+          "s674d72066673",
+          "sab99a80cf14e"
+        ],
+        "ndrc": 15.38,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "se5dc13575c88"
+        ]
+      },
+      {
+        "priceMonth": "2024-05",
+        "sowSourceMonth": "2023-07",
+        "sowsLag10_10k": 4271.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s6ee1ff241692",
+          "s7e3a37428c1a"
+        ],
+        "mara": 15.59,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s9e45f6dd6df9",
+          "s674d72066673",
+          "s84ec0d389bf4",
+          "s99fad3d5a53e"
+        ],
+        "ndrc": 15.78,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s9e45f6dd6df9"
+        ]
+      },
+      {
+        "priceMonth": "2024-06",
+        "sowSourceMonth": "2023-08",
+        "sowsLag10_10k": 4241.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "sd179f5479f7f",
+          "sef3c8da6afe3"
+        ],
+        "mara": 18.15,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s7819fdf9a496",
+          "s6ee1ff241692",
+          "s99fad3d5a53e",
+          "s9d7bfaf6009f"
+        ],
+        "ndrc": 18.36,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s7819fdf9a496"
+        ]
+      },
+      {
+        "priceMonth": "2024-07",
+        "sowSourceMonth": "2023-09",
+        "sowsLag10_10k": 4240.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s0e0fd91c321d",
+          "sf4424f7045d8"
+        ],
+        "mara": 18.65,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "sdb32176c4771",
+          "s5198bf0c660b",
+          "s6ee1ff241692",
+          "sef3c8da6afe3"
+        ],
+        "ndrc": 18.93,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sdb32176c4771"
+        ]
+      },
+      {
+        "priceMonth": "2024-08",
+        "sowSourceMonth": "2023-10",
+        "sowsLag10_10k": 4210.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s3f239410bde2",
+          "s4244af8b1672",
+          "s883546c6d2c1",
+          "sd1f088f52bb6",
+          "sfdc068d5429b"
+        ],
+        "mara": 20.35,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s2502ffaddfc6",
+          "s0e0fd91c321d",
+          "s4467975c0b89",
+          "sef3c8da6afe3"
+        ],
+        "ndrc": 20.63,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s2502ffaddfc6"
+        ]
+      },
+      {
+        "priceMonth": "2024-09",
+        "sowSourceMonth": "2023-11",
+        "sowsLag10_10k": 4158.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s012b78100816",
+          "s57c9cf92e2e2",
+          "sa9e22d957835",
+          "sb799037e8461",
+          "sc05b7c3e4945",
+          "se4e14a688209"
+        ],
+        "mara": 19.7,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s89c0afe60a88",
+          "s0e0fd91c321d",
+          "s18d3185c0651"
+        ],
+        "ndrc": 19.68,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s89c0afe60a88"
+        ]
+      },
+      {
+        "priceMonth": "2024-10",
+        "sowSourceMonth": "2023-12",
+        "sowsLag10_10k": 4142.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s17a8d856a488",
+          "sff556bde09c0"
+        ],
+        "mara": 18.25,
+        "maraStatus": "official_monthly_prior_year_column",
+        "maraSourceIds": [
+          "s903d003f4c42",
+          "s557c1805c012"
+        ],
+        "ndrc": 18.14,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s903d003f4c42"
+        ]
+      },
+      {
+        "priceMonth": "2024-11",
+        "sowSourceMonth": "2024-01",
+        "sowsLag10_10k": 4067.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s002e5e0ccc8f",
+          "s5f488891c6df"
+        ],
+        "mara": 17.33,
+        "maraStatus": "official_monthly_prior_column",
+        "maraSourceIds": [
+          "s23a43fc7253b",
+          "s17a8d856a488",
+          "s8d51499e3a8f"
+        ],
+        "ndrc": 17.2,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s23a43fc7253b"
+        ]
+      },
+      {
+        "priceMonth": "2024-12",
+        "sowSourceMonth": "2024-02",
+        "sowsLag10_10k": 4042.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s16f777f21b2d",
+          "s221ad55ecb3c",
+          "s87ef3c43e231"
+        ],
+        "mara": 16.64,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s316fc4591d15",
+          "s17a8d856a488",
+          "s29a3426654ae",
+          "s5f488891c6df"
+        ],
+        "ndrc": 16.46,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s316fc4591d15"
+        ]
+      },
+      {
+        "priceMonth": "2025-01",
+        "sowSourceMonth": "2024-03",
+        "sowsLag10_10k": 3992.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s87ef3c43e231",
+          "sab99a80cf14e",
+          "sb5a91a18f468",
+          "sc19598be5efe"
+        ],
+        "mara": 16.61,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "sd93f23fc5bad",
+          "s16f777f21b2d",
+          "s5f488891c6df",
+          "sdf97d663def1"
+        ],
+        "ndrc": 16.41,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sd93f23fc5bad"
+        ]
+      },
+      {
+        "priceMonth": "2025-02",
+        "sowSourceMonth": "2024-04",
+        "sowsLag10_10k": 3986.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s5a72a29e948d",
+          "s674d72066673",
+          "sab99a80cf14e",
+          "se5dc13575c88"
+        ],
+        "mara": 16.0,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "sc328fc069f7b",
+          "s16f777f21b2d",
+          "sc19598be5efe",
+          "sc712b0680b0a"
+        ],
+        "ndrc": 15.77,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sc328fc069f7b"
+        ]
+      },
+      {
+        "priceMonth": "2025-03",
+        "sowSourceMonth": "2024-05",
+        "sowsLag10_10k": 3996.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s674d72066673",
+          "s84ec0d389bf4",
+          "s99fad3d5a53e",
+          "s9e45f6dd6df9"
+        ],
+        "mara": 15.36,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "sf18a15f997b8",
+          "s5a72a29e948d",
+          "s9d39c6bd3667",
+          "sc19598be5efe"
+        ],
+        "ndrc": 15.2,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sf18a15f997b8"
+        ]
+      },
+      {
+        "priceMonth": "2025-04",
+        "sowSourceMonth": "2024-06",
+        "sowsLag10_10k": 4038.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s6ee1ff241692",
+          "s7819fdf9a496",
+          "s99fad3d5a53e",
+          "s9d7bfaf6009f"
+        ],
+        "mara": 15.2,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s1a004d17fdbd",
+          "s5a72a29e948d",
+          "s84ec0d389bf4",
+          "s8a221d86bfdc"
+        ],
+        "ndrc": 15.06,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s1a004d17fdbd"
+        ]
+      },
+      {
+        "priceMonth": "2025-05",
+        "sowSourceMonth": "2024-07",
+        "sowsLag10_10k": 4041.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s5198bf0c660b",
+          "s6ee1ff241692",
+          "sdb32176c4771",
+          "sef3c8da6afe3"
+        ],
+        "mara": 15.01,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s6bf1d90228a0",
+          "s7e7f60f506b9",
+          "s84ec0d389bf4",
+          "s9d7bfaf6009f"
+        ],
+        "ndrc": 14.92,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s6bf1d90228a0"
+        ]
+      },
+      {
+        "priceMonth": "2025-06",
+        "sowSourceMonth": "2024-08",
+        "sowsLag10_10k": 4036.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s0e0fd91c321d",
+          "s2502ffaddfc6",
+          "s4467975c0b89",
+          "sef3c8da6afe3"
+        ],
+        "mara": 14.66,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s85253a291a24",
+          "s5198bf0c660b",
+          "s89d093bc5b24",
+          "s9d7bfaf6009f"
+        ],
+        "ndrc": 14.57,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s85253a291a24"
+        ]
+      },
+      {
+        "priceMonth": "2025-07",
+        "sowSourceMonth": "2024-09",
+        "sowsLag10_10k": 4062.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s0e0fd91c321d",
+          "s18d3185c0651",
+          "s89c0afe60a88"
+        ],
+        "mara": 14.91,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "sd522b85d25a8",
+          "s4467975c0b89",
+          "s5198bf0c660b",
+          "s8963dc5b8ad3"
+        ],
+        "ndrc": 14.84,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sd522b85d25a8"
+        ]
+      },
+      {
+        "priceMonth": "2025-08",
+        "sowSourceMonth": "2024-10",
+        "sowsLag10_10k": 4073.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s557c1805c012",
+          "s903d003f4c42"
+        ],
+        "mara": 14.35,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s9a91f3018706",
+          "s18d3185c0651",
+          "s4467975c0b89",
+          "s7c36d9b746bc"
+        ],
+        "ndrc": 14.23,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s9a91f3018706"
+        ]
+      },
+      {
+        "priceMonth": "2025-09",
+        "sowSourceMonth": "2024-11",
+        "sowsLag10_10k": 4080.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s17a8d856a488",
+          "s23a43fc7253b",
+          "s8d51499e3a8f"
+        ],
+        "mara": 13.81,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "sd3cf0156ca89",
+          "s18d3185c0651",
+          "s557c1805c012"
+        ],
+        "ndrc": 13.78,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sd3cf0156ca89"
+        ]
+      },
+      {
+        "priceMonth": "2025-10",
+        "sowSourceMonth": "2024-12",
+        "sowsLag10_10k": 4078.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s17a8d856a488",
+          "s29a3426654ae",
+          "s316fc4591d15",
+          "s5f488891c6df"
+        ],
+        "mara": 12.57,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "se7de05411bec",
+          "s557c1805c012",
+          "s8d51499e3a8f"
+        ],
+        "ndrc": 12.27,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "se7de05411bec"
+        ]
+      },
+      {
+        "priceMonth": "2025-11",
+        "sowSourceMonth": "2025-01",
+        "sowsLag10_10k": 4062.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s16f777f21b2d",
+          "s5f488891c6df",
+          "sd93f23fc5bad",
+          "sdf97d663def1"
+        ],
+        "mara": 12.55,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s29a3426654ae",
+          "s8d51499e3a8f"
+        ],
+        "ndrc": 12.33,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sc3e2db9a73a5"
+        ]
+      },
+      {
+        "priceMonth": "2025-12",
+        "sowSourceMonth": "2025-02",
+        "sowsLag10_10k": 4066.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s16f777f21b2d",
+          "sc19598be5efe",
+          "sc328fc069f7b",
+          "sc712b0680b0a"
+        ],
+        "mara": 12.17,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s51e6078cdc5b",
+          "s29a3426654ae",
+          "sdf97d663def1"
+        ],
+        "ndrc": 11.99,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s51e6078cdc5b"
+        ]
+      },
+      {
+        "priceMonth": "2026-01",
+        "sowSourceMonth": "2025-03",
+        "sowsLag10_10k": 4039.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s5a72a29e948d",
+          "s9d39c6bd3667",
+          "sc19598be5efe",
+          "sf18a15f997b8"
+        ],
+        "mara": 13.07,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "sc712b0680b0a",
+          "sdf97d663def1"
+        ],
+        "ndrc": 13.1,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sb2ee133dfdd0"
+        ]
+      },
+      {
+        "priceMonth": "2026-02",
+        "sowSourceMonth": "2025-04",
+        "sowsLag10_10k": 4038.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s1a004d17fdbd",
+          "s5a72a29e948d",
+          "s84ec0d389bf4",
+          "s8a221d86bfdc"
+        ],
+        "mara": 12.82,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s9d39c6bd3667",
+          "sc712b0680b0a"
+        ],
+        "ndrc": 12.54,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s43861b6d9977"
+        ]
+      },
+      {
+        "priceMonth": "2026-03",
+        "sowSourceMonth": "2025-05",
+        "sowsLag10_10k": 4042.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s6bf1d90228a0",
+          "s7e7f60f506b9",
+          "s84ec0d389bf4",
+          "s9d7bfaf6009f"
+        ],
+        "mara": 11.25,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s1e8a85febd86",
+          "s8a221d86bfdc",
+          "s9d39c6bd3667"
+        ],
+        "ndrc": 10.59,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s1e8a85febd86"
+        ]
+      },
+      {
+        "priceMonth": "2026-04",
+        "sowSourceMonth": "2025-06",
+        "sowsLag10_10k": 4043.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s5198bf0c660b",
+          "s85253a291a24",
+          "s89d093bc5b24",
+          "s9d7bfaf6009f"
+        ],
+        "mara": 10.07,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s7e7f60f506b9",
+          "s8a221d86bfdc"
+        ],
+        "ndrc": 9.58,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sc49d8a44092f"
+        ]
+      },
+      {
+        "priceMonth": "2026-05",
+        "sowSourceMonth": "2025-07",
+        "sowsLag10_10k": 4042.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s4467975c0b89",
+          "s5198bf0c660b",
+          "s8963dc5b8ad3",
+          "sd522b85d25a8"
+        ],
+        "mara": 10.15,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s7e7f60f506b9",
+          "s89d093bc5b24"
+        ],
+        "ndrc": 9.8,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s6e9cebd49617"
+        ]
+      },
+      {
+        "priceMonth": "2026-06",
+        "sowSourceMonth": "2025-08",
+        "sowsLag10_10k": 4038.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s18d3185c0651",
+          "s4467975c0b89",
+          "s7c36d9b746bc",
+          "s9a91f3018706"
+        ],
+        "mara": 10.09,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "sa789851f2f2b",
+          "s8963dc5b8ad3",
+          "s89d093bc5b24"
+        ],
+        "ndrc": 9.71,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "sa789851f2f2b"
+        ]
+      },
+      {
+        "priceMonth": "2026-07",
+        "sowSourceMonth": "2025-09",
+        "sowsLag10_10k": 4035.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s18d3185c0651",
+          "s557c1805c012",
+          "sd3cf0156ca89"
+        ],
+        "mara": 11.2,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s7c36d9b746bc",
+          "s8963dc5b8ad3"
+        ],
+        "ndrc": 10.77,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s962ec66790fa"
+        ]
+      },
+      {
+        "priceMonth": "2026-08",
+        "sowSourceMonth": "2025-10",
+        "sowsLag10_10k": 3990.0,
+        "sowStatus": [
+          "official_observed"
+        ],
+        "sowSourceIds": [
+          "s557c1805c012",
+          "s8d51499e3a8f",
+          "se7de05411bec"
+        ],
+        "mara": 11.36,
+        "maraStatus": "official_monthly",
+        "maraSourceIds": [
+          "s7c36d9b746bc"
+        ],
+        "ndrc": 11.01,
+        "ndrcStatus": "official_observed",
+        "ndrcSourceIds": [
+          "s4deab632338d"
+        ]
+      },
+      {
+        "priceMonth": "2026-09",
+        "sowSourceMonth": "2025-11",
+        "sowsLag10_10k": null,
+        "sowStatus": "missing_original_observation",
+        "sowSourceIds": [],
+        "mara": 11.42,
+        "maraStatus": "author_aggregate_complete_weekly_arithmetic_mean",
+        "maraSourceIds": [
+          "s32eac10753d0",
+          "s0a73a85c50e8",
+          "s196cb114415a",
+          "s4d8b1a366ebe",
+          "sc9b1a97dd123",
+          "sdb6c9410f81e"
+        ],
+        "ndrc": null,
+        "ndrcStatus": "not_reported",
+        "ndrcSourceIds": []
+      }
+    ],
+    "missingSows": [
+      {
+        "priceMonth": "2021-10",
+        "sowSourceMonth": "2020-12"
+      },
+      {
+        "priceMonth": "2021-11",
+        "sowSourceMonth": "2021-01"
+      },
+      {
+        "priceMonth": "2021-12",
+        "sowSourceMonth": "2021-02"
+      },
+      {
+        "priceMonth": "2022-01",
+        "sowSourceMonth": "2021-03"
+      },
+      {
+        "priceMonth": "2022-02",
+        "sowSourceMonth": "2021-04"
+      },
+      {
+        "priceMonth": "2022-03",
+        "sowSourceMonth": "2021-05"
+      },
+      {
+        "priceMonth": "2022-05",
+        "sowSourceMonth": "2021-07"
+      },
+      {
+        "priceMonth": "2022-06",
+        "sowSourceMonth": "2021-08"
+      },
+      {
+        "priceMonth": "2026-09",
+        "sowSourceMonth": "2025-11"
+      }
+    ]
+  },
+  "figure2": {
+    "files": [
+      "/workspace/scratch/cb736cd573f0/outputs/pig-cycle-academic-20261024/figures/figure2_price_routes.png",
+      "/workspace/scratch/cb736cd573f0/outputs/pig-cycle-academic-20261024/figures/figure2_price_routes.pdf"
+    ],
+    "caption": "图2　2027年三条默认价格路线与需求路线联合情景（元/kg活猪）。A图绘制成本路线的长期必要产能中枢参照、历史有效产能振幅外推及供需平衡—逆需求路线。季度值为三个模型月均价的算术平均，年度值为十二个月等权平均；三条路线年度值分别为15.733333、20.808179、14.355724元/kg。成本基准为必要产能成本判断14.9元/kg加每年一头产能对应1000元权益的10%回报，按120kg归一化，它不是季度现货预测或短期价格下限。历史β=7.593232，使用两段现代MARA去化半程的峰谷振幅，并假定历史MSY每年提高2%；该β未通过严格时移端点和样本外检验获得可靠预测地位。需求路线观测锚为2026年8月MARA活猪11.36、猪肉零售21.00元/kg，固定十个月对应母猪3990万头；2026Q4去化4.708995%，PSY基值23.4与情景上限32的差距每年缩小6%，未来全国体重维持120kg，需求每年下降1%，进口占比2%且进口不增长，需求弹性绝对值0.374、零售到活猪绝对传导斜率0.75。B图仅在需求路线内比较原有联合情景：正常、缓慢、低谷延长、偏强修复的年度均价分别为14.355724、12.488900、11.137031、15.949763元/kg。各情景同时改变多项输入，完整改动见results_price.json，未赋概率。Q4季均16.653657不是周期高点；最大月均价也不等于日度或完整周期最高价。两子图纵轴范围不同，以各自刻度为准。来源：源1.2.0价格快照，经现行1.3.0引擎及独立公式复核，价格结果未变；核心事实来源ID为mara_202608、sow_202606、sow_202609、psy_cn_2025、usda_elasticity；所有情景参数和来源记录均见结果矩阵。",
+    "baseline": {
+      "cost": {
+        "quarterly": [
+          {
+            "quarter": "2027 Q1",
+            "price": 15.733333333333334,
+            "laggedSows10k": 3862.6666666666665
+          },
+          {
+            "quarter": "2027 Q2",
+            "price": 15.733333333333334,
+            "laggedSows10k": 3720.6666666666665
+          },
+          {
+            "quarter": "2027 Q3",
+            "price": 15.733333333333334,
+            "laggedSows10k": 3545.4606701940033
+          },
+          {
+            "quarter": "2027 Q4",
+            "price": 15.733333333333334,
+            "laggedSows10k": 3432.3820105820105
+          }
+        ],
+        "annual": 15.73333333333334,
+        "sourceIds": [
+          "mara_202608",
+          "oecd_model",
+          "policy_2026",
+          "psy_cn_2025",
+          "s001d4b9e7209",
+          "s002e5e0ccc8f",
+          "s012b78100816",
+          "s050494296d8a",
+          "s0944802de4b6",
+          "s0a73a85c50e8",
+          "s0cb50a1d74ff",
+          "s0e0fd91c321d",
+          "s0ec459a954ce",
+          "s0fcdba74d635",
+          "s16f777f21b2d",
+          "s17a8d856a488",
+          "s18d3185c0651",
+          "s196cb114415a",
+          "s1e8a85febd86",
+          "s221ad55ecb3c",
+          "s22d7d3d36d6f",
+          "s2321176f27f1",
+          "s2373d67a0290",
+          "s26f64998c86b",
+          "s28bd9eff7259",
+          "s29a3426654ae",
+          "s32eac10753d0",
+          "s3354acd48db5",
+          "s35c95a959d8e",
+          "s36073737075c",
+          "s3aef37038eff",
+          "s3d67aecf2b91",
+          "s3f239410bde2",
+          "s3fc70412f863",
+          "s416dcb5a130d",
+          "s4244af8b1672",
+          "s4467975c0b89",
+          "s484bf1af2ba7",
+          "s4d8b1a366ebe",
+          "s4e418f97fdb4",
+          "s4efcf14e0ce0",
+          "s5198bf0c660b",
+          "s51e6078cdc5b",
+          "s535b7508eb55",
+          "s53c7a5d5ff5f",
+          "s557c1805c012",
+          "s56d0689a4e88",
+          "s57c9cf92e2e2",
+          "s57e09fe683a6",
+          "s5a72a29e948d",
+          "s5ad7b9abe7b1",
+          "s5ae26bf71440",
+          "s5af977fe66f0",
+          "s5b7ecb0c8fb7",
+          "s5bc4c6559564",
+          "s5c9066b92657",
+          "s5f488891c6df",
+          "s61160fe2b0e5",
+          "s611ff4638d8c",
+          "s6411b6af4d0e",
+          "s674d72066673",
+          "s6b766107318e",
+          "s6cc769082beb",
+          "s6ee1ff241692",
+          "s719e2cea02bf",
+          "s7c36d9b746bc",
+          "s7e3a37428c1a",
+          "s7e7f60f506b9",
+          "s848fb09f0995",
+          "s84ec0d389bf4",
+          "s87ef3c43e231",
+          "s883546c6d2c1",
+          "s8945fbfa2b4f",
+          "s8963dc5b8ad3",
+          "s89d093bc5b24",
+          "s8a221d86bfdc",
+          "s8b769baaf5ad",
+          "s8d51499e3a8f",
+          "s90e6c15c9c68",
+          "s943ced9c81bb",
+          "s9442602fa8e4",
+          "s99fad3d5a53e",
+          "s9a91f3018706",
+          "s9d39c6bd3667",
+          "s9d7bfaf6009f",
+          "s9e07b468ff67",
+          "s9e45f6dd6df9",
+          "sa11809c5c76a",
+          "sa43e042c17af",
+          "sa59844d8c612",
+          "sa789851f2f2b",
+          "sa850940072e5",
+          "sa9e22d957835",
+          "sab99a80cf14e",
+          "sacc9cafd31e8",
+          "sb17704295d19",
+          "sb5a91a18f468",
+          "sb799037e8461",
+          "sba03c867b959",
+          "sbc992d02d067",
+          "sc05b7c3e4945",
+          "sc19598be5efe",
+          "sc1afc65b73b2",
+          "sc297d7712130",
+          "sc712b0680b0a",
+          "sc9b1a97dd123",
+          "scf38c2b9b80b",
+          "sd179f5479f7f",
+          "sd1f088f52bb6",
+          "sd3cf0156ca89",
+          "sd4ac27c05bcf",
+          "sd73ec4bbc9c1",
+          "sda970c64aad6",
+          "sdb6c9410f81e",
+          "sdde89e7eafa7",
+          "sded27634e90b",
+          "sdf97d663def1",
+          "se182945be601",
+          "se4e14a688209",
+          "se539b2b518c3",
+          "se5dc13575c88",
+          "se77eb5faf3fa",
+          "se7de05411bec",
+          "se88a1ccba300",
+          "sed6b328f9436",
+          "sef3c8da6afe3",
+          "sf4424f7045d8",
+          "sf8c9a3491baa",
+          "sfccd20b1f66c",
+          "sfdc068d5429b",
+          "sff556bde09c0",
+          "sow_202606",
+          "sow_202609",
+          "usda_elasticity"
+        ]
+      },
+      "capacity": {
+        "quarterly": [
+          {
+            "quarter": "2027 Q1",
+            "price": 13.378765333904013,
+            "laggedSows10k": 3862.6666666666665
+          },
+          {
+            "quarter": "2027 Q2",
+            "price": 17.11241737384121,
+            "laggedSows10k": 3720.6666666666665
+          },
+          {
+            "quarter": "2027 Q3",
+            "price": 23.71158698056244,
+            "laggedSows10k": 3545.4606701940033
+          },
+          {
+            "quarter": "2027 Q4",
+            "price": 29.029946818675864,
+            "laggedSows10k": 3432.3820105820105
+          }
+        ],
+        "annual": 20.80817912674588,
+        "sourceIds": [
+          "mara_202608",
+          "oecd_model",
+          "policy_2026",
+          "psy_cn_2025",
+          "s001d4b9e7209",
+          "s002e5e0ccc8f",
+          "s012b78100816",
+          "s050494296d8a",
+          "s0944802de4b6",
+          "s0a73a85c50e8",
+          "s0cb50a1d74ff",
+          "s0e0fd91c321d",
+          "s0ec459a954ce",
+          "s0fcdba74d635",
+          "s16f777f21b2d",
+          "s17a8d856a488",
+          "s18d3185c0651",
+          "s196cb114415a",
+          "s1e8a85febd86",
+          "s221ad55ecb3c",
+          "s22d7d3d36d6f",
+          "s2321176f27f1",
+          "s2373d67a0290",
+          "s26f64998c86b",
+          "s28bd9eff7259",
+          "s29a3426654ae",
+          "s32eac10753d0",
+          "s3354acd48db5",
+          "s35c95a959d8e",
+          "s36073737075c",
+          "s3aef37038eff",
+          "s3d67aecf2b91",
+          "s3f239410bde2",
+          "s3fc70412f863",
+          "s416dcb5a130d",
+          "s4244af8b1672",
+          "s4467975c0b89",
+          "s484bf1af2ba7",
+          "s4d8b1a366ebe",
+          "s4e418f97fdb4",
+          "s4efcf14e0ce0",
+          "s5198bf0c660b",
+          "s51e6078cdc5b",
+          "s535b7508eb55",
+          "s53c7a5d5ff5f",
+          "s557c1805c012",
+          "s56d0689a4e88",
+          "s57c9cf92e2e2",
+          "s57e09fe683a6",
+          "s5a72a29e948d",
+          "s5ad7b9abe7b1",
+          "s5ae26bf71440",
+          "s5af977fe66f0",
+          "s5b7ecb0c8fb7",
+          "s5bc4c6559564",
+          "s5c9066b92657",
+          "s5f488891c6df",
+          "s61160fe2b0e5",
+          "s611ff4638d8c",
+          "s6411b6af4d0e",
+          "s674d72066673",
+          "s6b766107318e",
+          "s6cc769082beb",
+          "s6ee1ff241692",
+          "s719e2cea02bf",
+          "s7c36d9b746bc",
+          "s7e3a37428c1a",
+          "s7e7f60f506b9",
+          "s848fb09f0995",
+          "s84ec0d389bf4",
+          "s87ef3c43e231",
+          "s883546c6d2c1",
+          "s8945fbfa2b4f",
+          "s8963dc5b8ad3",
+          "s89d093bc5b24",
+          "s8a221d86bfdc",
+          "s8b769baaf5ad",
+          "s8d51499e3a8f",
+          "s90e6c15c9c68",
+          "s943ced9c81bb",
+          "s9442602fa8e4",
+          "s99fad3d5a53e",
+          "s9a91f3018706",
+          "s9d39c6bd3667",
+          "s9d7bfaf6009f",
+          "s9e07b468ff67",
+          "s9e45f6dd6df9",
+          "sa11809c5c76a",
+          "sa43e042c17af",
+          "sa59844d8c612",
+          "sa789851f2f2b",
+          "sa850940072e5",
+          "sa9e22d957835",
+          "sab99a80cf14e",
+          "sacc9cafd31e8",
+          "sb17704295d19",
+          "sb5a91a18f468",
+          "sb799037e8461",
+          "sba03c867b959",
+          "sbc992d02d067",
+          "sc05b7c3e4945",
+          "sc19598be5efe",
+          "sc1afc65b73b2",
+          "sc297d7712130",
+          "sc712b0680b0a",
+          "sc9b1a97dd123",
+          "scf38c2b9b80b",
+          "sd179f5479f7f",
+          "sd1f088f52bb6",
+          "sd3cf0156ca89",
+          "sd4ac27c05bcf",
+          "sd73ec4bbc9c1",
+          "sda970c64aad6",
+          "sdb6c9410f81e",
+          "sdde89e7eafa7",
+          "sded27634e90b",
+          "sdf97d663def1",
+          "se182945be601",
+          "se4e14a688209",
+          "se539b2b518c3",
+          "se5dc13575c88",
+          "se77eb5faf3fa",
+          "se7de05411bec",
+          "se88a1ccba300",
+          "sed6b328f9436",
+          "sef3c8da6afe3",
+          "sf4424f7045d8",
+          "sf8c9a3491baa",
+          "sfccd20b1f66c",
+          "sfdc068d5429b",
+          "sff556bde09c0",
+          "sow_202606",
+          "sow_202609",
+          "usda_elasticity"
+        ]
+      },
+      "demand": {
+        "quarterly": [
+          {
+            "quarter": "2027 Q1",
+            "price": 12.045779300109748,
+            "laggedSows10k": 3862.6666666666665
+          },
+          {
+            "quarter": "2027 Q2",
+            "price": 13.372049911836305,
+            "laggedSows10k": 3720.6666666666665
+          },
+          {
+            "quarter": "2027 Q3",
+            "price": 15.351411723131532,
+            "laggedSows10k": 3545.4606701940033
+          },
+          {
+            "quarter": "2027 Q4",
+            "price": 16.653656915866264,
+            "laggedSows10k": 3432.3820105820105
+          }
+        ],
+        "annual": 14.355724462735962,
+        "sourceIds": [
+          "mara_202608",
+          "oecd_model",
+          "policy_2026",
+          "psy_cn_2025",
+          "s001d4b9e7209",
+          "s002e5e0ccc8f",
+          "s012b78100816",
+          "s050494296d8a",
+          "s0944802de4b6",
+          "s0a73a85c50e8",
+          "s0cb50a1d74ff",
+          "s0e0fd91c321d",
+          "s0ec459a954ce",
+          "s0fcdba74d635",
+          "s16f777f21b2d",
+          "s17a8d856a488",
+          "s18d3185c0651",
+          "s196cb114415a",
+          "s1e8a85febd86",
+          "s221ad55ecb3c",
+          "s22d7d3d36d6f",
+          "s2321176f27f1",
+          "s2373d67a0290",
+          "s26f64998c86b",
+          "s28bd9eff7259",
+          "s29a3426654ae",
+          "s32eac10753d0",
+          "s3354acd48db5",
+          "s35c95a959d8e",
+          "s36073737075c",
+          "s3aef37038eff",
+          "s3d67aecf2b91",
+          "s3f239410bde2",
+          "s3fc70412f863",
+          "s416dcb5a130d",
+          "s4244af8b1672",
+          "s4467975c0b89",
+          "s484bf1af2ba7",
+          "s4d8b1a366ebe",
+          "s4e418f97fdb4",
+          "s4efcf14e0ce0",
+          "s5198bf0c660b",
+          "s51e6078cdc5b",
+          "s535b7508eb55",
+          "s53c7a5d5ff5f",
+          "s557c1805c012",
+          "s56d0689a4e88",
+          "s57c9cf92e2e2",
+          "s57e09fe683a6",
+          "s5a72a29e948d",
+          "s5ad7b9abe7b1",
+          "s5ae26bf71440",
+          "s5af977fe66f0",
+          "s5b7ecb0c8fb7",
+          "s5bc4c6559564",
+          "s5c9066b92657",
+          "s5f488891c6df",
+          "s61160fe2b0e5",
+          "s611ff4638d8c",
+          "s6411b6af4d0e",
+          "s674d72066673",
+          "s6b766107318e",
+          "s6cc769082beb",
+          "s6ee1ff241692",
+          "s719e2cea02bf",
+          "s7c36d9b746bc",
+          "s7e3a37428c1a",
+          "s7e7f60f506b9",
+          "s848fb09f0995",
+          "s84ec0d389bf4",
+          "s87ef3c43e231",
+          "s883546c6d2c1",
+          "s8945fbfa2b4f",
+          "s8963dc5b8ad3",
+          "s89d093bc5b24",
+          "s8a221d86bfdc",
+          "s8b769baaf5ad",
+          "s8d51499e3a8f",
+          "s90e6c15c9c68",
+          "s943ced9c81bb",
+          "s9442602fa8e4",
+          "s99fad3d5a53e",
+          "s9a91f3018706",
+          "s9d39c6bd3667",
+          "s9d7bfaf6009f",
+          "s9e07b468ff67",
+          "s9e45f6dd6df9",
+          "sa11809c5c76a",
+          "sa43e042c17af",
+          "sa59844d8c612",
+          "sa789851f2f2b",
+          "sa850940072e5",
+          "sa9e22d957835",
+          "sab99a80cf14e",
+          "sacc9cafd31e8",
+          "sb17704295d19",
+          "sb5a91a18f468",
+          "sb799037e8461",
+          "sba03c867b959",
+          "sbc992d02d067",
+          "sc05b7c3e4945",
+          "sc19598be5efe",
+          "sc1afc65b73b2",
+          "sc297d7712130",
+          "sc712b0680b0a",
+          "sc9b1a97dd123",
+          "scf38c2b9b80b",
+          "sd179f5479f7f",
+          "sd1f088f52bb6",
+          "sd3cf0156ca89",
+          "sd4ac27c05bcf",
+          "sd73ec4bbc9c1",
+          "sda970c64aad6",
+          "sdb6c9410f81e",
+          "sdde89e7eafa7",
+          "sded27634e90b",
+          "sdf97d663def1",
+          "se182945be601",
+          "se4e14a688209",
+          "se539b2b518c3",
+          "se5dc13575c88",
+          "se77eb5faf3fa",
+          "se7de05411bec",
+          "se88a1ccba300",
+          "sed6b328f9436",
+          "sef3c8da6afe3",
+          "sf4424f7045d8",
+          "sf8c9a3491baa",
+          "sfccd20b1f66c",
+          "sfdc068d5429b",
+          "sff556bde09c0",
+          "sow_202606",
+          "sow_202609",
+          "usda_elasticity"
+        ]
+      }
+    },
+    "demandScenarios": [
+      {
+        "id": "joint_strong",
+        "label": "偏强修复",
+        "changedInputs": [
+          {
+            "key": "q4DepletionPct",
+            "label": "2026 Q4 去化",
+            "from": 4.708994708994707,
+            "to": 6,
+            "unit": "%",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "psyGapClosurePct",
+            "label": "每年缩小效率差距",
+            "from": 6,
+            "to": 3,
+            "unit": "%",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "nationalWeightTarget",
+            "label": "一年后全国出栏重",
+            "from": 120,
+            "to": 119,
+            "unit": "kg",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "demandTrendPct",
+            "label": "需求年变化",
+            "from": -1,
+            "to": 0,
+            "unit": "%",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "companyCost",
+            "label": "首年养殖完全成本",
+            "from": 11.8,
+            "to": 11.5,
+            "unit": "元/kg",
+            "affects2027NationalPrice": false
+          }
+        ],
+        "quarterly": [
+          {
+            "quarter": "2027 Q1",
+            "price": 12.701845927736487,
+            "laggedSows10k": 3862.6666666666665,
+            "deltaVsGlobalBaseline": 0.6560666276267391
+          },
+          {
+            "quarter": "2027 Q2",
+            "price": 14.43936022942963,
+            "laggedSows10k": 3720.6666666666665,
+            "deltaVsGlobalBaseline": 1.067310317593325
+          },
+          {
+            "quarter": "2027 Q3",
+            "price": 17.17979215221501,
+            "laggedSows10k": 3529.9599999999996,
+            "deltaVsGlobalBaseline": 1.828380429083479
+          },
+          {
+            "quarter": "2027 Q4",
+            "price": 19.478054016270644,
+            "laggedSows10k": 3385.8799999999997,
+            "deltaVsGlobalBaseline": 2.8243971004043793
+          }
+        ],
+        "annual": 15.949763081412945,
+        "probability": null,
+        "sourceIds": [
+          "mara_202608",
+          "oecd_model",
+          "policy_2026",
+          "psy_cn_2025",
+          "s001d4b9e7209",
+          "s002e5e0ccc8f",
+          "s012b78100816",
+          "s050494296d8a",
+          "s0944802de4b6",
+          "s0a73a85c50e8",
+          "s0cb50a1d74ff",
+          "s0e0fd91c321d",
+          "s0ec459a954ce",
+          "s0fcdba74d635",
+          "s16f777f21b2d",
+          "s17a8d856a488",
+          "s18d3185c0651",
+          "s196cb114415a",
+          "s1e8a85febd86",
+          "s221ad55ecb3c",
+          "s22d7d3d36d6f",
+          "s2321176f27f1",
+          "s2373d67a0290",
+          "s26f64998c86b",
+          "s28bd9eff7259",
+          "s29a3426654ae",
+          "s32eac10753d0",
+          "s3354acd48db5",
+          "s35c95a959d8e",
+          "s36073737075c",
+          "s3aef37038eff",
+          "s3d67aecf2b91",
+          "s3f239410bde2",
+          "s3fc70412f863",
+          "s416dcb5a130d",
+          "s4244af8b1672",
+          "s4467975c0b89",
+          "s484bf1af2ba7",
+          "s4d8b1a366ebe",
+          "s4e418f97fdb4",
+          "s4efcf14e0ce0",
+          "s5198bf0c660b",
+          "s51e6078cdc5b",
+          "s535b7508eb55",
+          "s53c7a5d5ff5f",
+          "s557c1805c012",
+          "s56d0689a4e88",
+          "s57c9cf92e2e2",
+          "s57e09fe683a6",
+          "s5a72a29e948d",
+          "s5ad7b9abe7b1",
+          "s5ae26bf71440",
+          "s5af977fe66f0",
+          "s5b7ecb0c8fb7",
+          "s5bc4c6559564",
+          "s5c9066b92657",
+          "s5f488891c6df",
+          "s61160fe2b0e5",
+          "s611ff4638d8c",
+          "s6411b6af4d0e",
+          "s674d72066673",
+          "s6b766107318e",
+          "s6cc769082beb",
+          "s6ee1ff241692",
+          "s719e2cea02bf",
+          "s7c36d9b746bc",
+          "s7e3a37428c1a",
+          "s7e7f60f506b9",
+          "s848fb09f0995",
+          "s84ec0d389bf4",
+          "s87ef3c43e231",
+          "s883546c6d2c1",
+          "s8945fbfa2b4f",
+          "s8963dc5b8ad3",
+          "s89d093bc5b24",
+          "s8a221d86bfdc",
+          "s8b769baaf5ad",
+          "s8d51499e3a8f",
+          "s90e6c15c9c68",
+          "s943ced9c81bb",
+          "s9442602fa8e4",
+          "s99fad3d5a53e",
+          "s9a91f3018706",
+          "s9d39c6bd3667",
+          "s9d7bfaf6009f",
+          "s9e07b468ff67",
+          "s9e45f6dd6df9",
+          "sa11809c5c76a",
+          "sa43e042c17af",
+          "sa59844d8c612",
+          "sa789851f2f2b",
+          "sa850940072e5",
+          "sa9e22d957835",
+          "sab99a80cf14e",
+          "sacc9cafd31e8",
+          "sb17704295d19",
+          "sb5a91a18f468",
+          "sb799037e8461",
+          "sba03c867b959",
+          "sbc992d02d067",
+          "sc05b7c3e4945",
+          "sc19598be5efe",
+          "sc1afc65b73b2",
+          "sc297d7712130",
+          "sc712b0680b0a",
+          "sc9b1a97dd123",
+          "scf38c2b9b80b",
+          "sd179f5479f7f",
+          "sd1f088f52bb6",
+          "sd3cf0156ca89",
+          "sd4ac27c05bcf",
+          "sd73ec4bbc9c1",
+          "sda970c64aad6",
+          "sdb6c9410f81e",
+          "sdde89e7eafa7",
+          "sded27634e90b",
+          "sdf97d663def1",
+          "se182945be601",
+          "se4e14a688209",
+          "se539b2b518c3",
+          "se5dc13575c88",
+          "se77eb5faf3fa",
+          "se7de05411bec",
+          "se88a1ccba300",
+          "sed6b328f9436",
+          "sef3c8da6afe3",
+          "sf4424f7045d8",
+          "sf8c9a3491baa",
+          "sfccd20b1f66c",
+          "sfdc068d5429b",
+          "sff556bde09c0",
+          "sow_202606",
+          "sow_202609",
+          "usda_elasticity"
+        ]
+      },
+      {
+        "id": "joint_base",
+        "label": "正常修复",
+        "changedInputs": [],
+        "quarterly": [
+          {
+            "quarter": "2027 Q1",
+            "price": 12.045779300109748,
+            "laggedSows10k": 3862.6666666666665,
+            "deltaVsGlobalBaseline": 0
+          },
+          {
+            "quarter": "2027 Q2",
+            "price": 13.372049911836305,
+            "laggedSows10k": 3720.6666666666665,
+            "deltaVsGlobalBaseline": 0
+          },
+          {
+            "quarter": "2027 Q3",
+            "price": 15.351411723131532,
+            "laggedSows10k": 3545.4606701940033,
+            "deltaVsGlobalBaseline": 0
+          },
+          {
+            "quarter": "2027 Q4",
+            "price": 16.653656915866264,
+            "laggedSows10k": 3432.3820105820105,
+            "deltaVsGlobalBaseline": 0
+          }
+        ],
+        "annual": 14.355724462735962,
+        "probability": null,
+        "sourceIds": [
+          "mara_202608",
+          "oecd_model",
+          "policy_2026",
+          "psy_cn_2025",
+          "s001d4b9e7209",
+          "s002e5e0ccc8f",
+          "s012b78100816",
+          "s050494296d8a",
+          "s0944802de4b6",
+          "s0a73a85c50e8",
+          "s0cb50a1d74ff",
+          "s0e0fd91c321d",
+          "s0ec459a954ce",
+          "s0fcdba74d635",
+          "s16f777f21b2d",
+          "s17a8d856a488",
+          "s18d3185c0651",
+          "s196cb114415a",
+          "s1e8a85febd86",
+          "s221ad55ecb3c",
+          "s22d7d3d36d6f",
+          "s2321176f27f1",
+          "s2373d67a0290",
+          "s26f64998c86b",
+          "s28bd9eff7259",
+          "s29a3426654ae",
+          "s32eac10753d0",
+          "s3354acd48db5",
+          "s35c95a959d8e",
+          "s36073737075c",
+          "s3aef37038eff",
+          "s3d67aecf2b91",
+          "s3f239410bde2",
+          "s3fc70412f863",
+          "s416dcb5a130d",
+          "s4244af8b1672",
+          "s4467975c0b89",
+          "s484bf1af2ba7",
+          "s4d8b1a366ebe",
+          "s4e418f97fdb4",
+          "s4efcf14e0ce0",
+          "s5198bf0c660b",
+          "s51e6078cdc5b",
+          "s535b7508eb55",
+          "s53c7a5d5ff5f",
+          "s557c1805c012",
+          "s56d0689a4e88",
+          "s57c9cf92e2e2",
+          "s57e09fe683a6",
+          "s5a72a29e948d",
+          "s5ad7b9abe7b1",
+          "s5ae26bf71440",
+          "s5af977fe66f0",
+          "s5b7ecb0c8fb7",
+          "s5bc4c6559564",
+          "s5c9066b92657",
+          "s5f488891c6df",
+          "s61160fe2b0e5",
+          "s611ff4638d8c",
+          "s6411b6af4d0e",
+          "s674d72066673",
+          "s6b766107318e",
+          "s6cc769082beb",
+          "s6ee1ff241692",
+          "s719e2cea02bf",
+          "s7c36d9b746bc",
+          "s7e3a37428c1a",
+          "s7e7f60f506b9",
+          "s848fb09f0995",
+          "s84ec0d389bf4",
+          "s87ef3c43e231",
+          "s883546c6d2c1",
+          "s8945fbfa2b4f",
+          "s8963dc5b8ad3",
+          "s89d093bc5b24",
+          "s8a221d86bfdc",
+          "s8b769baaf5ad",
+          "s8d51499e3a8f",
+          "s90e6c15c9c68",
+          "s943ced9c81bb",
+          "s9442602fa8e4",
+          "s99fad3d5a53e",
+          "s9a91f3018706",
+          "s9d39c6bd3667",
+          "s9d7bfaf6009f",
+          "s9e07b468ff67",
+          "s9e45f6dd6df9",
+          "sa11809c5c76a",
+          "sa43e042c17af",
+          "sa59844d8c612",
+          "sa789851f2f2b",
+          "sa850940072e5",
+          "sa9e22d957835",
+          "sab99a80cf14e",
+          "sacc9cafd31e8",
+          "sb17704295d19",
+          "sb5a91a18f468",
+          "sb799037e8461",
+          "sba03c867b959",
+          "sbc992d02d067",
+          "sc05b7c3e4945",
+          "sc19598be5efe",
+          "sc1afc65b73b2",
+          "sc297d7712130",
+          "sc712b0680b0a",
+          "sc9b1a97dd123",
+          "scf38c2b9b80b",
+          "sd179f5479f7f",
+          "sd1f088f52bb6",
+          "sd3cf0156ca89",
+          "sd4ac27c05bcf",
+          "sd73ec4bbc9c1",
+          "sda970c64aad6",
+          "sdb6c9410f81e",
+          "sdde89e7eafa7",
+          "sded27634e90b",
+          "sdf97d663def1",
+          "se182945be601",
+          "se4e14a688209",
+          "se539b2b518c3",
+          "se5dc13575c88",
+          "se77eb5faf3fa",
+          "se7de05411bec",
+          "se88a1ccba300",
+          "sed6b328f9436",
+          "sef3c8da6afe3",
+          "sf4424f7045d8",
+          "sf8c9a3491baa",
+          "sfccd20b1f66c",
+          "sfdc068d5429b",
+          "sff556bde09c0",
+          "sow_202606",
+          "sow_202609",
+          "usda_elasticity"
+        ]
+      },
+      {
+        "id": "joint_slow",
+        "label": "缓慢修复",
+        "changedInputs": [
+          {
+            "key": "q4DepletionPct",
+            "label": "2026 Q4 去化",
+            "from": 4.708994708994707,
+            "to": 2.3544973544973535,
+            "unit": "%",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "psyGapClosurePct",
+            "label": "每年缩小效率差距",
+            "from": 6,
+            "to": 8,
+            "unit": "%",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "nationalWeightTarget",
+            "label": "一年后全国出栏重",
+            "from": 120,
+            "to": 123,
+            "unit": "kg",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "demandTrendPct",
+            "label": "需求年变化",
+            "from": -1,
+            "to": -1.5,
+            "unit": "%",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "companyCost",
+            "label": "首年养殖完全成本",
+            "from": 11.8,
+            "to": 12.1,
+            "unit": "元/kg",
+            "affects2027NationalPrice": false
+          },
+          {
+            "key": "recoveryYears",
+            "label": "回到正常经营所需",
+            "from": 3,
+            "to": 4,
+            "unit": "年",
+            "affects2027NationalPrice": false
+          }
+        ],
+        "quarterly": [
+          {
+            "quarter": "2027 Q1",
+            "price": 11.259083236680183,
+            "laggedSows10k": 3862.6666666666665,
+            "deltaVsGlobalBaseline": -0.7866960634295648
+          },
+          {
+            "quarter": "2027 Q2",
+            "price": 12.118133010371103,
+            "laggedSows10k": 3720.6666666666665,
+            "deltaVsGlobalBaseline": -1.2539169014652014
+          },
+          {
+            "quarter": "2027 Q3",
+            "price": 13.18214069144689,
+            "laggedSows10k": 3573.7303350970014,
+            "deltaVsGlobalBaseline": -2.1692710316846426
+          },
+          {
+            "quarter": "2027 Q4",
+            "price": 13.39624153457041,
+            "laggedSows10k": 3517.191005291005,
+            "deltaVsGlobalBaseline": -3.2574153812958553
+          }
+        ],
+        "annual": 12.488899618267148,
+        "probability": null,
+        "sourceIds": [
+          "mara_202608",
+          "oecd_model",
+          "policy_2026",
+          "psy_cn_2025",
+          "s001d4b9e7209",
+          "s002e5e0ccc8f",
+          "s012b78100816",
+          "s050494296d8a",
+          "s0944802de4b6",
+          "s0a73a85c50e8",
+          "s0cb50a1d74ff",
+          "s0e0fd91c321d",
+          "s0ec459a954ce",
+          "s0fcdba74d635",
+          "s16f777f21b2d",
+          "s17a8d856a488",
+          "s18d3185c0651",
+          "s196cb114415a",
+          "s1e8a85febd86",
+          "s221ad55ecb3c",
+          "s22d7d3d36d6f",
+          "s2321176f27f1",
+          "s2373d67a0290",
+          "s26f64998c86b",
+          "s28bd9eff7259",
+          "s29a3426654ae",
+          "s32eac10753d0",
+          "s3354acd48db5",
+          "s35c95a959d8e",
+          "s36073737075c",
+          "s3aef37038eff",
+          "s3d67aecf2b91",
+          "s3f239410bde2",
+          "s3fc70412f863",
+          "s416dcb5a130d",
+          "s4244af8b1672",
+          "s4467975c0b89",
+          "s484bf1af2ba7",
+          "s4d8b1a366ebe",
+          "s4e418f97fdb4",
+          "s4efcf14e0ce0",
+          "s5198bf0c660b",
+          "s51e6078cdc5b",
+          "s535b7508eb55",
+          "s53c7a5d5ff5f",
+          "s557c1805c012",
+          "s56d0689a4e88",
+          "s57c9cf92e2e2",
+          "s57e09fe683a6",
+          "s5a72a29e948d",
+          "s5ad7b9abe7b1",
+          "s5ae26bf71440",
+          "s5af977fe66f0",
+          "s5b7ecb0c8fb7",
+          "s5bc4c6559564",
+          "s5c9066b92657",
+          "s5f488891c6df",
+          "s61160fe2b0e5",
+          "s611ff4638d8c",
+          "s6411b6af4d0e",
+          "s674d72066673",
+          "s6b766107318e",
+          "s6cc769082beb",
+          "s6ee1ff241692",
+          "s719e2cea02bf",
+          "s7c36d9b746bc",
+          "s7e3a37428c1a",
+          "s7e7f60f506b9",
+          "s848fb09f0995",
+          "s84ec0d389bf4",
+          "s87ef3c43e231",
+          "s883546c6d2c1",
+          "s8945fbfa2b4f",
+          "s8963dc5b8ad3",
+          "s89d093bc5b24",
+          "s8a221d86bfdc",
+          "s8b769baaf5ad",
+          "s8d51499e3a8f",
+          "s90e6c15c9c68",
+          "s943ced9c81bb",
+          "s9442602fa8e4",
+          "s99fad3d5a53e",
+          "s9a91f3018706",
+          "s9d39c6bd3667",
+          "s9d7bfaf6009f",
+          "s9e07b468ff67",
+          "s9e45f6dd6df9",
+          "sa11809c5c76a",
+          "sa43e042c17af",
+          "sa59844d8c612",
+          "sa789851f2f2b",
+          "sa850940072e5",
+          "sa9e22d957835",
+          "sab99a80cf14e",
+          "sacc9cafd31e8",
+          "sb17704295d19",
+          "sb5a91a18f468",
+          "sb799037e8461",
+          "sba03c867b959",
+          "sbc992d02d067",
+          "sc05b7c3e4945",
+          "sc19598be5efe",
+          "sc1afc65b73b2",
+          "sc297d7712130",
+          "sc712b0680b0a",
+          "sc9b1a97dd123",
+          "scf38c2b9b80b",
+          "sd179f5479f7f",
+          "sd1f088f52bb6",
+          "sd3cf0156ca89",
+          "sd4ac27c05bcf",
+          "sd73ec4bbc9c1",
+          "sda970c64aad6",
+          "sdb6c9410f81e",
+          "sdde89e7eafa7",
+          "sded27634e90b",
+          "sdf97d663def1",
+          "se182945be601",
+          "se4e14a688209",
+          "se539b2b518c3",
+          "se5dc13575c88",
+          "se77eb5faf3fa",
+          "se7de05411bec",
+          "se88a1ccba300",
+          "sed6b328f9436",
+          "sef3c8da6afe3",
+          "sf4424f7045d8",
+          "sf8c9a3491baa",
+          "sfccd20b1f66c",
+          "sfdc068d5429b",
+          "sff556bde09c0",
+          "sow_202606",
+          "sow_202609",
+          "usda_elasticity"
+        ]
+      },
+      {
+        "id": "joint_stress",
+        "label": "低谷延长",
+        "changedInputs": [
+          {
+            "key": "q4DepletionPct",
+            "label": "2026 Q4 去化",
+            "from": 4.708994708994707,
+            "to": 0,
+            "unit": "%",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "psyGapClosurePct",
+            "label": "每年缩小效率差距",
+            "from": 6,
+            "to": 12,
+            "unit": "%",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "nationalWeightTarget",
+            "label": "一年后全国出栏重",
+            "from": 120,
+            "to": 124,
+            "unit": "kg",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "demandTrendPct",
+            "label": "需求年变化",
+            "from": -1,
+            "to": -2,
+            "unit": "%",
+            "affects2027NationalPrice": true
+          },
+          {
+            "key": "companyCost",
+            "label": "首年养殖完全成本",
+            "from": 11.8,
+            "to": 12.5,
+            "unit": "元/kg",
+            "affects2027NationalPrice": false
+          },
+          {
+            "key": "recoveryYears",
+            "label": "回到正常经营所需",
+            "from": 3,
+            "to": 5,
+            "unit": "年",
+            "affects2027NationalPrice": false
+          }
+        ],
+        "quarterly": [
+          {
+            "quarter": "2027 Q1",
+            "price": 10.685303727784211,
+            "laggedSows10k": 3862.6666666666665,
+            "deltaVsGlobalBaseline": -1.3604755723255373
+          },
+          {
+            "quarter": "2027 Q2",
+            "price": 11.234325757128973,
+            "laggedSows10k": 3720.6666666666665,
+            "deltaVsGlobalBaseline": -2.137724154707332
+          },
+          {
+            "quarter": "2027 Q3",
+            "price": 11.638703649014838,
+            "laggedSows10k": 3602,
+            "deltaVsGlobalBaseline": -3.7127080741166942
+          },
+          {
+            "quarter": "2027 Q4",
+            "price": 10.98979285367316,
+            "laggedSows10k": 3602,
+            "deltaVsGlobalBaseline": -5.663864062193104
+          }
+        ],
+        "annual": 11.137031496900297,
+        "probability": null,
+        "sourceIds": [
+          "mara_202608",
+          "oecd_model",
+          "policy_2026",
+          "psy_cn_2025",
+          "s001d4b9e7209",
+          "s002e5e0ccc8f",
+          "s012b78100816",
+          "s050494296d8a",
+          "s0944802de4b6",
+          "s0a73a85c50e8",
+          "s0cb50a1d74ff",
+          "s0e0fd91c321d",
+          "s0ec459a954ce",
+          "s0fcdba74d635",
+          "s16f777f21b2d",
+          "s17a8d856a488",
+          "s18d3185c0651",
+          "s196cb114415a",
+          "s1e8a85febd86",
+          "s221ad55ecb3c",
+          "s22d7d3d36d6f",
+          "s2321176f27f1",
+          "s2373d67a0290",
+          "s26f64998c86b",
+          "s28bd9eff7259",
+          "s29a3426654ae",
+          "s32eac10753d0",
+          "s3354acd48db5",
+          "s35c95a959d8e",
+          "s36073737075c",
+          "s3aef37038eff",
+          "s3d67aecf2b91",
+          "s3f239410bde2",
+          "s3fc70412f863",
+          "s416dcb5a130d",
+          "s4244af8b1672",
+          "s4467975c0b89",
+          "s484bf1af2ba7",
+          "s4d8b1a366ebe",
+          "s4e418f97fdb4",
+          "s4efcf14e0ce0",
+          "s5198bf0c660b",
+          "s51e6078cdc5b",
+          "s535b7508eb55",
+          "s53c7a5d5ff5f",
+          "s557c1805c012",
+          "s56d0689a4e88",
+          "s57c9cf92e2e2",
+          "s57e09fe683a6",
+          "s5a72a29e948d",
+          "s5ad7b9abe7b1",
+          "s5ae26bf71440",
+          "s5af977fe66f0",
+          "s5b7ecb0c8fb7",
+          "s5bc4c6559564",
+          "s5c9066b92657",
+          "s5f488891c6df",
+          "s61160fe2b0e5",
+          "s611ff4638d8c",
+          "s6411b6af4d0e",
+          "s674d72066673",
+          "s6b766107318e",
+          "s6cc769082beb",
+          "s6ee1ff241692",
+          "s719e2cea02bf",
+          "s7c36d9b746bc",
+          "s7e3a37428c1a",
+          "s7e7f60f506b9",
+          "s848fb09f0995",
+          "s84ec0d389bf4",
+          "s87ef3c43e231",
+          "s883546c6d2c1",
+          "s8945fbfa2b4f",
+          "s8963dc5b8ad3",
+          "s89d093bc5b24",
+          "s8a221d86bfdc",
+          "s8b769baaf5ad",
+          "s8d51499e3a8f",
+          "s90e6c15c9c68",
+          "s943ced9c81bb",
+          "s9442602fa8e4",
+          "s99fad3d5a53e",
+          "s9a91f3018706",
+          "s9d39c6bd3667",
+          "s9d7bfaf6009f",
+          "s9e07b468ff67",
+          "s9e45f6dd6df9",
+          "sa11809c5c76a",
+          "sa43e042c17af",
+          "sa59844d8c612",
+          "sa789851f2f2b",
+          "sa850940072e5",
+          "sa9e22d957835",
+          "sab99a80cf14e",
+          "sacc9cafd31e8",
+          "sb17704295d19",
+          "sb5a91a18f468",
+          "sb799037e8461",
+          "sba03c867b959",
+          "sbc992d02d067",
+          "sc05b7c3e4945",
+          "sc19598be5efe",
+          "sc1afc65b73b2",
+          "sc297d7712130",
+          "sc712b0680b0a",
+          "sc9b1a97dd123",
+          "scf38c2b9b80b",
+          "sd179f5479f7f",
+          "sd1f088f52bb6",
+          "sd3cf0156ca89",
+          "sd4ac27c05bcf",
+          "sd73ec4bbc9c1",
+          "sda970c64aad6",
+          "sdb6c9410f81e",
+          "sdde89e7eafa7",
+          "sded27634e90b",
+          "sdf97d663def1",
+          "se182945be601",
+          "se4e14a688209",
+          "se539b2b518c3",
+          "se5dc13575c88",
+          "se77eb5faf3fa",
+          "se7de05411bec",
+          "se88a1ccba300",
+          "sed6b328f9436",
+          "sef3c8da6afe3",
+          "sf4424f7045d8",
+          "sf8c9a3491baa",
+          "sfccd20b1f66c",
+          "sfdc068d5429b",
+          "sff556bde09c0",
+          "sow_202606",
+          "sow_202609",
+          "usda_elasticity"
+        ]
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "mara_202608",
+      "title": "2026年8月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202609/t20260909_474345.htm",
+      "publisher": "全国畜牧总站",
+      "publicationDate": "2026-09-09",
+      "period": "2026-08",
+      "locator": "生猪、猪肉平均价格",
+      "usedFor": "活猪11.36、猪肉21.00同表锚",
+      "limitations": "月度集贸监测，不与NDRC出场价拼接。",
+      "verified": true
+    },
+    {
+      "id": "oecd_model",
+      "title": "OECD-FAO Agricultural Outlook 2026–2035 — Methodology",
+      "url": "https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2026-2035_47874669-en/full-report/methodology_4c323de7.html",
+      "publisher": "OECD / FAO",
+      "publicationDate": "2026",
+      "period": "2026–2035",
+      "locator": "The underlying Aglink-Cosimo model",
+      "usedFor": "动态局部均衡、供需贸易、头数与胴体重分拆",
+      "limitations": "全球年度框架；本网页未复制其完整方程和数据库。",
+      "verified": true
+    },
+    {
+      "id": "policy_2026",
+      "title": "生猪产能综合调控实施方案（2026年修订）",
+      "url": "https://www.hunan.gov.cn/zqt/zcsd/202605/t20260518_33979020.html",
+      "publisher": "农业农村部，湖南省政府转载",
+      "publicationDate": "2026-05-03",
+      "period": "2026修订",
+      "locator": "正常保有量与绿色/黄色区域",
+      "usedFor": "3750万头、92%–103%区间",
+      "limitations": "调控满足正常消费、动态考虑效率；未保证行业利润或唯一价格。",
+      "verified": true
+    },
+    {
+      "id": "psy_cn_2025",
+      "title": "2025年我国生猪产业形势回顾、存在问题与后期展望",
+      "url": "https://www.zgxmzz.cn/paper/11661",
+      "publisher": "中国畜牧杂志；作者孙俊娜、王祖力、蒋尧、李丹丹、张骏",
+      "publicationDate": "2026年第62卷第3期",
+      "period": "2025",
+      "locator": "PDF页码 []",
+      "usedFor": "{\"data_year\": 2025, \"psy\": 23.4, \"year_on_year_absolute\": 2.4, \"scope\": \"规模场与散户加权全国经产母猪\", \"attribution\": \"作者引用农业农村部监测数据\"}",
+      "limitations": "已核实期刊官网文章元数据及作者全文转载；未取得期刊PDF全文。；未公开监测样本数、原始数据、具体权重和分母日数规则，不能称为可独立复算全国审计统计序列。；经产母猪分母与配种母猪、全部能繁母猪不完全相同。；与24.5媒体参照存在差异；不得混为同口径序列。",
+      "verified": true
+    },
+    {
+      "id": "s001d4b9e7209",
+      "title": "11月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202212/t20221205_414557.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-11-21",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s002e5e0ccc8f",
+      "title": "2024-01五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202401/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s012b78100816",
+      "title": "11月第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202311/t20231114_434283.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-11-14",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s050494296d8a",
+      "title": "9月份第5周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202210/t20221008_411463.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-10-08",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s0944802de4b6",
+      "title": "3月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202203/t20220315_399352.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-03-15",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s0a73a85c50e8",
+      "title": "9月第5周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202610/t20261009_474865.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-10-09",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s0cb50a1d74ff",
+      "title": "1月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202302/t20230201_417632.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-02-01",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s0e0fd91c321d",
+      "title": "2024年9月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202410/t20241011_447899.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2024-10-11",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s0ec459a954ce",
+      "title": "2021-10五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202110/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s0fcdba74d635",
+      "title": "10月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202210/t20221025_412445.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-10-25",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s16f777f21b2d",
+      "title": "2025年2月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202503/t20250325_454805.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-03-11",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s17a8d856a488",
+      "title": "2024年12月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202501/t20250113_452086.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-01-10",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s18d3185c0651",
+      "title": "2025年9月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202510/t20251015_465668.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-10-15",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s196cb114415a",
+      "title": "9月第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202609/t20260920_474543.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-09-20",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s1a004d17fdbd",
+      "title": "2025-04五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202504/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s1e8a85febd86",
+      "title": "2026-03五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202603/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s221ad55ecb3c",
+      "title": "2024-02五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202402/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s2298f4cf574f",
+      "title": "11月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202111/t20211109_391122.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-11-09",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s22d7d3d36d6f",
+      "title": "7月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202208/t20220801_408000.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-08-01",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s2321176f27f1",
+      "title": "2021-11五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202111/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s2373d67a0290",
+      "title": "7月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202207/t20220725_407533.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-07-25",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s23a43fc7253b",
+      "title": "2024-11五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202411/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s2502ffaddfc6",
+      "title": "2024-08五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202408/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s25343fa65b00",
+      "title": "8月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202208/t20220816_408647.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-08-16",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s26f64998c86b",
+      "title": "2022年2月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202203/t20220307_398775.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-03-07",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s28bd9eff7259",
+      "title": "6月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202206/t20220621_405158.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-06-21",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s29234e601e01",
+      "title": "10月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202110/t20211012_389109.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-10-12",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s29a3426654ae",
+      "title": "2025年12月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202601/t20260115_469255.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-01-15",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s316fc4591d15",
+      "title": "2024-12五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202412/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s32eac10753d0",
+      "title": "2026-09国家统计局农业生产解读",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202610/t20261019_1965646.html",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "全国能繁母猪存栏段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s3354acd48db5",
+      "title": "10月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202210/t20221010_411621.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-10-10",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s35c95a959d8e",
+      "title": "2023-03五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202303/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s36073737075c",
+      "title": "1月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202301/t20230111_416853.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-01-11",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s37ebaae27f93",
+      "title": "2021年6月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202109/t20210901_386328.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-09-01",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s3aef37038eff",
+      "title": "11月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202211/t20221114_413643.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-11-14",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s3d67aecf2b91",
+      "title": "5月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202206/t20220606_404336.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-06-06",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s3f239410bde2",
+      "title": "10月第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202310/t20231017_432924.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-10-17",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s3fc70412f863",
+      "title": "6月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202206/t20220607_404367.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-06-07",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s416dcb5a130d",
+      "title": "2月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202303/t20230302_419381.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-03-02",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s4244af8b1672",
+      "title": "10月第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202310/t20231031_433706.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-10-31",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s43861b6d9977",
+      "title": "2026-02五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202602/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s4467975c0b89",
+      "title": "2025年8月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202509/t20250923_464888.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-09-15",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s484bf1af2ba7",
+      "title": "2022-01五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202201/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s4b0952421efd",
+      "title": "9月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202209/t20220905_409906.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-09-05",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s4d8b1a366ebe",
+      "title": "9月第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202609/t20260924_474668.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-09-24",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s4deab632338d",
+      "title": "2026-08五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202608/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s4e418f97fdb4",
+      "title": "2022-03五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202203/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s4efcf14e0ce0",
+      "title": "2023-06五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202306/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5198bf0c660b",
+      "title": "2025年7月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202508/t20250818_463512.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-08-12",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s51e6078cdc5b",
+      "title": "2025-12五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202512/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s535b7508eb55",
+      "title": "5月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202205/t20220524_403598.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-05-24",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s53c7a5d5ff5f",
+      "title": "4月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202204/t20220412_401204.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-04-12",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s557c1805c012",
+      "title": "2025年10月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202511/t20251118_467768.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-11-18",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s56bdfc987f93",
+      "title": "12月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202112/t20211228_394794.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-12-28",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s56d0689a4e88",
+      "title": "7月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202207/t20220718_407113.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-07-18",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s57c9cf92e2e2",
+      "title": "11月第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202311/t20231121_434616.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-11-21",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s57e09fe683a6",
+      "title": "9月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202209/t20220927_411120.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-09-27",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5a72a29e948d",
+      "title": "2025年4月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202505/t20250514_456937.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-05-14",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5ad7b9abe7b1",
+      "title": "2021-12五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2021/202112/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5ae26bf71440",
+      "title": "3月份第5周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202204/t20220402_400782.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-04-02",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5af977fe66f0",
+      "title": "12月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202212/t20221228_415899.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-12-28",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5b7ecb0c8fb7",
+      "title": "9月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202209/t20220919_410639.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-09-19",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5bc4c6559564",
+      "title": "3月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202203/t20220329_400382.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-03-29",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5c3189840ce2",
+      "title": "11月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202111/t20211123_392158.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-11-23",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5c9066b92657",
+      "title": "12月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202212/t20221219_415424.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-12-19",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5ea89389dc6d",
+      "title": "8月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202208/t20220823_409028.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-08-23",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s5f488891c6df",
+      "title": "2025年1月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202502/t20250217_453025.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-02-14",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s603a839cc4d8",
+      "title": "10月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202110/t20211026_390173.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-10-26",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s61160fe2b0e5",
+      "title": "3月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202203/t20220322_399912.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-03-22",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s611ff4638d8c",
+      "title": "2023-02五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202302/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s6411b6af4d0e",
+      "title": "4月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202204/t20220426_402263.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-04-26",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s674d72066673",
+      "title": "2024年5月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202406/t20240624_443125.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2024-06-17",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s6b766107318e",
+      "title": "10月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202211/t20221101_412956.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-11-01",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s6bf1d90228a0",
+      "title": "2025-05五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202505/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s6cc769082beb",
+      "title": "11月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202212/t20221205_414559.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-11-28",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s6e1ae5c904f8",
+      "title": "2022-08五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202208/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s6e9cebd49617",
+      "title": "2026-05五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202605/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s6ee1ff241692",
+      "title": "2024年7月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202408/t20240822_445999.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2024-08-22",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s719e2cea02bf",
+      "title": "12月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202212/t20221208_414644.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-12-08",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s7446d07d7ce5",
+      "title": "2021年7月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202109/t20210902_386392.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-09-02",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s7819fdf9a496",
+      "title": "2024-06五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202406/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s7963b38626e8",
+      "title": "12月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202112/t20211214_393782.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-12-14",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s7c36d9b746bc",
+      "title": "2026年8月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202609/t20260909_474345.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-09-09",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s7e3a37428c1a",
+      "title": "2023-07五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202307/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s7e7f60f506b9",
+      "title": "2026年5月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202606/t20260617_472822.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-06-17",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s823a9562fef8",
+      "title": "12月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202112/t20211207_393256.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-12-07",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s82c00edbfad7",
+      "title": "12月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202112/t20211221_394243.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-12-21",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s82c46eb55731",
+      "title": "12月份第5周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202201/t20220104_395183.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-01-04",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s848fb09f0995",
+      "title": "4月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202205/t20220505_402659.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-05-05",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s84ec0d389bf4",
+      "title": "2025年5月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202506/t20250616_460894.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-06-13",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s85253a291a24",
+      "title": "2025-06五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202506/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s87ef3c43e231",
+      "title": "2024年3月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202405/t20240509_440895.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2024-05-09",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s883546c6d2c1",
+      "title": "10月第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202310/t20231024_433408.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-10-24",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s8945fbfa2b4f",
+      "title": "2023-01五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202301/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s8963dc5b8ad3",
+      "title": "2026年7月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202608/t20260814_473946.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-08-14",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s89c0afe60a88",
+      "title": "2024-09五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202409/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s89d093bc5b24",
+      "title": "2026年6月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202607/t20260708_473285.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-07-08",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s8a221d86bfdc",
+      "title": "2026年4月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202605/t20260519_472251.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-05-19",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s8b769baaf5ad",
+      "title": "6月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202206/t20220613_404744.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-06-13",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s8d51499e3a8f",
+      "title": "2025年11月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202512/t20251217_468664.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-12-15",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s903d003f4c42",
+      "title": "2024-10五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202410/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s90e6c15c9c68",
+      "title": "建立生猪产能逆周期调控机制—农业农村部答记者问",
+      "url": "https://xmsyj.moa.gov.cn/zcjd/202108/t20210820_6374572.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-08-20",
+      "period": "",
+      "locator": "目前生猪生产已完全恢复段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s943ced9c81bb",
+      "title": "2022-05五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202205/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s9442602fa8e4",
+      "title": "12月份第5周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202301/t20230104_416304.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-01-04",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s962ec66790fa",
+      "title": "2026-07五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202607/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s9917c2edeea8",
+      "title": "2022-06五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202206/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s99fad3d5a53e",
+      "title": "2024年6月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202407/t20240719_444687.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2024-07-19",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s9a91f3018706",
+      "title": "2025-08五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202508/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s9d39c6bd3667",
+      "title": "2026年3月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202604/t20260410_471339.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-04-10",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s9d7bfaf6009f",
+      "title": "2025年6月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202508/t20250804_463227.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-07-14",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s9e07b468ff67",
+      "title": "2022-12五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202212/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "s9e45f6dd6df9",
+      "title": "2024-05五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202405/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sa11809c5c76a",
+      "title": "3月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202203/t20220308_398834.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-03-08",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sa43e042c17af",
+      "title": "2月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202302/t20230214_418309.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-02-14",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sa59844d8c612",
+      "title": "2022-02五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202202/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sa789851f2f2b",
+      "title": "2026-06五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202606/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sa850940072e5",
+      "title": "10月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202210/t20221018_412112.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-10-18",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sa8af4732ac06",
+      "title": "2022-07五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202207/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sa9e22d957835",
+      "title": "2023-11五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202311/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "saa5c025a2dd4",
+      "title": "2021-06五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202106/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sab99a80cf14e",
+      "title": "2024年4月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202405/t20240520_441295.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2024-05-20",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sacc9cafd31e8",
+      "title": "1月份第3周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202301/t20230128_417427.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-01-28",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sb17704295d19",
+      "title": "2022-11五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202211/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sb1b9a37f8657",
+      "title": "10月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202111/t20211102_390688.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-11-02",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sb2ee133dfdd0",
+      "title": "2026-01五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202601/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sb5a91a18f468",
+      "title": "2024-03五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202403/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sb799037e8461",
+      "title": "11月第5周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202312/t20231205_435175.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-12-05",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sb855b728f870",
+      "title": "8月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202208/t20220809_408340.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-08-09",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sba03c867b959",
+      "title": "12月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202212/t20221212_414850.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-12-12",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sbc992d02d067",
+      "title": "1月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202301/t20230117_417119.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-01-17",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc05b7c3e4945",
+      "title": "11月第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202311/t20231127_434823.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-11-27",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc19598be5efe",
+      "title": "2025年3月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202504/t20250424_456191.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2025-04-15",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc1afc65b73b2",
+      "title": "4月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202204/t20220418_401597.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-04-18",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc297d7712130",
+      "title": "2022-04五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202204/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc328fc069f7b",
+      "title": "2025-02五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202502/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc3e2db9a73a5",
+      "title": "2025-11五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202511/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc49d8a44092f",
+      "title": "2026-04五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202604/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc712b0680b0a",
+      "title": "2026年2月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202603/t20260324_470302.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-03-24",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc83bb9cb622d",
+      "title": "11月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202111/t20211130_392718.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-11-30",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc9b1a97dd123",
+      "title": "9月第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202609/t20260920_474544.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-09-20",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sc9f5f1df0db0",
+      "title": "2022-10五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202210/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "scf38c2b9b80b",
+      "title": "2021-09五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202109/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sd179f5479f7f",
+      "title": "2023-08五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202308/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sd1f088f52bb6",
+      "title": "2023-10五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202310/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sd26ff598d556",
+      "title": "8月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202208/t20220830_409467.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-08-30",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sd3cf0156ca89",
+      "title": "2025-09五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202509/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sd4ac27c05bcf",
+      "title": "2月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202303/t20230302_419382.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-03-02",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sd522b85d25a8",
+      "title": "2025-07五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202507/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sd529abac3076",
+      "title": "10月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202110/t20211019_389594.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-10-19",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sd73ec4bbc9c1",
+      "title": "2023-05五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202305/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sd93f23fc5bad",
+      "title": "2025-01五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202501/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sda970c64aad6",
+      "title": "2022年1月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202203/t20220307_398774.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-03-07",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sdb32176c4771",
+      "title": "2024-07五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202407/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sdb6c9410f81e",
+      "title": "9月第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202610/t20261009_474864.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-10-09",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sdde89e7eafa7",
+      "title": "6月份第5周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202207/t20220705_406212.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-07-05",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sded27634e90b",
+      "title": "2023-04五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202304/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sdf97d663def1",
+      "title": "2026年1月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202603/t20260324_470301.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2026-03-24",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "se182945be601",
+      "title": "5月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202205/t20220517_403255.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-05-17",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "se4e14a688209",
+      "title": "11月第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202311/t20231107_433999.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-11-07",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "se539b2b518c3",
+      "title": "7月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202207/t20220712_406738.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-07-12",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "se5dc13575c88",
+      "title": "2024-04五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2024/202404/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "se77eb5faf3fa",
+      "title": "2月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202302/t20230207_417933.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-02-07",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "se7de05411bec",
+      "title": "2025-10五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202510/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "se88a1ccba300",
+      "title": "11月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202211/t20221108_413276.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-11-08",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "seae4f119020a",
+      "title": "11月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202111/t20211116_391600.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2021-11-16",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sed6b328f9436",
+      "title": "5月份第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202205/t20220509_402859.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-05-09",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sef3c8da6afe3",
+      "title": "2024年8月全国畜产品和饲料价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/scxs/202409/t20240923_447237.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2024-09-23",
+      "period": "",
+      "locator": "全国活猪/生猪均价或月表活猪/生猪行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sf18a15f997b8",
+      "title": "2025-03五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202503/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sf1b16ef360b8",
+      "title": "2022-09五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202209/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sf4424f7045d8",
+      "title": "2023-09五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202309/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sf8c9a3491baa",
+      "title": "9月份第2周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202209/t20220913_410284.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-09-13",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sfccd20b1f66c",
+      "title": "6月份第4周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202206/t20220628_405759.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2022-06-28",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sfdc068d5429b",
+      "title": "10月第1周畜产品和饲料集贸市场价格情况",
+      "url": "https://www.nahs.org.cn/jcyj/jghq/202310/t20231010_432402.htm",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "2023-10-10",
+      "period": "",
+      "locator": "采集日及全国活猪/生猪均价段",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sff0e9717153d",
+      "title": "2021年9月全国畜产品和饲料价格情况",
+      "url": "https://www.fx361.com/page/2021/1118/12533132.shtml",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "首节全国活猪均价；期刊期号按索引，转载网页时间可能错误",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_authors_journal_reprint"
+    },
+    {
+      "id": "sff556bde09c0",
+      "title": "2023-12五部门生猪产品月表",
+      "url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2023/202312/",
+      "publisher": "农业农村部 / 全国畜牧总站 / 国家统计局（见原文）",
+      "publicationDate": "",
+      "period": "",
+      "locator": "能繁母猪/全国生猪出场价格行",
+      "usedFor": "历史序列对应原始观测；来源ID见逐行CSV",
+      "limitations": "保留原统计口径；旧样本指数不等于全国能繁头数。",
+      "verified": true,
+      "evidenceType": "official_primary"
+    },
+    {
+      "id": "sow_202606",
+      "title": "全国能繁母猪 2026-06",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202607/t20260716_1964140.html",
+      "publisher": "国家统计局",
+      "publicationDate": "2026-07-16",
+      "period": "2026-06",
+      "locator": "畜牧业生产段",
+      "usedFor": "模型季度母猪锚",
+      "limitations": "缺失月份仅在预测路径中插值，不回写观测序列。",
+      "verified": true
+    },
+    {
+      "id": "sow_202609",
+      "title": "全国能繁母猪 2026-09",
+      "url": "https://www.stats.gov.cn/sj/sjjd/202610/t20261019_1965646.html",
+      "publisher": "国家统计局",
+      "publicationDate": "2026-10-20",
+      "period": "2026-09",
+      "locator": "畜牧业生产段",
+      "usedFor": "模型季度母猪锚",
+      "limitations": "缺失月份仅在预测路径中插值，不回写观测序列。",
+      "verified": true
+    },
+    {
+      "id": "usda_elasticity",
+      "title": "China’s Meat Consumption: Growth Potential, ERR-320",
+      "url": "https://www.ers.usda.gov/media/9059/err-320.pdf?v=16878",
+      "publisher": "USDA ERS",
+      "publicationDate": "2023-07",
+      "period": "1999–2021估计",
+      "locator": "需求弹性表",
+      "usedFor": "家庭需求价格弹性−0.374；表观消费另有−0.163",
+      "limitations": "年度零售需求估计；不是月度活猪逆供给系数。",
+      "verified": true
+    }
+  ]
+}

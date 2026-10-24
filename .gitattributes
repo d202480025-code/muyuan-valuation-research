@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.pptx binary
+*.docx binary
+*.pdf binary
+*.png binary
+*.zip binary
+research/2026-10-24/materials/** -text
+research/2026-10-24/inputs/** -text
+research/2026-10-24/report-v2-original.md -text

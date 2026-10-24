@@ -1,0 +1,406 @@
+{
+  "version": "1.3.0",
+  "asOf": "2026-10-24",
+  "files": [
+    {
+      "path": "docs/.gitignore",
+      "bytes": 50,
+      "sha256": "4ed5fc464a4df514101a09d0fd8d652c98d8a9c3007538ad60c97a6059b625dc"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "docs/data/annual_productivity.csv",
+      "bytes": 1163,
+      "sha256": "d5470372e5f0bd4e3fc94c19a34db741a051bb62e44faa94530696880453c2e1"
+    },
+    {
+      "path": "docs/data/china_history.csv",
+      "bytes": 40945,
+      "sha256": "2d7158aa170421e02d61ad3e3c10f2e0f9db97df598fbab8d18be21d3c810a2f"
+    },
+    {
+      "path": "docs/data/company_growth.json",
+      "bytes": 70743,
+      "sha256": "aa7dc8bec269fbbc67552cbda2b913041035441936931e266a19511d13d2c9f9"
+    },
+    {
+      "path": "docs/data/cost_surveys.json",
+      "bytes": 81778,
+      "sha256": "79f3a223f7107c725cc3cd76d9c3c477f36c6667d38a46406208516e17712de3"
+    },
+    {
+      "path": "docs/data/cycles.json",
+      "bytes": 35355,
+      "sha256": "7f6a0f6987aee1caf752896628932871e8583dd0bffa6137053db849e2f3281c"
+    },
+    {
+      "path": "docs/data/default_results.json",
+      "bytes": 567683,
+      "sha256": "045d2f42879f44c589e8e807fecf6d58a090f8aa96ef0cee6d284cd1fb952950"
+    },
+    {
+      "path": "docs/data/evidence.json",
+      "bytes": 1107267,
+      "sha256": "a4f2fae1759cf4b0d02f455fb1f2096d09c921227bcced97525b81c77751b3ab"
+    },
+    {
+      "path": "docs/data/history_analysis.json",
+      "bytes": 118211,
+      "sha256": "e12c6500e850c197282afcbf88a93e57b807b8611e56b3e75976569339e6f3df"
+    },
+    {
+      "path": "docs/data/muyuan_financial_history.json",
+      "bytes": 4608,
+      "sha256": "de7bcf2ce567186229358dc62e15ece3f7b98ae10985b6b3c033b502fffd3b6d"
+    },
+    {
+      "path": "docs/data/sources.csv",
+      "bytes": 307175,
+      "sha256": "ee39017d7c006f1f91365e23d388670ab6da84e1bed2865d80068f04a7abbe29"
+    },
+    {
+      "path": "docs/data/sources.json",
+      "bytes": 465534,
+      "sha256": "f5ee0aa2dbf397e11095db725eefe76ed9477f46c265cf4fe281205d63f27ebe"
+    },
+    {
+      "path": "docs/data/us_evidence.json",
+      "bytes": 158743,
+      "sha256": "7b8f3094b28c66f0e1063cdecbd24668d17c0edc563250ffdd755a9b66d8cc18"
+    },
+    {
+      "path": "docs/data/us_growth.json",
+      "bytes": 38533,
+      "sha256": "614b95045628f923d0360e5bec3207197234c743d8910c28455efdfe8614349b"
+    },
+    {
+      "path": "docs/data.js",
+      "bytes": 847150,
+      "sha256": "c254611044618e3e152fb95d71659b0921a2dfaa1eb261ac82de9aa40c811cd9"
+    },
+    {
+      "path": "docs/docs/model.md",
+      "bytes": 1856,
+      "sha256": "2a238aae0ff4d046713897242776f18fad05db23ce37b1972cd3d46760c49ed8"
+    },
+    {
+      "path": "docs/docs/research.html",
+      "bytes": 1488,
+      "sha256": "9728d39f611960365371502937ce64d2feb7b720adabb817314bc9cba686c9a0"
+    },
+    {
+      "path": "docs/docs/video-script.md",
+      "bytes": 59600,
+      "sha256": "2e9ba0b1fc38ea4fecb114829c54dc6c0fd21fd74af40606abf5230dda2407a8"
+    },
+    {
+      "path": "docs/downloads/audit.md",
+      "bytes": 5425,
+      "sha256": "a98c879843ba72de78820e9a6aeb70c372f148fcb49db7fd8340da3619d8b987"
+    },
+    {
+      "path": "docs/downloads/industry-script.md",
+      "bytes": 24894,
+      "sha256": "8afb324022de6ee043564675b44bb09f229524b4c69af58a91d3fc2adc3f566c"
+    },
+    {
+      "path": "docs/downloads/industry.pdf",
+      "bytes": 515260,
+      "sha256": "1b302949b8cb4734ae6813ea34593b342acfc91f82ea5adc3b26cadfe7acb1c7"
+    },
+    {
+      "path": "docs/downloads/lecture.pdf",
+      "bytes": 564481,
+      "sha256": "7dcb192e56deafa9e7445b41f77cdf5af0560a23cd899477ac4c5017ce6ca73d"
+    },
+    {
+      "path": "docs/downloads/lecture.pptx",
+      "bytes": 260148,
+      "sha256": "64701e574ba8da2899d1c6a5035c6f2fe084a505af9a851832964db2c2b9bc08"
+    },
+    {
+      "path": "docs/downloads/main-high-pe.json",
+      "bytes": 3621,
+      "sha256": "9566693f8a2fb2cfab33dd477714db57d95455bc1fb21d68b7ea719c3b45a181"
+    },
+    {
+      "path": "docs/downloads/muyuan-script.md",
+      "bytes": 22700,
+      "sha256": "6f9698c7107c1abf94a8856191b8f79465fde38b70a1d1a17003b3b833f12951"
+    },
+    {
+      "path": "docs/downloads/muyuan.pdf",
+      "bytes": 491241,
+      "sha256": "2393f8f0b65f6414c451be252d26b080550c0824f3624ea58f832b1a767321bb"
+    },
+    {
+      "path": "docs/downloads/paper-flat-fcfe.json",
+      "bytes": 3623,
+      "sha256": "4311aa727195d2c28eae630001e9aca6872f31b0f86537388eb51266fffcedb2"
+    },
+    {
+      "path": "docs/downloads/script.docx",
+      "bytes": 59952,
+      "sha256": "6cbf963ad45e72b717bd6486bcb2810a34361c0d7409c9867d6123561bc1b7b8"
+    },
+    {
+      "path": "docs/downloads/script.md",
+      "bytes": 59600,
+      "sha256": "2e9ba0b1fc38ea4fecb114829c54dc6c0fd21fd74af40606abf5230dda2407a8"
+    },
+    {
+      "path": "docs/engine.js",
+      "bytes": 65344,
+      "sha256": "8f74dd1ace1bf9b23eae3a9a9615b91d7993de04e0825fbf53105d935a5fb068"
+    },
+    {
+      "path": "docs/engine_contract.md",
+      "bytes": 1183,
+      "sha256": "d4a7c21627405ecc5f3ba0f33fd6f8f98046e80642eb7393ce67e70a07c05ee5"
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 25411,
+      "sha256": "ad1156c105d88f7fa152953680d34315f3269ca6203d446799d26d9801ae66c9"
+    },
+    {
+      "path": "docs/LICENSE",
+      "bytes": 1238,
+      "sha256": "77590c822065158d765aa6dff893c8e4648b38ef704397b1a49bf02d71d22e5b"
+    },
+    {
+      "path": "docs/package.json",
+      "bytes": 252,
+      "sha256": "e07d6e8dc08ed00136ffebea3f79a2b5ab9405391fa7d44d466ae83c9834747a"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 426,
+      "sha256": "cecab53b51e62bfe03f74b98298c0f1cd2f61d70a3eff26cd57873a136449d40"
+    },
+    {
+      "path": "docs/styles.css",
+      "bytes": 54806,
+      "sha256": "39bdce3336fd8b125fbd83a70b8b732d607997d3f41d37036715b4e83d8fa826"
+    },
+    {
+      "path": "docs/tests/engine.test.js",
+      "bytes": 15045,
+      "sha256": "10cb0bfa9ecb5d0e4b1edff99e62b6a82d03e37c0a24803e43b49a3647dc5df5"
+    },
+    {
+      "path": "docs/tests/revised.test.js",
+      "bytes": 1651,
+      "sha256": "8f798e59bc4baf63335726cac7ef784cc95a0a7b681eb142808682d0dd87ec73"
+    },
+    {
+      "path": "docs/ui.js",
+      "bytes": 104855,
+      "sha256": "d7a2568c6f8fad578a6320f51a92b6a29b1954b1364528f2ce64c4304bd18b3e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2705,
+      "sha256": "60af59fda119f827c86370e2644921ef2c5053ad0919504d04bc79174ca66bb5"
+    },
+    {
+      "path": "research/2026-10-24/audit/delivery-verification.json",
+      "bytes": 727,
+      "sha256": "a5ed7973585f44274e152f05a08f08f356cfe75262712ca194b703dc6f279ca5"
+    },
+    {
+      "path": "research/2026-10-24/audit/engine-tests.log",
+      "bytes": 2823,
+      "sha256": "e17c7da873b88b5c83107ab41fdd799089e4649baef355bc61119964b875d9c0"
+    },
+    {
+      "path": "research/2026-10-24/audit/independent-tests.log",
+      "bytes": 61,
+      "sha256": "cd8656154d52c01e4662da39f46ac926607e9972023d2cf82c3ac6e41307e736"
+    },
+    {
+      "path": "research/2026-10-24/audit/presentation-integrity.json",
+      "bytes": 325,
+      "sha256": "26df9e86169f358fb873db25fc26f1d46742d4d742b64ea8dae39719cd70f7d8"
+    },
+    {
+      "path": "research/2026-10-24/audit/presentation-layout.json",
+      "bytes": 872,
+      "sha256": "1c22ded61016ba687279f4d0c63ad77deb861646adf8e3b8e9f7bb5b1c371f79"
+    },
+    {
+      "path": "research/2026-10-24/audit/price-reproduction.log",
+      "bytes": 1200,
+      "sha256": "bca9f33b74d0d37ecf3aadec5e884ce6b35cf8ba13909eba39c68ac43d4c1452"
+    },
+    {
+      "path": "research/2026-10-24/audit/valuation-reproduction.log",
+      "bytes": 1539,
+      "sha256": "3322b05185624a2e6c6e947bd691b468173239f7790048455e90235b6b4e558a"
+    },
+    {
+      "path": "research/2026-10-24/audit.md",
+      "bytes": 5425,
+      "sha256": "a98c879843ba72de78820e9a6aeb70c372f148fcb49db7fd8340da3619d8b987"
+    },
+    {
+      "path": "research/2026-10-24/authoring/lecture.json",
+      "bytes": 143785,
+      "sha256": "a455c0d9a548c001033261ad12b0f7e5b63ed0b343227f134b3adf06450d1341"
+    },
+    {
+      "path": "research/2026-10-24/authoring/slide_builder.mjs",
+      "bytes": 5175,
+      "sha256": "8c8f5d57ded2c1c04d9bb29083101b8941ee40d2b6e7a27b8a7e9db18bb53265"
+    },
+    {
+      "path": "research/2026-10-24/materials/academic_work/figure_captions.md",
+      "bytes": 4969,
+      "sha256": "aed26cee676379b74a3525c29da10d5616043197b3dc3222638993634cf50f67"
+    },
+    {
+      "path": "research/2026-10-24/materials/academic_work/figure_data.json",
+      "bytes": 198309,
+      "sha256": "531558ace6a144d96379bbe7b6d42cd6720c65e79e8c8c255b6a6326f7c4c0ae"
+    },
+    {
+      "path": "research/2026-10-24/materials/academic_work/price_assumptions.js",
+      "bytes": 45894,
+      "sha256": "7201dc785cf7472db0bca3e5c4099a3bc87039fca3e713fc1819f5d3ecf4a8bd"
+    },
+    {
+      "path": "research/2026-10-24/materials/academic_work/reproduce_valuation.js",
+      "bytes": 4445,
+      "sha256": "061a42ee9ecd1419275ae2c0fab19d9821645059706db327ba790e1343203c89"
+    },
+    {
+      "path": "research/2026-10-24/materials/academic_work/results_price.json",
+      "bytes": 4277224,
+      "sha256": "11048743e04449934c994f6b0b7a264a3ed0e88f683d6609272860ba8312ab3e"
+    },
+    {
+      "path": "research/2026-10-24/materials/academic_work/results_price.md",
+      "bytes": 56388,
+      "sha256": "81c0355316ebb205bb408d2527b29c5e4c27ae738c2cb10715211412c902941f"
+    },
+    {
+      "path": "research/2026-10-24/materials/academic_work/results_valuation.json",
+      "bytes": 1354770,
+      "sha256": "d33bf21c0f926be73a417068f2ed86507ea3636e27ad648474c6875023453af7"
+    },
+    {
+      "path": "research/2026-10-24/materials/academic_work/source-evidence-register.md",
+      "bytes": 23668,
+      "sha256": "22ee1893c228783444e8481da7f4e461ba58606167653e5391cfd1f55201f0c0"
+    },
+    {
+      "path": "research/2026-10-24/materials/figures/figure1_history_lag10.pdf",
+      "bytes": 61613,
+      "sha256": "2e8ded09746b079ffc7c3301cb5312bbae600281f328aa27327ed248e2d75bf1"
+    },
+    {
+      "path": "research/2026-10-24/materials/figures/figure1_history_lag10.png",
+      "bytes": 520668,
+      "sha256": "1bb7444399b564e1438e4cc3129a6aeb2a9e664aacda6ce2bd26aaf02163d4e4"
+    },
+    {
+      "path": "research/2026-10-24/materials/figures/figure2_price_routes.pdf",
+      "bytes": 69003,
+      "sha256": "f45af58e4b7ead2f8157e4a7e1d8e4e1346d335ea9d8baf26b9df1328cf51d18"
+    },
+    {
+      "path": "research/2026-10-24/materials/figures/figure2_price_routes.png",
+      "bytes": 517123,
+      "sha256": "739b70890d2d00d3536b2e98ceadcea0357d351ef2aff530eeec70f7c225ab89"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/annual_productivity.csv",
+      "bytes": 1163,
+      "sha256": "d5470372e5f0bd4e3fc94c19a34db741a051bb62e44faa94530696880453c2e1"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/china_history.csv",
+      "bytes": 40945,
+      "sha256": "2d7158aa170421e02d61ad3e3c10f2e0f9db97df598fbab8d18be21d3c810a2f"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/company_growth.json",
+      "bytes": 70743,
+      "sha256": "aa7dc8bec269fbbc67552cbda2b913041035441936931e266a19511d13d2c9f9"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/cost_surveys.json",
+      "bytes": 81778,
+      "sha256": "79f3a223f7107c725cc3cd76d9c3c477f36c6667d38a46406208516e17712de3"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/cycles.json",
+      "bytes": 35355,
+      "sha256": "7f6a0f6987aee1caf752896628932871e8583dd0bffa6137053db849e2f3281c"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/default_results.json",
+      "bytes": 567683,
+      "sha256": "045d2f42879f44c589e8e807fecf6d58a090f8aa96ef0cee6d284cd1fb952950"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/evidence.json",
+      "bytes": 1107267,
+      "sha256": "a4f2fae1759cf4b0d02f455fb1f2096d09c921227bcced97525b81c77751b3ab"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/history_analysis.json",
+      "bytes": 118211,
+      "sha256": "e12c6500e850c197282afcbf88a93e57b807b8611e56b3e75976569339e6f3df"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/muyuan_financial_history.json",
+      "bytes": 4608,
+      "sha256": "de7bcf2ce567186229358dc62e15ece3f7b98ae10985b6b3c033b502fffd3b6d"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/sources.csv",
+      "bytes": 307175,
+      "sha256": "ee39017d7c006f1f91365e23d388670ab6da84e1bed2865d80068f04a7abbe29"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/sources.json",
+      "bytes": 465534,
+      "sha256": "f5ee0aa2dbf397e11095db725eefe76ed9477f46c265cf4fe281205d63f27ebe"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/us_evidence.json",
+      "bytes": 158743,
+      "sha256": "7b8f3094b28c66f0e1063cdecbd24668d17c0edc563250ffdd755a9b66d8cc18"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data/us_growth.json",
+      "bytes": 38533,
+      "sha256": "614b95045628f923d0360e5bec3207197234c743d8910c28455efdfe8614349b"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/data.js",
+      "bytes": 847150,
+      "sha256": "c254611044618e3e152fb95d71659b0921a2dfaa1eb261ac82de9aa40c811cd9"
+    },
+    {
+      "path": "research/2026-10-24/materials/pig-cycle-lab/engine.js",
+      "bytes": 65344,
+      "sha256": "8f74dd1ace1bf9b23eae3a9a9615b91d7993de04e0825fbf53105d935a5fb068"
+    },
+    {
+      "path": "research/2026-10-24/recording-guide.md",
+      "bytes": 866,
+      "sha256": "d2c1a8754be8b161eed4dbc85243091526a2eaef7270458d3b5593343bf79b80"
+    },
+    {
+      "path": "research/2026-10-24/report-v3.md",
+      "bytes": 146502,
+      "sha256": "d58f4fc3346eaae22323bf1c6cddb50009492e2594ea3a3be474b58cfbeb0608"
+    }
+  ]
+}

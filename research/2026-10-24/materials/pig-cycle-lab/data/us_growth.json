@@ -1,0 +1,1011 @@
+{
+  "meta": {
+    "title": "美国成熟生猪行业中的企业成长：集中化、效率、出口与资本约束",
+    "research_cutoff": "2026-10-24 Asia/Hong_Kong",
+    "scope": "US observed history through 2025, sources published by cutoff; no current price or valuation quote",
+    "purpose": "Evidence constraints for a finite Muyuan share-growth period and incremental capital returns; not US-derived China share ceiling",
+    "source_count": 12,
+    "written_by": "history_lag",
+    "version": "1.0"
+  },
+  "conclusions": [
+    "成熟国内人均需求不排除份额成长；行业规模、公司份额、单头重量/售价须拆开。",
+    "美国大场存栏份额长期提升，但这一统计不是集团所有权 CR4；单场或农场组规模不能当牧原最终份额。",
+    "美国行业产量受出口、人口和重量共同支持；国内人均用量成熟不等于行业总需求严格零增长。",
+    "效率改进有实证，但单要素劳动生产率、窝均健仔数、PSY、MSY并非同一个指标，增速也非永久。",
+    "低成本有利于留存份额，却不保证新增资本收益超过资金成本；主动退出低回报产能是资本理性的一部分。",
+    "成长应以有限期限、份额终点、爬坡/利用率、维持与新增资本、增量ROIC/ROE联合约束。"
+  ],
+  "sources": [
+    {
+      "id": "USG_CENSUS_HL22",
+      "title": "2022 Census of Agriculture Highlights: Hogs and Pigs",
+      "issuer": "USDA NASS",
+      "published": "2024-05",
+      "url": "https://www.nass.usda.gov/Publications/Highlights/2024/Census22_HL_Hogs_Pigs.pdf",
+      "locator": "p.1, farm inventory size shares; p.2 family farm scope"
+    },
+    {
+      "id": "USG_CENSUS_HIST22",
+      "title": "2022 Census of Agriculture, Table 1 Historical Highlights",
+      "issuer": "USDA NASS",
+      "published": "2024",
+      "url": "https://www.nass.usda.gov/Publications/AgCensus/2022/Full_Report/Volume_1,_Chapter_1_US/st99_1_001_001.pdf",
+      "locator": "printed United States p.3 / PDF p.1; historical columns and coverage adjustment header"
+    },
+    {
+      "id": "USG_ERS361",
+      "title": "The U.S. Hog Industry: Structural Change, Production Systems and Costs, and Manure Management, ERR-361",
+      "issuer": "USDA ERS",
+      "published": "2026-06",
+      "url": "https://www.ers.usda.gov/media/29249/err-361.pdf?v=25895",
+      "locator": "printed pp.3–4 structural change; pp.8–11 contracts; pp.18–21 costs and returns; pp.24–25 productivity; PDF page = printed page + 6"
+    },
+    {
+      "id": "USG_ERS308",
+      "title": "U.S. Hog Production: Rising Output and Changing Trends in Productivity Growth, ERR-308",
+      "issuer": "USDA ERS",
+      "published": "2022-08",
+      "url": "https://www.ers.usda.gov/media/9008/err-308.pdf?v=16712",
+      "locator": "printed p.4 growth slowdown; pp.15–18 costs/labor, Table 6/7; pp.37–38 exports/disappearance; PDF page = printed page + 6"
+    },
+    {
+      "id": "USG_NASS_SLAUGHTER16",
+      "title": "Overview of the United States Slaughter Industry",
+      "issuer": "USDA NASS",
+      "published": "2016-10-27",
+      "url": "https://esmis.nal.usda.gov/sites/default/release-files/b5644r52v/jd473028z/7w62fc23r/SlauOverview-10-27-2016.pdf",
+      "locator": "printed/PDF p.2 pork output; p.6 hog slaughter and live/dressed weight"
+    },
+    {
+      "id": "USG_NASS_SLAUGHTER25",
+      "title": "Livestock Slaughter 2025 Summary",
+      "issuer": "USDA NASS",
+      "published": "2026-04-22",
+      "url": "https://esmis.nal.usda.gov/sites/default/release-files/795870/lsan0426.pdf",
+      "locator": "printed/PDF p.6 summary; p.8 annual commercial/farm slaughter table"
+    },
+    {
+      "id": "USG_ERS_OUTLOOK2610",
+      "title": "Livestock, Dairy, and Poultry Outlook: October 2026, LDP-M-388",
+      "issuer": "USDA ERS",
+      "published": "2026-10-16",
+      "url": "https://www.ers.usda.gov/media/29753/ldp-m-388.pdf?v=63883",
+      "locator": "printed/PDF p.26, U.S. red meat and poultry forecasts, annual 2025 actual column; 2026/27 columns are forecasts"
+    },
+    {
+      "id": "USG_NASS_HP2512",
+      "title": "Quarterly Hogs and Pigs",
+      "issuer": "USDA NASS",
+      "published": "2025-12-23",
+      "url": "https://esmis.nal.usda.gov/sites/default/release-files/795702/hgpg1225.pdf",
+      "locator": "printed/PDF pp.1–2 summary, contract-owned inventory; p.5 December–November annual pigs per litter"
+    },
+    {
+      "id": "USG_AMS_PS2324",
+      "title": "Packers and Stockyards Division Annual Report 2023 and 2024",
+      "issuer": "USDA AMS",
+      "published": "2026-09",
+      "url": "https://www.ams.usda.gov/sites/default/files/media/PSD_Combined_2023_2024_Annual_Report.pdf",
+      "locator": "printed pp.6–7 / PDF pp.8–9, concentration definition and Table 3; p.8 procurement definitions"
+    },
+    {
+      "id": "USG_SMF24",
+      "title": "Smithfield Foods FY2024 Form 10-K",
+      "issuer": "Smithfield Foods / SEC",
+      "published": "2025-03",
+      "url": "https://www.sec.gov/Archives/edgar/data/91388/000009138825000017/smf-20241229.htm",
+      "locator": "Item 1, Hog Production: 2024 actual output and 2025 then forecast; distinguish forecast from actual"
+    },
+    {
+      "id": "USG_SMF25",
+      "title": "Smithfield Foods FY2025 Form 10-K",
+      "issuer": "Smithfield Foods",
+      "published": "2026-03-24",
+      "url": "https://investors.smithfieldfoods.com/sec-filings/sec-filings/content/0000091388-26-000014/smf-20251228.htm",
+      "locator": "printed pp.3–5 reform/strategy; p.7 contract model; p.54 capacity; p.59 actual 2019/2025 hog output; pp.110–111 disposals"
+    },
+    {
+      "id": "USG_ERS_SECTOR25",
+      "title": "Hogs & Pork - Sector at a Glance",
+      "issuer": "USDA ERS",
+      "published": "2025-01-08",
+      "url": "https://www.ers.usda.gov/topics/animal-products/hogs-pork/sector-at-a-glance",
+      "locator": "Structural Change; Trade; Live Hog Trade; 2022 figures"
+    }
+  ],
+  "census_history": [
+    {
+      "year": 1992,
+      "farms_with_inventory": 191347,
+      "inventory_head": 57563118,
+      "farms_with_sales": 188167,
+      "gross_hogs_sold_head": 111326807,
+      "coverage": "not_adjusted_for_coverage",
+      "inventory_date": "1992-12-31",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "observed",
+      "limitations": "Census farm operation/location basis, not consolidated pig ownership. Sales can count stage transfers; not terminal slaughter. Do not treat 1992 unadjusted coverage as directly comparable to 2022."
+    },
+    {
+      "year": 1997,
+      "farms_with_inventory": 109754,
+      "inventory_head": 61206236,
+      "farms_with_sales": 102106,
+      "gross_hogs_sold_head": 142611882,
+      "coverage": "not_adjusted_for_coverage",
+      "inventory_date": "1997-12-31",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "observed",
+      "limitations": "Census farm operation/location basis, not consolidated pig ownership. Sales can count stage transfers; not terminal slaughter. Do not treat 1992 unadjusted coverage as directly comparable to 2022."
+    },
+    {
+      "year": 1997,
+      "farms_with_inventory": 124889,
+      "inventory_head": 61188149,
+      "farms_with_sales": 112377,
+      "gross_hogs_sold_head": 142956569,
+      "coverage": "adjusted_for_coverage",
+      "inventory_date": "1997-12-31",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "observed",
+      "limitations": "Census farm operation/location basis, not consolidated pig ownership. Sales can count stage transfers; not terminal slaughter. Do not treat 1992 unadjusted coverage as directly comparable to 2022."
+    },
+    {
+      "year": 2002,
+      "farms_with_inventory": 78895,
+      "inventory_head": 60405103,
+      "farms_with_sales": 82028,
+      "gross_hogs_sold_head": 184997686,
+      "coverage": "adjusted_for_coverage",
+      "inventory_date": "2002-12-31",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "observed",
+      "limitations": "Census farm operation/location basis, not consolidated pig ownership. Sales can count stage transfers; not terminal slaughter. Do not treat 1992 unadjusted coverage as directly comparable to 2022."
+    },
+    {
+      "year": 2007,
+      "farms_with_inventory": 75442,
+      "inventory_head": 67786318,
+      "farms_with_sales": 74789,
+      "gross_hogs_sold_head": 206807181,
+      "coverage": "adjusted_for_coverage",
+      "inventory_date": "2007-12-31",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "observed",
+      "limitations": "Census farm operation/location basis, not consolidated pig ownership. Sales can count stage transfers; not terminal slaughter. Do not treat 1992 unadjusted coverage as directly comparable to 2022."
+    },
+    {
+      "year": 2012,
+      "farms_with_inventory": 63246,
+      "inventory_head": 66026785,
+      "farms_with_sales": 55882,
+      "gross_hogs_sold_head": 199115305,
+      "coverage": "adjusted_for_coverage",
+      "inventory_date": "2012-12-31",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "observed",
+      "limitations": "Census farm operation/location basis, not consolidated pig ownership. Sales can count stage transfers; not terminal slaughter. Do not treat 1992 unadjusted coverage as directly comparable to 2022."
+    },
+    {
+      "year": 2017,
+      "farms_with_inventory": 66439,
+      "inventory_head": 72381007,
+      "farms_with_sales": 64871,
+      "gross_hogs_sold_head": 235282860,
+      "coverage": "adjusted_for_coverage",
+      "inventory_date": "2017-12-31",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "observed",
+      "limitations": "Census farm operation/location basis, not consolidated pig ownership. Sales can count stage transfers; not terminal slaughter. Do not treat 1992 unadjusted coverage as directly comparable to 2022."
+    },
+    {
+      "year": 2022,
+      "farms_with_inventory": 60809,
+      "inventory_head": 73817751,
+      "farms_with_sales": 56265,
+      "gross_hogs_sold_head": 240064008,
+      "coverage": "adjusted_for_coverage",
+      "inventory_date": "2022-12-31",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "observed",
+      "limitations": "Census farm operation/location basis, not consolidated pig ownership. Sales can count stage transfers; not terminal slaughter. Do not treat 1992 unadjusted coverage as directly comparable to 2022."
+    }
+  ],
+  "farm_inventory_size_shares": [
+    {
+      "year": 2002,
+      "lt2000_pct": 25,
+      "from2000_to4999_pct": 23,
+      "ge5000_pct": 53,
+      "unit": "percent of Dec31 hog and pig inventory",
+      "classification": "farm inventory head, not firm owned hogs",
+      "sourceIds": [
+        "USG_CENSUS_HL22"
+      ],
+      "status": "observed_rounded"
+    },
+    {
+      "year": 2007,
+      "lt2000_pct": 15,
+      "from2000_to4999_pct": 24,
+      "ge5000_pct": 60,
+      "unit": "percent of Dec31 hog and pig inventory",
+      "classification": "farm inventory head, not firm owned hogs",
+      "sourceIds": [
+        "USG_CENSUS_HL22"
+      ],
+      "status": "observed_rounded"
+    },
+    {
+      "year": 2012,
+      "lt2000_pct": 10,
+      "from2000_to4999_pct": 23,
+      "ge5000_pct": 68,
+      "unit": "percent of Dec31 hog and pig inventory",
+      "classification": "farm inventory head, not firm owned hogs",
+      "sourceIds": [
+        "USG_CENSUS_HL22"
+      ],
+      "status": "observed_rounded"
+    },
+    {
+      "year": 2017,
+      "lt2000_pct": 7,
+      "from2000_to4999_pct": 21,
+      "ge5000_pct": 73,
+      "unit": "percent of Dec31 hog and pig inventory",
+      "classification": "farm inventory head, not firm owned hogs",
+      "sourceIds": [
+        "USG_CENSUS_HL22"
+      ],
+      "status": "observed_rounded"
+    },
+    {
+      "year": 2022,
+      "lt2000_pct": 5,
+      "from2000_to4999_pct": 20,
+      "ge5000_pct": 75,
+      "unit": "percent of Dec31 hog and pig inventory",
+      "classification": "farm inventory head, not firm owned hogs",
+      "sourceIds": [
+        "USG_CENSUS_HL22"
+      ],
+      "status": "observed_rounded"
+    }
+  ],
+  "contract_structure": {
+    "definition": "Production contract: contractor owns pigs and usually supplies feed/technical input; grower owns or operates facilities and supplies raising services. Farm counts are not pig-owner firm counts.",
+    "sourceIds": [
+      "USG_ERS361",
+      "USG_SMF25"
+    ],
+    "arms_rows": [
+      {
+        "year": 1998,
+        "weight_gain_pct": 40,
+        "farm_count_pct": 16,
+        "sold_removed_heads_pct": 57,
+        "dec31_inventory_pct": 42,
+        "sourceIds": [
+          "USG_ERS361"
+        ],
+        "locator": "Table 3 printed p.11 / PDF p.17",
+        "survey": "ARMS, >=25-head hog inventory farms",
+        "status": "observed"
+      },
+      {
+        "year": 2004,
+        "weight_gain_pct": 58,
+        "farm_count_pct": 28,
+        "sold_removed_heads_pct": 69,
+        "dec31_inventory_pct": 56,
+        "sourceIds": [
+          "USG_ERS361"
+        ],
+        "locator": "Table 3 printed p.11 / PDF p.17",
+        "survey": "ARMS, >=25-head hog inventory farms",
+        "status": "observed"
+      },
+      {
+        "year": 2009,
+        "weight_gain_pct": 64,
+        "farm_count_pct": 48,
+        "sold_removed_heads_pct": 73,
+        "dec31_inventory_pct": 65,
+        "sourceIds": [
+          "USG_ERS361"
+        ],
+        "locator": "Table 3 printed p.11 / PDF p.17",
+        "survey": "ARMS, >=25-head hog inventory farms",
+        "status": "observed"
+      },
+      {
+        "year": 2015,
+        "weight_gain_pct": 69,
+        "farm_count_pct": 53,
+        "sold_removed_heads_pct": 72,
+        "dec31_inventory_pct": 66,
+        "sourceIds": [
+          "USG_ERS361"
+        ],
+        "locator": "Table 3 printed p.11 / PDF p.17",
+        "survey": "ARMS, >=25-head hog inventory farms",
+        "status": "observed"
+      },
+      {
+        "year": 2020,
+        "weight_gain_pct": 77,
+        "farm_count_pct": 50,
+        "sold_removed_heads_pct": 83,
+        "dec31_inventory_pct": 78,
+        "sourceIds": [
+          "USG_ERS361"
+        ],
+        "locator": "Table 3 printed p.11 / PDF p.17",
+        "survey": "ARMS, >=25-head hog inventory farms",
+        "status": "observed"
+      }
+    ],
+    "census_inventory_under_contract": [
+      {
+        "year": 2002,
+        "pct": 50
+      },
+      {
+        "year": 2017,
+        "pct": 67
+      },
+      {
+        "year": 2022,
+        "pct": 65
+      }
+    ],
+    "census_note": "Census inventories refer to operated land: a contractor does not add pigs housed on separately operated contract farms to its own census-operated-site inventory. ARMS and Census differ; do not splice.",
+    "nass_dec2025": {
+      "pct": 52,
+      "denominator": "US total hog inventory",
+      "numerator": "pigs owned by operations with >5000 head but raised by contractees",
+      "sourceIds": [
+        "USG_NASS_HP2512"
+      ],
+      "locator": "p.2",
+      "not_equivalent_to": "Census all production contract share, company CR4, large farm site share"
+    }
+  },
+  "packing_concentration": {
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "hog_cr4_pct": [
+      64,
+      65,
+      64,
+      65,
+      64
+    ],
+    "measure": "Four largest packer firms, share of heads slaughtered; report Table 3 title federally inspected plants, method references NASS Annual Commercial Slaughter",
+    "sourceIds": [
+      "USG_AMS_PS2324"
+    ],
+    "locator": "printed pp.6–7 / PDF pp.8–9",
+    "not_equivalent_to": "farm owner concentration or farm inventory size shares"
+  },
+  "national_supply": [
+    {
+      "year": 2015,
+      "commercial_slaughter_million_head": 115.4,
+      "commercial_pork_billion_lb": 24.5,
+      "average_liveweight_lb": 283,
+      "fi_average_dressedweight_lb": 213,
+      "status": "observed_rounded",
+      "sourceIds": [
+        "USG_NASS_SLAUGHTER16"
+      ]
+    },
+    {
+      "year": 2024,
+      "commercial_slaughter_million_head": 129.6703,
+      "average_liveweight_lb": 288,
+      "status": "observed",
+      "sourceIds": [
+        "USG_NASS_SLAUGHTER25"
+      ]
+    },
+    {
+      "year": 2025,
+      "commercial_slaughter_million_head": 128.2011,
+      "commercial_pork_billion_lb": 27.578,
+      "average_liveweight_lb": 289,
+      "export_billion_lb_cwe": 6.972,
+      "import_billion_lb_cwe": 1.117,
+      "live_swine_import_million_head": 6.988,
+      "per_capita_retail_disappearance_lb": 49.3,
+      "status": "observed_as_published_before_cutoff",
+      "sourceIds": [
+        "USG_NASS_SLAUGHTER25",
+        "USG_ERS_OUTLOOK2610"
+      ]
+    }
+  ],
+  "long_run_output": {
+    "period": "1990–2015",
+    "pork_output_change_pct": 60,
+    "hog_slaughter_change_pct_lower_bound": 35,
+    "sourceIds": [
+      "USG_NASS_SLAUGHTER16"
+    ],
+    "status": "observed_rounded",
+    "limitations": "Text says slaughter increased over 35%; do not reconstruct an exact 1990 level from rounded change."
+  },
+  "exports_history": [
+    {
+      "year": 1992,
+      "billion_lb_cwe": 0.42,
+      "sourceIds": [
+        "USG_ERS308"
+      ],
+      "status": "observed_rounded"
+    },
+    {
+      "year": 2020,
+      "billion_lb_cwe": 7.3,
+      "sourceIds": [
+        "USG_ERS308"
+      ],
+      "status": "observed_rounded"
+    },
+    {
+      "year": 2025,
+      "billion_lb_cwe": 6.972,
+      "sourceIds": [
+        "USG_ERS_OUTLOOK2610"
+      ],
+      "status": "observed"
+    }
+  ],
+  "domestic_demand": {
+    "year_2019_retail_availability_lb_per_capita": 49,
+    "historical_range_since1980s": [
+      48,
+      52
+    ],
+    "year_2025_retail_disappearance_lb_per_capita": 49.3,
+    "sourceIds": [
+      "USG_ERS308",
+      "USG_ERS_OUTLOOK2610"
+    ],
+    "limitations": "Availability/disappearance accounting proxy, not measured ingestion; 1980s–2019 range belongs to the 2022 report, not a claim that every later year remains within the band."
+  },
+  "productivity_labor": [
+    {
+      "year": 1992,
+      "all_farms_labor_hours_per_100lb_gain": 1.2,
+      "farrow_finish_labor_hours_per_100lb_gain": 1.13,
+      "finisher_labor_hours_per_100lb_gain": 0.88,
+      "sourceIds": [
+        "USG_ERS308"
+      ],
+      "locator": "Table 7 printed p.18 / PDF p.24",
+      "status": "observed",
+      "limitations": "Partial productivity proxy, not TFP, PSY or MSY. Samples / production mix change."
+    },
+    {
+      "year": 1998,
+      "all_farms_labor_hours_per_100lb_gain": 0.5,
+      "farrow_finish_labor_hours_per_100lb_gain": 0.72,
+      "finisher_labor_hours_per_100lb_gain": 0.24,
+      "sourceIds": [
+        "USG_ERS308"
+      ],
+      "locator": "Table 7 printed p.18 / PDF p.24",
+      "status": "observed",
+      "limitations": "Partial productivity proxy, not TFP, PSY or MSY. Samples / production mix change."
+    },
+    {
+      "year": 2004,
+      "all_farms_labor_hours_per_100lb_gain": 0.32,
+      "farrow_finish_labor_hours_per_100lb_gain": 0.54,
+      "finisher_labor_hours_per_100lb_gain": 0.14,
+      "sourceIds": [
+        "USG_ERS308"
+      ],
+      "locator": "Table 7 printed p.18 / PDF p.24",
+      "status": "observed",
+      "limitations": "Partial productivity proxy, not TFP, PSY or MSY. Samples / production mix change."
+    },
+    {
+      "year": 2009,
+      "all_farms_labor_hours_per_100lb_gain": 0.27,
+      "farrow_finish_labor_hours_per_100lb_gain": 0.48,
+      "finisher_labor_hours_per_100lb_gain": 0.12,
+      "sourceIds": [
+        "USG_ERS308"
+      ],
+      "locator": "Table 7 printed p.18 / PDF p.24",
+      "status": "observed",
+      "limitations": "Partial productivity proxy, not TFP, PSY or MSY. Samples / production mix change."
+    },
+    {
+      "year": 2015,
+      "all_farms_labor_hours_per_100lb_gain": 0.2,
+      "farrow_finish_labor_hours_per_100lb_gain": 0.49,
+      "finisher_labor_hours_per_100lb_gain": 0.11,
+      "sourceIds": [
+        "USG_ERS308"
+      ],
+      "locator": "Table 7 printed p.18 / PDF p.24",
+      "status": "observed",
+      "limitations": "Partial productivity proxy, not TFP, PSY or MSY. Samples / production mix change."
+    }
+  ],
+  "annual_pigs_saved_per_litter": [
+    {
+      "year": 2024,
+      "period": "December 2023–November 2024",
+      "value": 11.68
+    },
+    {
+      "year": 2025,
+      "period": "December 2024–November 2025",
+      "value": 11.79
+    }
+  ],
+  "pigs_saved_per_litter_notes": {
+    "sourceIds": [
+      "USG_NASS_HP2512"
+    ],
+    "locator": "p.5 annual monthly table total",
+    "limitations": "Pigs saved per litter, not annual weaned pigs per sow or marketed pigs per sow. Does not include all survival to slaughter and not a PSY ceiling."
+  },
+  "cost_scale_2020": [
+    {
+      "max_annual_inventory_head": "<2000",
+      "gross_value": 59.26,
+      "operating_cost": 67.46,
+      "ownership_cost": 11.42,
+      "unpaid_labor_cost": 4.94,
+      "total_economic_cost": 85.85,
+      "return_over_total": -26.59,
+      "unit": "2020 USD / 100 lb liveweight gain",
+      "production_system": "feeder_to_finish",
+      "sourceIds": [
+        "USG_ERS361"
+      ],
+      "locator": "Table 6 printed pp.20–21 / PDF pp.26–27",
+      "status": "observed",
+      "limitations": "Purchased feeder/nursery pigs included in this cross-sectional cost table. All contractor/grower/landlord costs included. Costs not finished live sale weight. Operating differences not statistically significant; some total/ownership differences significant at report 90% threshold. Pandemic year not normalized. Rounding may make subtraction differ by 0.01."
+    },
+    {
+      "max_annual_inventory_head": "2000-4999",
+      "gross_value": 58.39,
+      "operating_cost": 59.06,
+      "ownership_cost": 8.41,
+      "unpaid_labor_cost": 2.92,
+      "total_economic_cost": 71.96,
+      "return_over_total": -13.57,
+      "unit": "2020 USD / 100 lb liveweight gain",
+      "production_system": "feeder_to_finish",
+      "sourceIds": [
+        "USG_ERS361"
+      ],
+      "locator": "Table 6 printed pp.20–21 / PDF pp.26–27",
+      "status": "observed",
+      "limitations": "Purchased feeder/nursery pigs included in this cross-sectional cost table. All contractor/grower/landlord costs included. Costs not finished live sale weight. Operating differences not statistically significant; some total/ownership differences significant at report 90% threshold. Pandemic year not normalized. Rounding may make subtraction differ by 0.01."
+    },
+    {
+      "max_annual_inventory_head": "5000-9999",
+      "gross_value": 58.87,
+      "operating_cost": 58.21,
+      "ownership_cost": 7.73,
+      "unpaid_labor_cost": 1.45,
+      "total_economic_cost": 68.65,
+      "return_over_total": -9.77,
+      "unit": "2020 USD / 100 lb liveweight gain",
+      "production_system": "feeder_to_finish",
+      "sourceIds": [
+        "USG_ERS361"
+      ],
+      "locator": "Table 6 printed pp.20–21 / PDF pp.26–27",
+      "status": "observed",
+      "limitations": "Purchased feeder/nursery pigs included in this cross-sectional cost table. All contractor/grower/landlord costs included. Costs not finished live sale weight. Operating differences not statistically significant; some total/ownership differences significant at report 90% threshold. Pandemic year not normalized. Rounding may make subtraction differ by 0.01."
+    },
+    {
+      "max_annual_inventory_head": ">=10000",
+      "gross_value": 58.4,
+      "operating_cost": 54.28,
+      "ownership_cost": 5.49,
+      "unpaid_labor_cost": 0.56,
+      "total_economic_cost": 61.21,
+      "return_over_total": -2.8,
+      "unit": "2020 USD / 100 lb liveweight gain",
+      "production_system": "feeder_to_finish",
+      "sourceIds": [
+        "USG_ERS361"
+      ],
+      "locator": "Table 6 printed pp.20–21 / PDF pp.26–27",
+      "status": "observed",
+      "limitations": "Purchased feeder/nursery pigs included in this cross-sectional cost table. All contractor/grower/landlord costs included. Costs not finished live sale weight. Operating differences not statistically significant; some total/ownership differences significant at report 90% threshold. Pandemic year not normalized. Rounding may make subtraction differ by 0.01."
+    }
+  ],
+  "economic_returns": {
+    "period": "1998–2024",
+    "years": 27,
+    "years_covering_operating_cost": 27,
+    "years_covering_operating_and_ownership_cost": 19,
+    "years_covering_total_economic_cost": 13,
+    "sourceIds": [
+      "USG_ERS361"
+    ],
+    "locator": "printed p.18 / PDF p.24",
+    "limitations": "Historical aggregate cost coverage frequency, not company ROE or independently sampled probability; non-ARMS survey years updated using prices and fixed latest survey production parameters."
+  },
+  "smithfield": {
+    "ownership_hog_output_million": [
+      {
+        "year": 2019,
+        "value": 17.6,
+        "status": "actual_recalled_in_2025_10K",
+        "sourceIds": [
+          "USG_SMF25"
+        ]
+      },
+      {
+        "year": 2024,
+        "value": 14.6,
+        "status": "actual",
+        "sourceIds": [
+          "USG_SMF24"
+        ]
+      },
+      {
+        "year": 2025,
+        "value": 11.1,
+        "status": "actual",
+        "sourceIds": [
+          "USG_SMF25"
+        ]
+      }
+    ],
+    "output_locator": "2025 10-K printed p.59; 2024 Item 1 Hog Production",
+    "year2025_capacity_million": 11.5,
+    "capacity_note": "Item 2 properties table p.54 lists capacity; not actual 11.1m output. 2024 report also previously forecast 11.5m for2025; do not confuse statuses.",
+    "owned_farms_more_than": 240,
+    "contract_farms_more_than": 1300,
+    "own_hogs_share_of_fresh_pork_processed_pct": 40,
+    "sourceIds": [
+      "USG_SMF25"
+    ],
+    "contract_capital_definition": "Grower provides facility initial investment, labor/frontline management; Smithfield supplies animals/feed. Contract farming is not zero capital across the chain.",
+    "transactions": [
+      {
+        "year": 2024,
+        "counterparty": "Murphy Family Farms",
+        "sows_sold": 150000,
+        "minority_interest_pct": 25,
+        "cash_investment_usd": 3000000,
+        "annual_supplier_hogs_million": 3.2
+      },
+      {
+        "year": 2025,
+        "counterparty": "VisionAg",
+        "sows_sold": 28000,
+        "minority_interest_pct": 9,
+        "cash_investment_usd": 450000,
+        "annual_supplier_hogs_million": 0.6
+      }
+    ],
+    "transaction_note": "Company sold sows and related inventory, retained minority investments/feed supply/purchase arrangements. Does not prove equivalent national physical supply exit. Sale prices are not the cash minority contributions.",
+    "strategy": "Reduce size of internal hog production; procure more from independent suppliers with market-based agreements; continue exploring reductions medium term.",
+    "packaged_meats_2025_sales_share_pct": 56,
+    "packaged_meats_2025_operating_profit_share_pct": 85,
+    "group_multiple_limitation": "Company mixes branded prepared meat, fresh pork/packing and hog production. Group multiple cannot price a pure hog production stream.",
+    "limitations": "US internal production includes company-owned animals on contract farms; Mexico separately reported. Company fiscal year and national slaughter calendar/including imported live pigs differ; no ownership CR4 inferred."
+  },
+  "derived": [
+    {
+      "id": "farms_1997_2022",
+      "value": -0.5130956289184796,
+      "unit": "fraction",
+      "formula": "60809/124889-1",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "derived"
+    },
+    {
+      "id": "inventory_1997_2022",
+      "value": 0.2064060149948317,
+      "unit": "fraction",
+      "formula": "73817751/61188149-1",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "derived"
+    },
+    {
+      "id": "large_farm_inventory_2002_million",
+      "value": 32.01470459,
+      "unit": "million head",
+      "formula": "53%*60.405103",
+      "sourceIds": [
+        "USG_CENSUS_HIST22",
+        "USG_CENSUS_HL22"
+      ],
+      "status": "derived_approximate_rounded_share"
+    },
+    {
+      "id": "large_farm_inventory_2022_million",
+      "value": 55.363313250000004,
+      "unit": "million head",
+      "formula": "75%*73.817751",
+      "sourceIds": [
+        "USG_CENSUS_HIST22",
+        "USG_CENSUS_HL22"
+      ],
+      "status": "derived_approximate_rounded_share"
+    },
+    {
+      "id": "large_farm_inventory_growth2002_2022",
+      "value": 0.7293088897435303,
+      "unit": "fraction",
+      "formula": "(0.75*73.817751)/(0.53*60.405103)-1",
+      "sourceIds": [
+        "USG_CENSUS_HIST22",
+        "USG_CENSUS_HL22"
+      ],
+      "status": "derived_approximate_rounded_share",
+      "limitations": "Changing farm-size group, not same-firm panel or a company organic growth rate."
+    },
+    {
+      "id": "large_farm_inventory_cagr2002_2022",
+      "value": 0.02776453799037637,
+      "unit": "fraction/year",
+      "formula": "((0.75*73.817751)/(0.53*60.405103))^(1/20)-1",
+      "sourceIds": [
+        "USG_CENSUS_HIST22",
+        "USG_CENSUS_HL22"
+      ],
+      "status": "derived_approximate_rounded_share"
+    },
+    {
+      "id": "all_inventory_cagr2002_2022",
+      "value": 0.010076713723645492,
+      "unit": "fraction/year",
+      "formula": "(73817751/60405103)^(1/20)-1",
+      "sourceIds": [
+        "USG_CENSUS_HIST22"
+      ],
+      "status": "derived"
+    },
+    {
+      "id": "pork_output_growth2015_2025",
+      "value": 0.1256326530612244,
+      "unit": "fraction",
+      "formula": "27.578/24.5-1",
+      "sourceIds": [
+        "USG_NASS_SLAUGHTER16",
+        "USG_ERS_OUTLOOK2610"
+      ],
+      "status": "derived_approximate_rounded_2015"
+    },
+    {
+      "id": "pork_output_cagr2015_2025",
+      "value": 0.011904828629646591,
+      "unit": "fraction/year",
+      "formula": "(27.578/24.5)^(1/10)-1",
+      "sourceIds": [
+        "USG_NASS_SLAUGHTER16",
+        "USG_ERS_OUTLOOK2610"
+      ],
+      "status": "derived_approximate_rounded_2015"
+    },
+    {
+      "id": "slaughter_cagr2015_2025",
+      "value": 0.010575102352806676,
+      "unit": "fraction/year",
+      "formula": "(128.2011/115.4)^(1/10)-1",
+      "sourceIds": [
+        "USG_NASS_SLAUGHTER16",
+        "USG_NASS_SLAUGHTER25"
+      ],
+      "status": "derived_approximate_rounded_2015"
+    },
+    {
+      "id": "export_share2025",
+      "value": 0.2528102110377838,
+      "unit": "fraction of pork production",
+      "formula": "6.972/27.578",
+      "sourceIds": [
+        "USG_ERS_OUTLOOK2610"
+      ],
+      "status": "derived",
+      "limitations": "Gross exports/production. CWE denominator aligns broadly; not net exports or causal marginal contribution."
+    },
+    {
+      "id": "smf_output_decline2019_2025",
+      "value": -0.3693181818181819,
+      "unit": "fraction",
+      "formula": "11.1/17.6-1",
+      "sourceIds": [
+        "USG_SMF25"
+      ],
+      "status": "derived"
+    },
+    {
+      "id": "finisher_large_small_cost_difference2020",
+      "value": -0.28701223063482817,
+      "unit": "fraction",
+      "formula": "61.21/85.85-1",
+      "sourceIds": [
+        "USG_ERS361"
+      ],
+      "status": "derived"
+    }
+  ],
+  "illustrative_share_growth": [
+    {
+      "initial_share": 0.1,
+      "end_share": 0.15,
+      "years": 5,
+      "national_head_cagr": 0,
+      "company_head_cagr": 0.08447177119769855,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.15,
+      "years": 5,
+      "national_head_cagr": -0.01,
+      "company_head_cagr": 0.07362705348572152,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.15,
+      "years": 10,
+      "national_head_cagr": 0,
+      "company_head_cagr": 0.04137974399241062,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.15,
+      "years": 10,
+      "national_head_cagr": -0.01,
+      "company_head_cagr": 0.030965946552486523,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.2,
+      "years": 5,
+      "national_head_cagr": 0,
+      "company_head_cagr": 0.1486983549970351,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.2,
+      "years": 5,
+      "national_head_cagr": -0.01,
+      "company_head_cagr": 0.13721137144706463,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.2,
+      "years": 10,
+      "national_head_cagr": 0,
+      "company_head_cagr": 0.07177346253629313,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.2,
+      "years": 10,
+      "national_head_cagr": -0.01,
+      "company_head_cagr": 0.06105572791093028,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.25,
+      "years": 5,
+      "national_head_cagr": 0,
+      "company_head_cagr": 0.20112443398143132,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.25,
+      "years": 5,
+      "national_head_cagr": -0.01,
+      "company_head_cagr": 0.18911318964161694,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.25,
+      "years": 10,
+      "national_head_cagr": 0,
+      "company_head_cagr": 0.09595822638521723,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    },
+    {
+      "initial_share": 0.1,
+      "end_share": 0.25,
+      "years": 10,
+      "national_head_cagr": -0.01,
+      "company_head_cagr": 0.08499864412136504,
+      "status": "illustrative_assumption_not_forecast",
+      "formula": "(end_share/initial_share)^(1/years)*(1+national_head_cagr)-1"
+    }
+  ],
+  "model_constraints": {
+    "identities": [
+      "company_sale_heads[t] = national_market_heads[t] * company_share[t]",
+      "revenue[t] = company_sale_heads[t] * sale_weight[t] * realized_live_price[t]",
+      "company_head_cagr = (share_end/share_start)^(1/T) * (1+industry_head_cagr) - 1"
+    ],
+    "recommended_growth_term_sensitivity_years": [
+      5,
+      10,
+      15
+    ],
+    "growth_term_status": "scenario grid, not empirically estimated lifetime or probabilities",
+    "terminal_share_status": "Must be separately justified by China competitive/land/feed/disease/finance evidence; US 75% farm size cohort and 64% packing CR4 are not allowable company caps.",
+    "biology": "Use finite MSY/PSY convergence or annual improvement fade. Do not extend 2% or any positive biological productivity indefinitely; calculate constraint by breeding productivity, survival, finishing space, turns, weight and demand.",
+    "fcff": "Growth value only if incremental after-tax ROIC exceeds WACC. Reinvestment rate g/ROIC is a steady-state accounting approximation requiring matching nominal growth and profitability.",
+    "fcfe": "Growth value only if incremental equity return exceeds cost of equity at a consistent leverage policy. Equity reinvestment rate g/incremental ROE is a simplifying steady-state relation; full forecast uses actual capex, working capital, borrowings and debt service.",
+    "no_double_count": [
+      "If head count grows solely because already-built capacity utilization improves, do not charge a complete new farm build again; still charge marginal inventory/working capital/maintenance.",
+      "If new farms are needed, reinvestment cannot remain zero while volume compounds.",
+      "Ownership transferred to contractors does not remove facilities/feed/hog inventory capital from the whole system; reflect grower fees, commitments and financing.",
+      "Do not compound both company output via MSY and again via a separate growth percentage if same productivity mechanism.",
+      "Do not assume nationwide effective capacity declines while simultaneously increasing every producer MSY and maintaining all volumes; reconcile supply balance.",
+      "A company expanding enough to replace scarce supply may partly lower industry prices; independent price and volume bull cases require a jointly coherent scenario."
+    ]
+  },
+  "limitations": [
+    "No verified official US national ownership-based farming CR4 was obtained. Reported CR4 is packer slaughter concentration only.",
+    "Census 1992 and one1997 column unadjusted for coverage; current census 1997 adjusted column chosen for main 1997–2022 comparison.",
+    "Census sales include phase transfers; never substitute240.1m2022 gross sales for terminal slaughter.",
+    "2024 livestock inventory estimates in ERR361 versus subsequently revised NASS vintages can differ. This research avoids splicing those year-end inventories.",
+    "ERR361 p.9 contract-sale components112.8m+78.9m labeled2002 do not reconcile to Table1 census2002 total184.998m. These component volumes are excluded; do not copy without resolving report source/vintage mismatch.",
+    "ERS historical cost reductions per100lb gain excluding purchased pig costs in productivity tables are different from the complete cross-sectional Table6 cost account.",
+    "US exports/production ratios are gross accounting shares, not a causal attribution or a China export forecast.",
+    "No probabilities of China growth paths are inferred from one US country path, 27 serially dependent years, or one large-company restructuring."
+  ]
+}

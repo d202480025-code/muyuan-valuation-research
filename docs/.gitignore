@@ -1,0 +1,6 @@
+public/
+.openai/
+__pycache__/
+*.pyc
+.DS_Store
+qa/

@@ -1,0 +1,46 @@
+{
+  "output": "materials/academic_work/results_price.json",
+  "summary": "materials/academic_work/results_price.md",
+  "rows": 63,
+  "routeRows": 189,
+  "verification": {
+    "independentMonthlyPriceComparisons": 1764,
+    "independentQuantityAndAnchorComparisons": 15876,
+    "uniqueConfigurations": 147,
+    "baselineReferenceValuesPassed": true,
+    "quarterlyAnnualAggregationPassed": true,
+    "allInputsMatchActualParams": true,
+    "unresolvedSourceIds": [],
+    "sourceCount": 158,
+    "existingEngineAndDataNotModified": true
+  },
+  "baseline": {
+    "cost": {
+      "quarterly": [
+        15.733333333333334,
+        15.733333333333334,
+        15.733333333333334,
+        15.733333333333334
+      ],
+      "annual": 15.73333333333334
+    },
+    "capacity": {
+      "quarterly": [
+        13.378765333904013,
+        17.11241737384121,
+        23.71158698056244,
+        29.029946818675864
+      ],
+      "annual": 20.80817912674588
+    },
+    "demand": {
+      "quarterly": [
+        12.045779300109748,
+        13.372049911836305,
+        15.351411723131532,
+        16.653656915866264
+      ],
+      "annual": 14.355724462735962
+    }
+  }
+}
