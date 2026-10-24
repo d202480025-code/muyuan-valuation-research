@@ -1,6 +1,6 @@
 # 2027年猪价假设矩阵：可复算论文附录
 
-研究截点：2026-10-24，Asia/Hong_Kong。读取引擎 1.3.0。本附录只计算条件情景，不给预测概率。
+研究截点：2026-10-24，Asia/Hong_Kong。读取引擎 1.4.0。本附录只计算条件情景，不给预测概率。
 
 ## 一、先列假设
 
@@ -647,9 +647,9 @@ P_Q=(P_m1+P_m2+P_m3)/3；P_年=Σ12 P_m/12；季节先按因子乘价，再缩�
 
 运行 `node academic_work/price_assumptions.js` 生成完整JSON及本附录。63个设定、189条路线结果；独立逐月价格复算1764次、数量与锚点字段复算15876次，全部通过。
 
-engine.js SHA-256：8f74dd1ace1bf9b23eae3a9a9615b91d7993de04e0825fbf53105d935a5fb068
+engine.js SHA-256：5e043a7bf9480f8925f30d5b3ec5d737f18bcbe17984f66d5ca31322f2673c18
 
-data.js SHA-256：c254611044618e3e152fb95d71659b0921a2dfaa1eb261ac82de9aa40c811cd9
+data.js SHA-256：ae2488a19628de274d80232e2ec30d86ca165560d08baea2a7c54b917cd2ac9f
 
 所有结果行保留sourceIds；完整URL、日期、定位与来源局限见JSON末尾sources。本附录未重新抓取或扩展原有来源。核心来源如下：
 

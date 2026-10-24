@@ -1,11 +1,9 @@
-# 计算引擎与界面契约1.3.0
+# 引擎与界面契约1.4.0
 
-按顺序加载data.js、engine.js、ui.js，无外部请求，适用于本地文件与GitHub Pages子目录。
+按data.js、engine.js、ui.js顺序加载，无需外部API。PARAMS共131项，权威定义见引擎。旧配置导入补充恒定折旧默认，当前视频PAPER显式选择资产批次、终值现金维护explicit。
 
-globalThis.PigCycleModel导出VERSION、PARAMS、DEFAULTS、PRESETS、mergeConfig、validate、calculate、serialize、deserialize、csv及独立辅助计算。PARAMS共125项，为字段及单位的权威定义。
+annual包含cost、profit、referenceDA、oldAssetDA、newAssetDA、da、sustainingCapex、growthCapex、deltaNwc、netBorrowing及fcfe。批次模式在利润和折旧加回中同步处理到期/新增差额，边际折旧税效应设零；不支持用固定利润现金转换比例替代现金桥。
 
-界面MAIN为完整高位PE主线，PAPER为需求路线平量现金流参照。引擎DEFAULTS保留2%增长三次、1000元当年投资的销量资本配置供现行模型比较，不包含旧版结果承诺。
+终值维护选项继续独立生效：depreciation使维护等于终值D&A，explicit保持明确现金更新预算。两种预算不同会改变价值；不应将这种现金预算变化归因于非现金折旧本身。当前视频使用explicit，平量维护更新95亿元。
 
-calculate返回valid、errors、warnings、summary、monthly、quarterly、annual、valuation、growth及alternatives。年度cost直接反映首年与长期基础成本及明确融资调整，未包含其他自动利润扣减。annual中的da、sustainingCapex、growthCapex、deltaNwc、netBorrowing、fcfe分别列示。
-
-历史价格口径分列，月度MSY不伪造。辅助期货和仔猪计算不自动改变主路径。错误输入应显示错误，不得继续显示旧结果。配置导入需要版本和字段检查，旧版本废止字段只在迁移时丢弃，不成为当前计算参数。
+输入无效必须显示错误。当前版本支持1.0至1.4配置迁移，已废止字段只在迁移时丢弃，不再进入当前参数或计算。

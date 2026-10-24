@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "config": {
     "priceMethod": "demand",
     "valuationMethod": "fcfe",
@@ -84,6 +84,12 @@
     "explicitYears": 10,
     "cashflowMode": "bridge",
     "cashConversionPct": 80,
+    "assetDepreciationMode": "cohort",
+    "oldAssetRemainingYears": 10,
+    "newFixedAssetLife": 10,
+    "newFixedResidualPct": 5,
+    "renewalAssetLife": 2.5,
+    "renewalResidualPct": 30,
     "daPerKg": 1.2,
     "maintenanceCapex": 65,
     "otherSustainingCapex": 30,
@@ -93,7 +99,7 @@
     "openingWorkingCapital": 70,
     "annualNetRepayment": 0,
     "repaymentYears": 3,
-    "terminalCapexMode": "depreciation",
+    "terminalCapexMode": "explicit",
     "discountRatePct": 10,
     "terminalGrowthPct": 0,
     "terminalROEPct": 15,

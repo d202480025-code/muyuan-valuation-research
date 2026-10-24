@@ -3,7 +3,7 @@
     "title": "猪周期研究台",
     "asOf": "2026-10-24",
     "timezone": "Asia/Hong_Kong",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "priceThrough": "2026-09",
     "sowsThrough": "2026-09",
     "limitations": [
@@ -18792,7 +18792,7 @@
         "r": 0.730415686073333,
         "slope": 4.940152957368139,
         "r2": 0.5335070744619776,
-        "intercept": 0.00007844227318817097,
+        "intercept": 7.844227318817097e-05,
         "residualSd": 0.16236373722932995,
         "status": "descriptive_only",
         "note": "Lag-specific samples differ; use common-sample table to compare 8/10/12."

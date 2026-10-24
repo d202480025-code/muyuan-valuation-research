@@ -86,9 +86,9 @@ test('auxiliary text preserves blanks but rejects nonstrings, excessive length, 
 });
 test('1.0.0 configurations migrate with auxiliary defaults and retain existing main parameters',()=>{
   const legacy=Object.fromEntries(M.PARAMS.filter(p=>!p.auxiliary).map(p=>[p.key,M.DEFAULTS[p.key]]));legacy.companyCost=12.2;
-  const c=M.deserialize(encodeConfig('1.0.0',legacy),D);assert.equal(M.VERSION,'1.3.0');assert.equal(c.companyCost,12.2);
+  const c=M.deserialize(encodeConfig('1.0.0',legacy),D);assert.equal(M.VERSION,'1.4.0');assert.equal(c.companyCost,12.2);
   for(const p of M.PARAMS.filter(p=>p.auxiliary))assert.equal(c[p.key],p.default);
-  assert.equal(JSON.parse(Buffer.from(M.serialize(c),'base64url').toString('utf8')).version,'1.3.0');
+  assert.equal(JSON.parse(Buffer.from(M.serialize(c),'base64url').toString('utf8')).version,'1.4.0');
   assert.throws(()=>M.deserialize(encodeConfig('1.0.0',{...legacy,unknownField:1}),D));assert.throws(()=>M.deserialize(encodeConfig('9.0.0',legacy),D));
 });
 test('unfinished auxiliary inputs roundtrip without invalidating a legacy or current main configuration',()=>{

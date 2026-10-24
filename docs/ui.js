@@ -5,8 +5,8 @@
   var M = globalThis.PigCycleModel;
   var DATA = globalThis.PIG_DATA || {};
   var $ = function (id) { return document.getElementById(id); };
-  var STORAGE_KEY = 'pig-cycle-lab.viewer.revised-1.3-20261024';
-  var PAPER = M.mergeConfig(M.DEFAULTS, {companyGrowthMode:'flat',hogsPerYear:8000,companyWeight:120,growthCapexPerHead:2000,growthInvestmentTiming:'one_year_before',cashflowMode:'bridge',valuationMethod:'fcfe'});
+  var STORAGE_KEY = 'pig-cycle-lab.viewer.revised-1.4-20261024';
+  var PAPER = M.mergeConfig(M.DEFAULTS, {assetDepreciationMode:'cohort',terminalCapexMode:'explicit',companyGrowthMode:'flat',hogsPerYear:8000,companyWeight:120,growthCapexPerHead:2000,growthInvestmentTiming:'one_year_before',cashflowMode:'bridge',valuationMethod:'fcfe'});
   var MAIN = M.mergeConfig(PAPER,{priceMethod:'custom',customQ1:20,customQ2:20,customQ3:20,customQ4:20,valuationMethod:'pe',normalPigPrice:15.5,normalPriceMode:'manual',normalEarningsMode:'firstyear',normalPE:10});
   var COLORS = { demand: '#087f80', capacity: '#567b9f', cost: '#d78a50', custom: '#8a7caa', price: '#d78a50', sows: '#087f80' };
   var PRICE_METHODS = [
@@ -430,7 +430,7 @@
     if (state.config.valuationMethod === 'pe') note = state.config.normalEarningsMode === 'firstyear' ? '当前将首年情景利润乘以PE，高位年度利润的外推不代表正常利润；后续长期价格仍按独立输入使用。' : state.config.normalEarningsMode === 'roe' ? '正常利润按正常 ROE × 当前归母账面权益计算，再乘以所选 PE。请与 ROE-PB 的回报要求和增长假设一起核对。' : state.config.normalEarningsMode === 'terminal' ? '正常利润以当前商品猪销量和期末单位价差计算，再乘以正常 PE。' : '正常利润以修复后的猪价、完全成本与当前商品猪销量计算，采用修复后的基础成本；再乘以正常 PE。';
     content += '<p class="valuation-caption">' + note + '</p>';
     if (state.config.marketPrice > 0) content += '<div class="implied-price"><span>你输入的股价 ' + fmt(state.config.marketPrice) + ' 元</span><p>' + (finite(s.impliedNormalPrice) ? '在相同 FCFE 假设下，对应长期猪价约 <strong>' + fmt(s.impliedNormalPrice) + '</strong> 元 / 公斤。' : '在模型搜索区间内，未找到匹配的长期猪价。') + '</p></div>';
-    if(state.config.valuationMethod==='fcfe')content+='<details class="data-details"><summary>查看逐年成本、折旧与现金流</summary><p class="chart-note">基础成本直接采用设定；折旧已包含在完全成本并在现金桥中加回。未来实际折旧需要资产年限、更新和新增资产明细支持。</p><div class="table-scroll"><table class="data-table"><thead><tr><th>年</th><th>公司价</th><th>基础成本</th><th>利润</th><th>D&amp;A</th><th>必要维护</th><th>FCFE</th></tr></thead><tbody>'+asArray(result.annual).map(function(a){return '<tr><td>'+a.year+'</td>'+['price','cost','profit','da','sustainingCapex','fcfe'].map(function(k){return '<td>'+fmt(a[k])+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table></div></details>';
+    if(state.config.valuationMethod==='fcfe')content+='<details class="data-details"><summary>查看逐年成本、折旧与现金流</summary><p class="chart-note">批次模式按存量资产到期及新增、更新资产计算折旧，再同步修正利润和等价完全成本。存量年龄分布与投资类别均为情景；边际折旧所得税效应设零。终值保持明确的维护更新现金预算，不把当期折旧机械当现金支出。</p><div class="table-scroll"><table class="data-table"><thead><tr><th>年</th><th>公司价</th><th>等价完全成本</th><th>利润</th><th>存量折旧</th><th>新增折旧</th><th>D&amp;A</th><th>必要维护</th><th>FCFE</th></tr></thead><tbody>'+asArray(result.annual).map(function(a){return '<tr><td>'+a.year+'</td>'+['price','cost','profit','oldAssetDA','newAssetDA','da','sustainingCapex','fcfe'].map(function(k){return '<td>'+fmt(a[k])+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table></div></details>';
     $('valuation-content').innerHTML = content;
   }
 
@@ -885,8 +885,8 @@
     $('reset-config').addEventListener('click', function () { applyConfig(PAPER, '修订现金流参照：8000万头持平'); showToast('当前参数已恢复默认，保存的对比情景仍可载入。'); });
     $('mobile-parameters').addEventListener('click', function () { var panel = document.querySelector('.parameter-panel'); var collapsed = panel.classList.toggle('is-mobile-collapsed'); this.setAttribute('aria-expanded', String(!collapsed)); this.innerHTML = collapsed ? '展开 <span aria-hidden="true">⌄</span>' : '收起 <span aria-hidden="true">⌃</span>'; });
     $('load-main').addEventListener('click',function(){applyConfig(MAIN,'主线：全年20元与10倍PE');});
-    $('load-paper').addEventListener('click',function(){applyConfig(PAPER,'修订现金流参照：8000万头持平');showToast('已载入1.3.0修订参照。');});
-    $('load-legacy').addEventListener('click',function(){applyConfig(M.DEFAULTS,'2%增长三次：修订模型');showToast('已载入旧销量及投资配置，采用当前修订模型重算。');});
+    $('load-paper').addEventListener('click',function(){applyConfig(PAPER,'修订现金流参照：8000万头持平');showToast('已载入1.4.0资产批次参照。');});
+    $('load-legacy').addEventListener('click',function(){applyConfig(M.mergeConfig(M.DEFAULTS,{assetDepreciationMode:'cohort'}),'2%增长三次：批次折旧模型');showToast('已载入旧销量及投资配置，采用当前修订模型重算。');});
     $('load-target').addEventListener('click',function(){applyConfig(M.mergeConfig(PAPER,{companyGrowthMode:'target',targetHogs:9000,targetGrowthYears:4}),'2031年9000万头：提前投资');});
     $('sync-depletion').addEventListener('click',function(){var c=state.config;var d=(1-c.sowQ3/c.sowQ2)*100;var check=M.validate(M.mergeConfig(c,{q4DepletionPct:d}),DATA);if(check.errors.length){showToast('同速去化超出允许范围，请检查Q2/Q3输入。',true);return;} applyConfig(M.mergeConfig(c,{q4DepletionPct:d}),'Q4与Q3同速去化');});
     $('save-scenario').addEventListener('click', openScenarioDialog);

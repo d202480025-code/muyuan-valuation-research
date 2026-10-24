@@ -1,0 +1,73 @@
+{
+  "checks": 163,
+  "version": "1.4.0",
+  "flat": {
+    "method": "fcfe",
+    "label": "周期路径 · FCFE",
+    "valuePerShare": 59.50231416715761,
+    "equityValue": 3435.0663024607743,
+    "enterpriseValue": null,
+    "terminalValue": 3576.3999999999996,
+    "terminalPresentValue": 1378.857020315776,
+    "terminalShare": 0.4014062317597788,
+    "normalProfit": 337.43999999999994,
+    "normalEps": 5.845145078621067,
+    "impliedROE": 0.42081835177059523,
+    "details": [
+      {
+        "label": "显性期现金流现值",
+        "value": 2056.2092821449983,
+        "unit": "亿元"
+      },
+      {
+        "label": "终值现金流（已扣增长再投资）",
+        "value": 357.64,
+        "unit": "亿元"
+      },
+      {
+        "label": "终值现值",
+        "value": 1378.857020315776,
+        "unit": "亿元"
+      },
+      {
+        "label": "终值增长再投资",
+        "value": 0,
+        "unit": "亿元"
+      },
+      {
+        "label": "期末单位价差",
+        "value": 4.0558114035087725,
+        "unit": "元/kg"
+      }
+    ],
+    "terminalFCFE": 357.64
+  },
+  "growth": [
+    {
+      "id": "flat",
+      "value": 59.50231416715761,
+      "added": 0
+    },
+    {
+      "id": "old_capital",
+      "value": 61.92900603667609,
+      "added": 2.4266918695184856
+    },
+    {
+      "id": "rate_new_capital",
+      "value": 61.16293630836129,
+      "added": 1.6606221412036817
+    },
+    {
+      "id": "target9000",
+      "value": 62.743876904839624,
+      "added": 3.241562737682017
+    },
+    {
+      "id": "target10000",
+      "value": 65.96678328308306,
+      "added": 6.4644691159254535
+    }
+  ],
+  "constantValue": 58.1532790643764
+}

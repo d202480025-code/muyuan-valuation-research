@@ -1,23 +1,15 @@
 {
-  "version": "1.3.0",
-  "asOf": "2026-10-24",
-  "slides": 55,
+  "version": "1.4.0",
+  "slides": 57,
   "mainSlides": 49,
-  "industrySlides": 26,
-  "companyStartSlide": 27,
-  "nativeTables": 33,
-  "nativeCharts": 8,
-  "speakerNotes": 55,
-  "recommendedMinutes": 58.08,
-  "industryTextIsolated": true,
-  "powerpointPdfExport": "passed",
-  "wordPdfPages": 33,
-  "packageIntegrity": "passed; zero findings",
-  "layout": "zero findings; two estimates checked against actual PDF and fit",
-  "webPresetValues": {
-    "mainPE": 129.54,
-    "flatFCFE": 58.15,
-    "target9000": 61.23
-  },
-  "validationScope": "Frozen material algorithm and accounting consistency; external sources selectively checked, not a full re-audit of every linked source."
+  "appendixSlides": 8,
+  "editableCharts": 22,
+  "nativeTables": 23,
+  "sourceLinks": 56,
+  "speakerNotesAndProvenance": 57,
+  "industryIsolatedPages": 26,
+  "estimatedMinutes": 57.18333333333333,
+  "recommendedCut": "28:26",
+  "dataLedgerFields": 488,
+  "wordPages": 38
 }

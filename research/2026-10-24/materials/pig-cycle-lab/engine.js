@@ -1,7 +1,7 @@
 /* Pig Cycle Lab — pure calculation engine. Units and assumptions are public in docs/model.md. */
 (function (root) {
   'use strict';
-  const VERSION = '1.3.0';
+  const VERSION = '1.4.0';
   const PARAMS = [];
   function num(key,label,group,value,min,max,step,unit,description,extra) {
     PARAMS.push(Object.assign({key,label,group,type:'number',default:value,min,max,step,unit,description,evidence:'assumption',sourceIds:[]},extra||{}));
@@ -95,6 +95,12 @@
   num('explicitYears','显性预测期','跨周期路径',10,5,20,1,'年','终值从显性期结束后的下一年起。',A);
   sel('cashflowMode','股权现金流计算','资本与现金流','bridge',[['bridge','利润 + 折旧 − 再投资 − 净还债'],['ratio','利润 × 现金转化率（简化）']],'两种路线互斥；桥接模式不再乘现金转化率。');
   num('cashConversionPct','简化现金转化率','资本与现金流',80,0,150,5,'%','仅简化路线；亏损年份机械同比放大/缩小并不等于真实现金流，须重点复核。',{showWhen:{key:'cashflowMode',value:'ratio'}});
+  sel('assetDepreciationMode','折旧路径','资本与现金流','constant',[['constant','恒定折旧对照'],['cohort','存量到期与新增资产批次']],'批次模式将存量折旧、维护更新及增长投资分别建账。所有资产年龄分布是可修改情景，不是公司披露的逐项资产台账。',A);
+  num('oldAssetRemainingYears','存量折旧剩余期限分布','资本与现金流',10,1,30,1,'年','首年存量折旧均分到剩余1年至本年数各档；由此逐年到期。缺乏逐项年龄台账，10年仅作情景。',A);
+  num('newFixedAssetLife','新增及维护固定资产折旧期','资本与现金流',10,1,40,1,'年','年限平均法情景。公司房屋10至20年、设备3至20年；这里10年为简化组合，不能替代真实类别权重。',A);
+  num('newFixedResidualPct','固定资产预计残值率','资本与现金流',5,0,90,1,'%','固定资产更新与增长投入资本化后按该残值率和年限折旧。残值不自动视为已收回现金。',A);
+  num('renewalAssetLife','其他更新资产折旧期','资本与现金流',2.5,1,20,.5,'年','示例将其他更新预算30亿元全部资本化，借用种猪2.5年政策；真实构成仍需勾稽，不能把已费用化支出重复资本化。',A);
+  num('renewalResidualPct','其他更新资产残值率','资本与现金流',30,0,90,1,'%','仅用于其他更新全部按种猪类资产处理的示例。公司种猪残值率30%，并不证明30亿元预算全属该类。',A);
   num('daPerKg','归母同口径折旧摊销','资本与现金流',1.2,0,3,.05,'元/kg','模型假设。不能把集团折旧总额未经口径调整全部加回养殖归母利润。');
   num('maintenanceCapex','首年固定资产维护更新','资本与现金流',65,0,250,5,'亿元','公司2026公开口径约60–70亿元；这里向2027延伸，随后随销量变化。',{sourceIds:['my_202605']});
   num('otherSustainingCapex','首年其他必要再投资','资本与现金流',30,0,200,5,'亿元','繁殖生物资产更新、未包含租赁等的占位情景；需与折旧/费用口径逐项对齐。');
@@ -176,7 +182,9 @@
         if(!ok) errors.push({key:p.key,message:p.label+'选项不存在。'});
       }
     }
-    for(const k of ['lagMonths','explicitYears','recoveryYears','volumeGrowthYears','targetGrowthYears','repaymentYears']) if(!Number.isInteger(c[k])) errors.push({key:k,message:'月份/年数须为整数。'});
+    for(const k of ['oldAssetRemainingYears','lagMonths','explicitYears','recoveryYears','volumeGrowthYears','targetGrowthYears','repaymentYears']) if(!Number.isInteger(c[k])) errors.push({key:k,message:'月份/年数须为整数。'});
+    if(c.assetDepreciationMode==='cohort'&&c.cashflowMode!=='bridge')errors.push({key:'cashflowMode',message:'资产批次需要逐项现金桥，不能用固定利润转现金比例代替。'});
+    if(c.assetDepreciationMode==='cohort'&&c.attributionPct<=0)errors.push({key:'attributionPct',message:'批次折旧模式要求正的归属折算比例，以勾稽等价完全成本。'});
     if(c.discountRatePct<=c.terminalGrowthPct) errors.push({key:'terminalGrowthPct',message:'折现率必须大于终值增长率。'});
     if(c.terminalROEPct<=c.terminalGrowthPct) errors.push({key:'terminalROEPct',message:'终值新增权益回报须大于增长率，避免超过100%的留存要求。'});
     if(c.productivityMode==='bounded'&&c.psyCeiling<c.psyBase) errors.push({key:'psyCeiling',message:'有上限的改善路径要求上限不低于基期PSY；下降情景请使用直接MSY。'});
@@ -346,8 +354,10 @@
     const normal=normalOverride==null?(c.normalPriceMode==='cost'?cost.normalPrice:c.normalPigPrice):normalOverride;
     const firstPrice=avg(monthly.map(x=>x.price)),annual=[],r=pct(c.discountRatePct),g=pct(c.terminalGrowthPct),a=pct(c.attributionPct),N=c.explicitYears;
     let prevVolume=c.hogsPerYear,prevWC=c.openingWorkingCapital;
+    const cohorts=[],openingDA=c.hogsPerYear*c.companyWeight/10000*c.daPerKg;
+    function batchDA(amount,life,residual,age){return age<0?0:amount*(1-pct(residual))/life*clamp(life-age,0,1);}
     const companyNormal=normal+c.realizedPriceDelta,initialMargin=companyNormal-c.longRunCost;
-    const terminalMargin=initialMargin;
+    let terminalMargin=initialMargin;
     for(let i=0;i<N;i++) {
       const volume=companyVolume(c,i),kg=volume*c.companyWeight/10000;
       const repair=i===0?0:c.recoveryYears===1?1:clamp(i/(c.recoveryYears-1),0,1);
@@ -356,24 +366,38 @@
       const debtOpening=c.interestDebt-c.annualNetRepayment*Math.min(i,c.repaymentYears);
       const interestSaving=c.cashflowMode==='bridge'?c.annualInterest*(1-debtOpening/c.interestDebt):0;
       unitCost-=interestSaving/kg;
-      const profit=kg*(price-unitCost)*a+c.otherProfit,da=kg*c.daPerKg,sustainingCapex=(c.maintenanceCapex+c.otherSustainingCapex)*volume/c.hogsPerYear;
+      let profit=kg*(price-unitCost)*a+c.otherProfit,da=kg*c.daPerKg;const referenceDA=da,sustainingCapex=(c.maintenanceCapex+c.otherSustainingCapex)*volume/c.hogsPerYear;
       const capacityAddition=c.growthInvestmentTiming==='one_year_before'?Math.max(0,companyVolume(c,i+1)-volume):Math.max(0,volume-prevVolume);
       const growthCapex=capacityAddition*c.growthCapexPerHead/10000,revenue=kg*price,workingCapital=revenue*pct(c.workingCapitalPct),deltaNwc=workingCapital-prevWC;
+      let oldAssetDA=da,newAssetDA=0;
+      if(c.assetDepreciationMode==='cohort'){
+        oldAssetDA=openingDA*Math.max(0,(c.oldAssetRemainingYears-i)/c.oldAssetRemainingYears);
+        // Fixed maintenance and other renewals enter service next year; growth follows the selected investment timing.
+        cohorts.push({amount:c.maintenanceCapex*volume/c.hogsPerYear,life:c.newFixedAssetLife,residual:c.newFixedResidualPct,start:i+1});
+        cohorts.push({amount:c.otherSustainingCapex*volume/c.hogsPerYear,life:c.renewalAssetLife,residual:c.renewalResidualPct,start:i+1});
+        cohorts.push({amount:growthCapex,life:c.newFixedAssetLife,residual:c.newFixedResidualPct,start:i+(c.growthInvestmentTiming==='one_year_before'?1:0)});
+        newAssetDA=cohorts.reduce((sum,b)=>sum+batchDA(b.amount,b.life,b.residual,i-b.start),0);da=oldAssetDA+newAssetDA;
+        // All D&A amounts are attribution-equivalent. With zero marginal depreciation tax, profit and addback cancel exactly.
+        profit+=referenceDA-da;unitCost+=(da-referenceDA)/(kg*a);
+      }
       const netBorrowing=i<c.repaymentYears?-c.annualNetRepayment:0;
       const fcfe=c.cashflowMode==='ratio'?profit*pct(c.cashConversionPct):profit+da-sustainingCapex-growthCapex-deltaNwc+netBorrowing;
       const industryHogs=c.industryHogsBase*Math.pow(1+pct(c.industryHogsTrendPct),i+2),marketSharePct=volume/industryHogs*100;
-      annual.push({year:2027+i,volume,weight:c.companyWeight,price,cost:unitCost,profit,da,sustainingCapex,growthCapex,deltaNwc,netBorrowing,fcfe,presentValue:fcfe/Math.pow(1+r,i+1),workingCapital,debtOpening,interestSaving,industryHogs,marketSharePct,capacityAddition});
+      annual.push({year:2027+i,volume,weight:c.companyWeight,price,cost:unitCost,profit,da,referenceDA,oldAssetDA,newAssetDA,sustainingCapex,growthCapex,deltaNwc,netBorrowing,fcfe,presentValue:fcfe/Math.pow(1+r,i+1),workingCapital,debtOpening,interestSaving,industryHogs,marketSharePct,capacityAddition});
       prevVolume=volume;prevWC=workingCapital;
     }
     const last=annual[N-1],terminalDebt=c.interestDebt-c.annualNetRepayment*Math.min(N,c.repaymentYears);
     const terminalInterestSaving=c.cashflowMode==='bridge'?c.annualInterest*(1-terminalDebt/c.interestDebt):0;
-    const terminalProfit=(last.profit+(terminalInterestSaving-last.interestSaving)*a)*(1+g),terminalDA=last.da*(1+g),terminalMaintenance=c.terminalCapexMode==='depreciation'?terminalDA:last.sustainingCapex*(1+g);
+    const steadyDA=(c.maintenanceCapex*(1-pct(c.newFixedResidualPct))+c.otherSustainingCapex*(1-pct(c.renewalResidualPct)))*last.volume/c.hogsPerYear;
+    const normalizedTerminalProfit=c.assetDepreciationMode==='cohort'?last.profit+last.da-steadyDA:last.profit;
+    if(c.assetDepreciationMode==='cohort')terminalMargin=(normalizedTerminalProfit-c.otherProfit)/(last.volume*c.companyWeight/10000*a);
+    const terminalProfit=(normalizedTerminalProfit+(terminalInterestSaving-last.interestSaving)*a)*(1+g),terminalDA=(c.assetDepreciationMode==='cohort'?steadyDA:last.da)*(1+g),terminalMaintenance=c.terminalCapexMode==='depreciation'?terminalDA:last.sustainingCapex*(1+g);
     const terminalReinvestment=Math.max(0,terminalProfit)*g/pct(c.terminalROEPct);
     const terminalFCFE=(c.cashflowMode==='ratio'?terminalProfit*pct(c.cashConversionPct):terminalProfit+terminalDA-terminalMaintenance)-terminalReinvestment;
     const terminalValue=terminalFCFE/(r-g),terminalPresentValue=terminalValue/Math.pow(1+r,N),fcfeEquity=annual.reduce((s,x)=>s+x.presentValue,0)+terminalPresentValue+c.extraCash;
     // Multiples use today's productive scale with NORMAL earnings, not a peak quarter.
     const normalKg=c.hogsPerYear*c.companyWeight/10000,operatingNormalProfit=normalKg*initialMargin*a+c.otherProfit;
-    const normalProfit=c.normalEarningsMode==='firstyear'?annual[0].profit:c.normalEarningsMode==='roe'?pct(c.normalROEPct)*c.bookEquity:c.normalEarningsMode==='terminal'?normalKg*terminalMargin*a+c.otherProfit:operatingNormalProfit,normalEps=normalProfit/c.shares,impliedROE=operatingNormalProfit/c.bookEquity;
+    const normalProfit=c.normalEarningsMode==='firstyear'?annual[0].profit:c.normalEarningsMode==='roe'?pct(c.normalROEPct)*c.bookEquity:c.normalEarningsMode==='terminal'?(c.assetDepreciationMode==='cohort'?normalizedTerminalProfit*c.hogsPerYear/last.volume:normalKg*terminalMargin*a+c.otherProfit):operatingNormalProfit,normalEps=normalProfit/c.shares,impliedROE=operatingNormalProfit/c.bookEquity;
     const pe=normalProfit>0?normalProfit*c.normalPE+c.extraCash:null;
     // Simplified bridge. All nonfarm profit / noncontrolling / tax effects require same-scope reconciliation.
     const ebitda=c.ebitdaMode==='manual'?c.groupEbitda:normalKg*initialMargin+c.annualInterest+normalKg*c.evDaPerKg+c.otherEbitda,ev=ebitda>0?ebitda*c.evEbitdaMultiple:null,evEquity=ev==null?null:ev-c.netDebt-c.minorityValue;
@@ -434,7 +458,7 @@
   function deserialize(s,data) {
     if(typeof s!=='string'||s.length>30000||!/^[A-Za-z0-9_-]+$/.test(s))throw new Error('分享配置格式不正确。');
     const b=s.replace(/-/g,'+').replace(/_/g,'/'),raw=typeof Buffer!=='undefined'?Buffer.from(b,'base64').toString('utf8'):decodeURIComponent(escape(atob(b)));
-    const obj=JSON.parse(raw);if(!obj||![VERSION,'1.2.0','1.1.0','1.0.0'].includes(obj.version)||!obj.config||typeof obj.config!=='object'||Array.isArray(obj.config))throw new Error('配置版本不兼容。');
+    const obj=JSON.parse(raw);if(!obj||![VERSION,'1.3.0','1.2.0','1.1.0','1.0.0'].includes(obj.version)||!obj.config||typeof obj.config!=='object'||Array.isArray(obj.config))throw new Error('配置版本不兼容。');
     const retired=['advantageRetentionPct','advantageFadeClock','advantageFadeStartYear'];if(obj.version!==VERSION){for(const k of retired)delete obj.config[k];}const known=new Set(PARAMS.map(p=>p.key));for(const k of Object.keys(obj.config))if(!known.has(k))throw new Error('配置包含未知字段：'+k);
     const migrated=Object.assign({},obj.config);
     if(obj.version!==VERSION){if(!Object.hasOwn(migrated,'costBasis'))migrated.costBasis='technical';if(!Object.hasOwn(migrated,'companyGrowthMode'))migrated.companyGrowthMode='rate';if(!Object.hasOwn(migrated,'growthInvestmentTiming'))migrated.growthInvestmentTiming='same_year';}
